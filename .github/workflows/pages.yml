@@ -46,7 +46,7 @@ jobs:
 
       - name: Check application behavior and types
         run: |
-          npm test
+          npm test -- --maxWorkers=2
           npm run lint
 
       - name: Install model build dependencies
