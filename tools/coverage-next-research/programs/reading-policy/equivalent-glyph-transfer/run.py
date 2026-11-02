@@ -134,7 +134,7 @@ for kind in ['raw','joint']:assert pairs[kind+'-original']<=pairs[kind+'-transfe
 basecovered=four|sets['joint-original'];newcovered=four|sets['joint-transferred']
 coverage=readjson(READ/'coverage-effects.json');bench=readjson('/root/.cache/babble-coverage-research/benchmarks/repertoires.json');tgh={r['char']for r in bench['properties']['kTGH']};hy=Array=None
 # Existing pinned HY contains only the tested Han range in its non-ASCII letters.
-text=(ROOT/'HY.txt').read_text();knownHan=set()
+text=(ROOT/'the_Tower_of_Babel.txt').read_text();knownHan=set()
 for c in set(text):
  cp=ord(c)
  if (0x3400<=cp<=0x4dbf or 0x4e00<=cp<=0x9fff or 0xf900<=cp<=0xfaff or 0x20000<=cp<=0x33479):knownHan.add(c)

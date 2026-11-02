@@ -17,12 +17,12 @@
 
 ## 默认练习文本《花园中》
 
-2026-10-26（Asia/Dubai），用户明确指定将其提供的 `HY.docx` 转换为 text 并用作初始练习内容。本项目按 Word 正文顺序读取 65 个段落，以 LF 连接，输出根目录 UTF-8 `HY.txt`，共 2,197 个 Unicode 码点；保留原文字、英文、标点和空段落，不改写文章。来源、转换说明和 SHA256 见 [data/NOTICE-practice-text.md](../data/NOTICE-practice-text.md)：
+2026-10-26（Asia/Dubai），用户明确指定将其提供的 `HY.docx` 转换为 text 并用作初始练习内容。本项目按 Word 正文顺序读取 65 个段落，以 LF 连接，输出根目录 UTF-8 `the_Tower_of_Babel.txt`，共 2,197 个 Unicode 码点；保留原文字、英文、标点和空段落，不改写文章。来源、转换说明和 SHA256 见 [data/NOTICE-practice-text.md](../data/NOTICE-practice-text.md)：
 
 - 原 Word：`afedef22df04a7f840a1a7b20c69009a86b8f1cdc4f8971efae73ac5e95615a2`。
 - 转换文本：`b8bca40fef81749ed547a6f0ac12a29519b8b24162fe5d003a31ed33214cdac3`。
 
-文件未附作者及独立许可证声明，不补造署名，不将代码或字典的 MIT / AGPL / Unicode / CC0 授权套用到该文章。按用户指示纳入的 `HY.txt` 随应用及完整源码包分发，原 `HY.docx` 不进入网页或源码下载包；独立通知随构建复制到 `dist/licenses/`。
+文件未附作者及独立许可证声明，不补造署名，不将代码或字典的 MIT / AGPL / Unicode / CC0 授权套用到该文章。按用户指示纳入的 `the_Tower_of_Babel.txt` 随应用及完整源码包分发，原 `HY.docx` 不进入网页或源码下载包；独立通知随构建复制到 `dist/licenses/`。
 
 这份文章仅是默认练习题目来源，与字音、形码、字根和键位数据相互独立，不参与生成或推断编码。界面也支持用户自行粘贴或本地上传 UTF-8 `.txt`；这些自有内容只在当前页面内存使用，不上传、不写入学习存储，刷新后清除。内置默认文章仍随应用可用，不意味着恢复了此前的自有文章、读音选择或位置。
 

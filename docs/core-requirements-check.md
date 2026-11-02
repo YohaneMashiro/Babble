@@ -41,7 +41,7 @@
 | 数据驱动课程、自由进入、不同经验起点 | 完成 | `src/data/lessons.ts:6`、`:133`、`src/components/LearningPath.tsx:39`；当前 15 课可自由进入、随时跳过，程度只调整推荐。浏览器逐一进入全部 15 课，并验证推荐和刷新保存。建议列表中的二字词 / 多字词专门课程未实现；原 PRD 允许调整课程拆分，不作为当前 Phase 4 门槛。 |
 | 课程只练目标位、seen / attempted / mastered、无时间压力 | 完成 | `src/domain/progress.ts:52`、`:81`、`:106`、`:122`；按字、全码和目标位范围累计，两次连续独立正确才曾掌握，错误 / 协助会中断当前连续记录，不衰减既有掌握。提示、示例、Inspector 不能算独立正确；实际持久化记录已检验。 |
 | 本地学习进度和错误记录、刷新继续、存储失败降级 | 完成 | `src/hooks/useLearningProgress.ts:7`、`src/state/learning-storage.ts:49`；IndexedDB 写入按队列执行，snapshot 与 attempt 事务提交；读取失败、损坏或存储受限时保留原数据、仅内存练习。浏览器实际验证保存、恢复、快速连续写入、损坏记录和降级。 |
-| HY.docx → UTF-8 文本、默认文章、保留英文 | 完成 | `src/data/practice-text.ts`、`HY.txt`；独立从 Word XML 提取正文 65 段，与 TXT 逐字一致；2,197 码点、6,343 字节、60 个拉丁字母。浏览器验证默认预填、替换和清除行为。 |
+| HY.docx → UTF-8 文本、默认文章、保留英文 | 完成 | `src/data/practice-text.ts`、`the_Tower_of_Babel.txt`；独立从 Word XML 提取正文 65 段，与 TXT 逐字一致；2,197 码点、6,343 字节、60 个拉丁字母。浏览器验证默认预填、替换和清除行为。 |
 | 粘贴、TXT 上传、长度 / 编码 / 错误处理 | 完成 | `src/components/TextEditor.tsx:18`；UTF-8 `.txt`，20,000 码点硬上限，上传前有字节大小保护；拒绝错误扩展名、编码和超长内容时保留原草稿、不截断；异步读取不会覆盖后续编辑。实际浏览器通过。 |
 | 文本逐字训练、原样保留、分页、点击定位、未知字符 | 完成 | `src/domain/text.ts:95`、`src/components/TextTrainer.tsx:18`、`src/app/App.tsx:396`；每 400 个可训练目标分页，保留标点 / 英文 / 数字 / 换行，重复字按出现位置独立定位，当前字突出显示，缺形字标记、跳过且可查。实际长文本与边界通过。 |
 | 多音字 / 多码不猜上下文、无可靠数据不造码 | 完成 | `src/domain/text.ts:56`、`:88`、`src/data/library.ts:204`；文本按每次出现明确选读音，仅读音选项暂停训练，可跳过且不造 attempt；声韵前缀必须匹配已有核验全码。实际浏览器与来源完整性测试通过。 |
@@ -73,7 +73,7 @@
 | `npm run audit:official -- --offline --cache-dir /tmp/babble-ix-implementation/live-cache --report /tmp/babble-core-checker-official.json` | 使用当前外部已验证快照，0 编码 / 根冲突、269 个待补字。 |
 | `python3 -B tools/shape-expansion/generate.py --reference /tmp/babble-ix-page-audit/ixdata.json --check` | 固定输入和生成物验证通过，额外 1,570 字 / 1,630 全码与锁一致。 |
 | Chai 固定核心＋外部字形＋固定官方参照独立运行 | 结果写入 `/tmp/babble-core-checker-chai.json`；目标 5/24、控制 6/10 匹配，无引擎错误。 |
-| Word 正文对 TXT 独立比较 | 65 段 LF 连接与 `HY.txt` 完全一致；SHA256 为 `b8bca40fef81749ed547a6f0ac12a29519b8b24162fe5d003a31ed33214cdac3`。 |
+| Word 正文对 TXT 独立比较 | 65 段 LF 连接与 `the_Tower_of_Babel.txt` 完全一致；SHA256 为 `b8bca40fef81749ed547a6f0ac12a29519b8b24162fe5d003a31ed33214cdac3`。 |
 | 源码包与隐私核对 | 包中 122 个文件；未包含原 Word、官方 JSON 或远程字形原件；许可文件存在。指定私有账户信息扫描无命中，报告不记录其值。 |
 
 浏览器运行使用项目外 Playwright / Chromium / axe，未加入应用依赖。新生成的明细位于 `test-results/browser-smoke.json`、`learning-path-smoke.json`、`custom-text-smoke.json` 及对应 accessibility JSON；这些 QA 文件不随产品分发。本次独立查看桌面首屏、HY 文本训练和 320px 截图，确认当前字视觉层级、同页结构及基本响应式布局。

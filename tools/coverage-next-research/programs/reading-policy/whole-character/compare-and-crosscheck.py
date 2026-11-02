@@ -26,7 +26,7 @@ for row in rows:
  codes={re.sub('[-+*]+$','',v).upper()for v in ref.get(row['char'],{}).get('1','').split()if re.fullmatch('[a-zA-Z]{4}[-+*]*',v)}
  if row['code']in codes:accepted.append(row)
 chars={r['char']for r in accepted};finite=set('升断见生继夜');effects={}
-reps=json.loads(Path('/root/.cache/babble-coverage-research/benchmarks/repertoires.json').read_text())['properties'];hy=(R/'HY.txt').read_text();modern=json.loads((R/'src/data/generated/readings.json').read_text())['characters'];han=[c for c in hy if c in modern]
+reps=json.loads(Path('/root/.cache/babble-coverage-research/benchmarks/repertoires.json').read_text())['properties'];hy=(R/'the_Tower_of_Babel.txt').read_text();modern=json.loads((R/'src/data/generated/readings.json').read_text())['characters'];han=[c for c in hy if c in modern]
 for mode in ['full','no-cjkvi']:
  exact=json.loads((B/f'checker/leaf-{mode}-actual-exact-pairs.json').read_text());before=four|{r[0]for r in exact}|finite;after=before|chars
  effects[mode]={'before':len(before),'after':len(after),'netAdded':len(after-before),'newCharacters':sorted(after-before),'normative':{k:{'before':sum(r['char']in before for r in rs),'after':sum(r['char']in after for r in rs),'total':len(rs)}for k,rs in reps.items()},'hyBefore':sum(c in before for c in han),'hyAfter':sum(c in after for c in han)}

@@ -27,7 +27,7 @@ npm run build
 
 `--download` 允许获取已固定来源的缺失输入。所有输入都先校验字节数和 SHA-256；下载的 Python 配置只用 AST 读取字面量，不执行其中代码。已有原始 ZIP 可通过 `--archive /外部路径/G2PWModel-v2-onnx.zip` 指定。缓存存在时，程序仍校验下载输入和量化权重；`--force` 会用固定 Python 依赖重新执行量化，并要求输出符合已固定摘要。
 
-`--preprocess` 使用同一个 int8 模型本地生成 [`src/data/generated/default-pinyin.json`](../src/data/generated/default-pinyin.json)。每项位置以 Unicode 码点计算，与原始 HY.txt 一一对应，保留换行、英文、标点和补充平面字符。常规字典读音与实际进入神经模型的 `modelIndices` 分开记录。原文 SHA-256 绑定默认注音；更改文章后应重新运行预处理。
+`--preprocess` 使用同一个 int8 模型本地生成 [`src/data/generated/default-pinyin.json`](../src/data/generated/default-pinyin.json)。每项位置以 Unicode 码点计算，与原始 the_Tower_of_Babel.txt 一一对应，保留换行、英文、标点和补充平面字符。常规字典读音与实际进入神经模型的 `modelIndices` 分开记录。原文 SHA-256 绑定默认注音；更改文章后应重新运行预处理。
 
 生成器的中文 BERT 词表按官方 `BertTokenizer.load_vocab` 的文件行规则读取，保留词表中的 U+2028/U+2029。不能使用 Python `str.splitlines()` 分割词表，否则会额外拆词并让后续 token ID 错位。
 

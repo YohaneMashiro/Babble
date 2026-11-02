@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "scope": "Exact locally executed research program snapshots; no raw reference, candidate corpus or private text copied. These are not production generators or a portable CLI.",
+  "scope": "Fixed research program snapshots; practice-text file references updated to the canonical project path. Adapted entries retain their original executed byte counts and hashes. No raw reference, candidate corpus or private text copied. These are not production generators or a portable CLI.",
   "programs": [
     {
       "path": "programs/reading-policy/run.mjs",
@@ -29,8 +29,10 @@
     {
       "path": "programs/reading-policy/measure-coverage.mjs",
       "originalResearchPath": "/root/.cache/babble-coverage-next/reading-policy/measure-coverage.mjs",
-      "bytes": 6059,
-      "sha256": "faf2b61e7e462551da90e66abe3681d50e1e3ab071db5a003eafa33e06d0364d"
+      "bytes": 6075,
+      "sha256": "aadf0fd603afff7bf5202881da92dc85be87ecf316f4de0d16e5acc8b498f111",
+      "originalBytes": 6059,
+      "originalSha256": "faf2b61e7e462551da90e66abe3681d50e1e3ab071db5a003eafa33e06d0364d"
     },
     {
       "path": "programs/reading-policy/export-choices.mjs",
@@ -41,8 +43,10 @@
     {
       "path": "programs/reading-policy/equivalent-glyph-transfer/run.py",
       "originalResearchPath": "/root/.cache/babble-coverage-next/reading-policy/equivalent-glyph-transfer/run.py",
-      "bytes": 14739,
-      "sha256": "6ae8d1c9e007d697b99b591261e15591a35704b491aa043799609f68a5b58fcc"
+      "bytes": 14755,
+      "sha256": "5dba0daaf3ab5c4ce9899f1aac17409075d618596aa3f16af9ac6308941bc856",
+      "originalBytes": 14739,
+      "originalSha256": "6ae8d1c9e007d697b99b591261e15591a35704b491aa043799609f68a5b58fcc"
     },
     {
       "path": "programs/reading-policy/equivalent-glyph-transfer/verify-reproduction.py",
@@ -59,8 +63,10 @@
     {
       "path": "programs/reading-policy/whole-character/compare-and-crosscheck.py",
       "originalResearchPath": "/root/.cache/babble-coverage-next/reading-policy/whole-character/compare-and-crosscheck.py",
-      "bytes": 4091,
-      "sha256": "725587d9f6dbd3dd0e9578b6a6bb39405fe2aa995099739ed586e1a13b2509a5"
+      "bytes": 4107,
+      "sha256": "693edce0f5fcf1d7b5ca0adb851f13791a8a362842afe982f8e1a395731e1ddc",
+      "originalBytes": 4091,
+      "originalSha256": "725587d9f6dbd3dd0e9578b6a6bb39405fe2aa995099739ed586e1a13b2509a5"
     },
     {
       "path": "programs/decomposition/prepare.mjs",
@@ -119,8 +125,10 @@
     {
       "path": "programs/decomposition/leaf-expansion/compare.py",
       "originalResearchPath": "/root/.cache/babble-coverage-next/decomposition/leaf-expansion/compare.py",
-      "bytes": 8168,
-      "sha256": "c7300bebd63b5b74187dde5dff44b39d35dfd06177ea8b0942125bcaca47aec1"
+      "bytes": 8184,
+      "sha256": "43ea86555ee9389f30a4b9d4052de0ea83b88954d2d0bdf60c6418797be16b6d",
+      "originalBytes": 8168,
+      "originalSha256": "c7300bebd63b5b74187dde5dff44b39d35dfd06177ea8b0942125bcaca47aec1"
     },
     {
       "path": "programs/decomposition/leaf-expansion/audit-caps.py",
@@ -197,14 +205,18 @@
     {
       "path": "programs/checker/audit-common.py",
       "originalResearchPath": "/root/.cache/babble-coverage-next/checker/audit-common.py",
-      "bytes": 5358,
-      "sha256": "f63b7f2f50e60792d17c1e7b9fa5f976c2372f29a4c621e08c7bc234bd6fb51e"
+      "bytes": 5374,
+      "sha256": "1661ac54bc7226d4fd698def9d862e05eeeb96b0f79378414da1a4732d9249c5",
+      "originalBytes": 5358,
+      "originalSha256": "f63b7f2f50e60792d17c1e7b9fa5f976c2372f29a4c621e08c7bc234bd6fb51e"
     },
     {
       "path": "programs/checker/audit-targets.py",
       "originalResearchPath": "/root/.cache/babble-coverage-next/checker/audit-targets.py",
-      "bytes": 5903,
-      "sha256": "8b31aa9022e51e825f4450c7beac91c8a5c11cc31c0057da8b1a331276379364"
+      "bytes": 5919,
+      "sha256": "1d862f1518e80390a07673257965a104e2041a53a7d8e2516462b8aaea7efe6c",
+      "originalBytes": 5903,
+      "originalSha256": "8b31aa9022e51e825f4450c7beac91c8a5c11cc31c0057da8b1a331276379364"
     },
     {
       "path": "programs/checker/audit-snapshot.py",

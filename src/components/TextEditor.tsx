@@ -207,24 +207,23 @@ export function TextEditor({ initialText, isEditing = false, lookup, prepareLook
 
   return <Dialog title="自定义文本" onClose={onClose} wide>
     <form className="text-editor" onSubmit={submit}>
-      <p className="text-editor-intro">{soundOnly ? '粘贴或上传想练习的内容，按每个字在原文中的读音练习小鹤双拼两码。' : '粘贴或上传想练习的内容，优先练四码，没有可用四码时查找部件拼字。'}</p>
       <div className="text-editor-label"><label htmlFor={inputId}>练习文本</label><button type="button" onClick={() => editText(DEFAULT_PRACTICE_TEXT.text)}>填入《花园中》</button></div>
       <div className="text-editor-upload"><label htmlFor={uploadId}>上传 TXT 文件</label><input id={uploadId} type="file" accept=".txt,text/plain" onClick={requestModel} onChange={readTextFile} aria-invalid={uploadStatus.error || undefined} aria-describedby={`${uploadHelpId} ${uploadStatusId}`} /><span id={uploadHelpId}>UTF-8 · 最多 20,000 字符；首次启用自动注音约下载 175 MB</span></div>
       <p id={uploadStatusId} className={`text-editor-upload-status ${uploadStatus.error ? 'is-error' : ''}`} role="status" aria-live="polite">{uploadStatus.message}</p>
       <section className="text-annotation-status" aria-label="自动注音" data-phase={hasPreprocessed ? 'preprocessed' : activeAnnotations ? 'annotated' : manuallySelected ? 'manual' : modelStatus.phase} aria-busy={waitingForAnnotation || undefined}>
-        {hasPreprocessed && !manuallySelected ? <p>《花园中》的 g2pW 读音已预处理，无需下载模型即可练习；读音仍可逐字修改。</p> : activeAnnotations ? <p>g2pW 自动注音已就绪，练习时可以随时修改当前字的读音。</p> : manuallySelected ? <p>本次使用手动选音，原文保持不变。</p> : modelStatus.phase === 'loading' ? <>
+        {hasPreprocessed && !manuallySelected ? <p>示例读音已就绪，无需下载模型，可逐字修改。</p> : activeAnnotations ? <p>自动注音已就绪，可逐字修改。</p> : manuallySelected ? <p>本次使用手动选音，原文保持不变。</p> : modelStatus.phase === 'loading' ? <>
           <p role="status">{modelStatus.totalBytes ? `正在准备 g2pW 自动注音模型：${((modelStatus.loadedBytes ?? 0) / 1000000).toFixed(1)} / ${(modelStatus.totalBytes / 1000000).toFixed(1)} MB` : '正在准备 g2pW 自动注音模型…'}<span>模型在本机运行，原文不会上传。</span></p>
           {modelStatus.totalBytes !== undefined && modelStatus.totalBytes > 0 && <progress aria-label="自动注音模型下载进度" max={modelStatus.totalBytes} value={modelStatus.loadedBytes ?? 0} />}
         </> : annotatingText === text || waitingForAnnotation ? <>
           <p role="status">正在为当前文本自动注音…{modelStatus.total ? ` ${modelStatus.completed ?? 0} / ${modelStatus.total} 处` : ''}</p>
           {modelStatus.total !== undefined && modelStatus.total > 0 && <progress aria-label="当前文本自动注音进度" max={modelStatus.total} value={modelStatus.completed ?? 0} />}
-        </> : modelStatus.phase === 'error' || failedAnnotation ? <p className="is-error" role="status">{failedAnnotation?.message ?? '自动注音模型暂时无法加载。原文保留，可以重试或手动选音练习。'}</p> : <p>可用 g2pW 按上下文自动选读音。点击上传 TXT 或下方按钮时才加载模型，原文仅在本机处理。</p>}
+        </> : modelStatus.phase === 'error' || failedAnnotation ? <p className="is-error" role="status">{failedAnnotation?.message ?? '自动注音模型暂时无法加载。原文保留，可以重试或手动选音练习。'}</p> : <p>上传 TXT 或启用自动注音时加载模型，原文在本机处理。</p>}
         {(!activeAnnotations || modelStatus.phase === 'loading') && !hasPreprocessed && <div className="text-annotation-actions">
           {modelStatus.phase !== 'loading' && annotatingText !== text && <button type="button" onClick={enableModel}>{modelStatus.phase === 'error' || failedAnnotation ? '重试 g2pW 自动注音' : '启用 g2pW 自动注音'}</button>}
           {(waitingForAnnotation || modelStatus.phase === 'error' || failedAnnotation) && <button type="button" disabled={!baseCanSubmit} onClick={startManually}>手动选音练习</button>}
         </div>}
       </section>
-      <textarea id={inputId} value={text} onChange={event => editText(event.target.value)} spellCheck={false} autoFocus placeholder="在这里粘贴文章、笔记或想练的一句话……" aria-invalid={invalid || undefined} aria-describedby={`${helpId} ${statusId}`} />
+      <textarea id={inputId} value={text} onChange={event => editText(event.target.value)} spellCheck={false} autoFocus placeholder="粘贴练习文本…" aria-invalid={invalid || undefined} aria-describedby={`${helpId} ${statusId}`} />
       <div className="text-editor-count"><span>{characterCount.toLocaleString()} / {TEXT_HARD_CAP.toLocaleString()} 字符</span>{document && <span>{document.counts.han.toLocaleString()} 个汉字 · {document.counts.trainable.toLocaleString()} 个可练习</span>}</div>
       <p id={helpId} className="text-editor-help">推荐不超过 {TEXT_RECOMMENDED_HAN.toLocaleString()} 个汉字。标点、英文和数字保留原样；{soundOnly ? '没有可用双拼的字会标明，自动选读仍可逐字修改。' : '没有可用四码或拼字的字会标明，自动选读仍可逐字修改。'}</p>
       {(preparing || preparationError) && <div className="component-data-status" role="status" data-status={preparing ? 'loading' : 'error'}>{preparing ? soundOnly ? '正在准备本段文字的读音资料…' : '正在准备本段文字的拼字资料…' : preparationError}{preparationError && <button type="button" onClick={() => setRetry(value => value + 1)}>{soundOnly ? '重试加载读音资料' : '重试加载拼字资料'}</button>}</div>}

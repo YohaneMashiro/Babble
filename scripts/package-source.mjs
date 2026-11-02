@@ -14,7 +14,7 @@ try {
   await mkdir(sourceDir, { recursive: true })
   await mkdir(licenseDir, { recursive: true })
   // Explicit paths keep local credentials, browser caches and unrelated files out.
-  const included = ['README.md', 'README.en.md', '.github', 'LICENSE', 'LICENSE-CODE', 'HY.txt', 'package.json', 'package-lock.json', 'tsconfig.json', 'vite.config.ts', 'index.html', '.gitignore', 'src', 'tests', 'scripts', 'docs', 'data', 'tools', 'public/models/g2pw']
+  const included = ['README.md', 'README.en.md', '.github', 'LICENSE', 'LICENSE-CODE', 'the_Tower_of_Babel.txt', 'package.json', 'package-lock.json', 'tsconfig.json', 'vite.config.ts', 'index.html', '.gitignore', 'src', 'tests', 'scripts', 'docs', 'data', 'tools', 'public/models/g2pw']
   const archive = join(temporary, 'babble-source.tgz')
   execFileSync('tar', ['--sort=name', '--mtime=@0', '--owner=0', '--group=0', '--numeric-owner', '--exclude=target', '--exclude=__pycache__', '--exclude=.DS_Store', '--exclude=public/models/g2pw/*.bin', '--exclude=public/models/g2pw/runtime/*.wasm', '--exclude=public/models/g2pw/runtime/*.mjs', '-czf', archive, ...included], { cwd: root })
   await cp(archive, join(sourceDir, 'babble-source.tgz'))

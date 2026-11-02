@@ -23,7 +23,7 @@ try{
  // Pin all local SSR dependencies actually loaded for the original runtime baseline.
  const graph=server.moduleGraph.idToModuleMap
  for(const raw of [...graph.keys()].sort()){let path=raw.split('?')[0];if(path.startsWith(ROOT+'/')&&!path.includes('/node_modules/'))await read(path)}
- const textPath=join(ROOT,'HY.txt'),text=(await read(textPath)).toString(),han=Array.from(text).filter(isHanCharacter),occurrences=new Map()
+ const textPath=join(ROOT,'the_Tower_of_Babel.txt'),text=(await read(textPath)).toString(),han=Array.from(text).filter(isHanCharacter),occurrences=new Map()
  for(const c of han)occurrences.set(c,(occurrences.get(c)??0)+1)
  const targets={}
  for(const version of targetData.versions){const set=new Set();for(const [a,b]of version.ranges)for(let cp=parseInt(a,16);cp<=parseInt(b,16);cp++)set.add(String.fromCodePoint(cp));assert.equal(set.size,version.count);targets[`Unicode-${version.version}-Unified_Ideograph`]=set}

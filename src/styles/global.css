@@ -242,32 +242,19 @@ kbd { font-family: inherit; }
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
 
-.learning-levels { max-width: 1000px; margin: 24px auto 0; display: grid; grid-template-columns: minmax(360px, 1fr) 1fr; align-items: center; gap: 16px 28px; }
-.learning-level-switch { display: flex; gap: 4px; padding: 5px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
-.learning-level-switch > button { flex: 1; display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 8px; text-align: left; border: 1px solid transparent; }
-.learning-level-switch > button.is-active { background: var(--accent-soft); border-color: #b4cbbd; color: var(--accent); }
-.level-number { font-size: 13px; font-weight: 600; }
-.learning-level-switch strong { display: block; font-size: 14px; font-weight: 600; }
-.learning-level-switch small { display: block; margin-top: 5px; color: var(--muted); font-size: 10px; white-space: nowrap; }
-.level-description { font-size: 12px; line-height: 1.8; margin: 0; color: var(--muted); }
-.level-description > span { display: block; font-size: 10px; }
-.level-memory-note { grid-column: 1 / -1; color: var(--muted); font-size: 12px; margin: 0; }
-.learning-levels .main-nav { grid-column: 1 / -1; position: static; transform: none; justify-content: center; border-bottom: 1px solid var(--line); padding: 0 0 12px; }
+.learning-levels { max-width: 1000px; margin: 14px auto 0; padding-bottom: 10px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; border-bottom: 1px solid var(--line); }
+.learning-level-switch { display: inline-flex; flex-shrink: 0; gap: 2px; padding: 2px; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); }
+.learning-level-switch > button { padding: 5px 12px; border-radius: 4px; font-size: 12px; line-height: 18px; white-space: nowrap; }
+.learning-level-switch > button.is-active { background: var(--accent-soft); color: var(--accent); }
+.level-memory-note { flex-basis: 100%; color: var(--muted); font-size: 11px; margin: 0; }
+.learning-levels .main-nav { position: static; transform: none; padding: 0; }
+.learning-levels .main-nav button { padding: 8px 14px; }
 .app-shell[data-learning-level="shuangpin"] .inspector-code-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .app-shell[data-learning-level="shuangpin"] .inspector-slots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-@media (max-width: 800px) {
-  .learning-levels { grid-template-columns: 1fr; gap: 12px; margin-top: 18px; }
-  .level-description { text-align: center; font-size: 11px; }
-  .learning-level-switch { width: min(100%, 500px); justify-self: center; }
-}
 @media (max-width: 600px) {
   .site-header { height: 76px; padding-top: 0; align-items: center; }
-  .learning-level-switch > button { padding: 10px 8px; gap: 7px; }
-  .learning-level-switch strong { font-size: 13px; }
-  .learning-level-switch small { font-size: 9px; }
-  .learning-levels .main-nav { width: auto; gap: 4px; }
-  .learning-levels .main-nav button { padding: 8px 12px; }
-}
-@media (prefers-color-scheme: dark) {
-  .learning-level-switch > button.is-active { border-color: #537d60; }
+  .learning-levels { gap: 8px; margin-top: 10px; }
+  .learning-level-switch > button { padding: 5px 6px; font-size: 11px; }
+  .learning-levels .main-nav { width: auto; gap: 2px; }
+  .learning-levels .main-nav button { padding: 8px 6px; font-size: 12px; }
 }

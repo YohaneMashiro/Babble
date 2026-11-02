@@ -18,7 +18,7 @@ def main(args):
     cache = args.cache.expanduser().resolve()
     metadata = json.loads((cache / 'metadata.json').read_text())
     tokenizer = tokenizer_for(cache / 'inputs')
-    text = (ROOT / 'HY.txt').read_bytes().decode('utf-8')
+    text = (ROOT / 'the_Tower_of_Babel.txt').read_bytes().decode('utf-8')
     annotation = json.loads((ROOT / 'src/data/generated/default-pinyin.json').read_text())
     fixtures = json.loads((ROOT / 'docs/research-assets/contextual-pinyin/synthetic-fixtures.json').read_text())['cases']
     results = {}
@@ -43,7 +43,7 @@ def main(args):
     changed = [i for i, (a, b) in enumerate(zip(fp['readings'], quant['readings'])) if a != b]
     generated_matches = quant['readings'] == annotation['readings'] and quant['indices'] == annotation['modelIndices']
     report = {'date': '2026-11-02', 'provider': 'g2pw', 'modelVersion': annotation['modelVersion'],
-        'sourceSha256': digest(ROOT / 'HY.txt'), 'modelSha256': digest(cache / 'g2pw.int8.onnx'),
+        'sourceSha256': digest(ROOT / 'the_Tower_of_Babel.txt'), 'modelSha256': digest(cache / 'g2pw.int8.onnx'),
         'article': {'codepoints': len(text), 'annotatedOccurrences': sum(x is not None for x in quant['readings']),
                     'modelOccurrences': len(quant['indices']), 'fp32Int8DifferentPositions': changed,
                     'generatedMatchesLocalInt8': generated_matches},

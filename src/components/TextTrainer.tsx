@@ -43,7 +43,7 @@ export function TextTrainer({ document, targetIndex, pageIndex, choiceKey, autom
   }, [document, targetIndex])
 
   const readingChoices = isAmbiguous && <div className="text-reading-choice" role="group" aria-label={`选择${activeToken.value}在此处的读音`}>
-    <p><strong>「{activeToken.value}」在这里怎么读？</strong><span>{automaticChoice ? '已按上下文自动选择，可以为当前这一处更改。' : '为当前这一处选择读音。同一个字的其他位置可以另选。'}</span></p>
+    <p><strong>「{activeToken.value}」的读音</strong><span>仅修改当前这一处。</span></p>
     <div className="text-reading-options">{options.map(option => <button key={option.key} aria-pressed={choice?.key === option.key} onClick={() => onChoose(option)}><span>{option.pinyin}</span>{option.disclosesCode && option.entry && <span className="text-choice-code">{soundOnly ? option.entry.fullCode.slice(0, 2) : option.entry.fullCode}</span>}{!option.entry && <small>仅读音</small>}</button>)}</div>
     {options.some(option => option.disclosesCode) && <p className="text-choice-note">同一读音有不同编码，选择时会显示编码；本次按使用协助记录。</p>}
     {!choice && <p className="text-choice-note" role="status">先选择本处读音，再开始输入{soundOnly ? '双拼两码' : '四码'}。</p>}
@@ -61,7 +61,7 @@ export function TextTrainer({ document, targetIndex, pageIndex, choiceKey, autom
 
   return <section className="text-context" aria-label="自定义文本练习">
     <div className="text-context-heading"><h2>自定义文本</h2><div><button onClick={onEdit}>编辑文本</button><button onClick={onClear}>清除文本</button></div></div>
-    <div className="text-context-summary"><span>{document.counts.trainable.toLocaleString()} 个可练习字 · {document.counts.unavailable.toLocaleString()} 个暂无可用编码</span><span>原文保留标点、英文和数字</span></div>
+    <div className="text-context-summary"><span>{document.counts.trainable.toLocaleString()} 个可练习字 · {document.counts.unavailable.toLocaleString()} 个暂无可用编码</span></div>
     <p id={helpId} className="text-context-help">{soundOnly ? '输入两码后按空格确认下一字；点击原文可跳转，虚线字可查读音。' : '输入编码后按空格确认下一字；点击原文可跳转，虚线字可查询。'}</p>
     <div className="text-original" role="region" aria-label="练习原文" aria-describedby={helpId} tabIndex={0} ref={viewportRef}>
       {page && document.tokens.slice(page.startToken, page.endToken).map(token => {

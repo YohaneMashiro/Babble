@@ -7,10 +7,10 @@ import { createServer } from 'vite'
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const args = process.argv.slice(2)
 if (args.length > 1 || args[0] === '--help') {
-  console.log('Usage: node scripts/audit-coverage.mjs [text-file]\nDefaults to HY.txt. Outputs coverage JSON without the original text.')
+  console.log('Usage: node scripts/audit-coverage.mjs [text-file]\nDefaults to the_Tower_of_Babel.txt. Outputs coverage JSON without the original text.')
   process.exitCode = args.length > 1 ? 1 : 0
 } else {
-  const input = args[0] ? resolve(args[0]) : resolve(root, 'HY.txt')
+  const input = args[0] ? resolve(args[0]) : resolve(root, 'the_Tower_of_Babel.txt')
   let server
   try {
     const text = new TextDecoder('utf-8', { fatal: true }).decode(await readFile(input))

@@ -6,8 +6,8 @@ import { createQaBrowser } from './browser-qa.mjs'
 
 const AxeBuilder = process.env.AXE_IMPORT ? (await import(process.env.AXE_IMPORT)).default : null
 const baseURL = process.env.QA_BASE_URL || 'http://127.0.0.1:4173/'
-const initialText = await readFile(new URL('../HY.txt', import.meta.url), 'utf8')
-assert.equal(createHash('sha256').update(initialText).digest('hex'), 'b8bca40fef81749ed547a6f0ac12a29519b8b24162fe5d003a31ed33214cdac3', 'HY.txt must match the independently extracted DOCX paragraphs exactly')
+const initialText = await readFile(new URL('../the_Tower_of_Babel.txt', import.meta.url), 'utf8')
+assert.equal(createHash('sha256').update(initialText).digest('hex'), 'b8bca40fef81749ed547a6f0ac12a29519b8b24162fe5d003a31ed33214cdac3', 'the_Tower_of_Babel.txt must match the independently extracted DOCX paragraphs exactly')
 const { browser, engine, output } = await createQaBrowser()
 const contexts = []
 const passed = []

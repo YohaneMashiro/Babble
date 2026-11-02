@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild fixed g2pW int8 resources and locally annotate authorized HY.txt.
+"""Rebuild fixed g2pW int8 resources and locally annotate authorized the_Tower_of_Babel.txt.
 
 Apache-2.0; preprocessing is adapted from GitYCC/g2pW. See Apache-2.0.txt.
 Downloads and raw weights are restricted to an external cache.
@@ -144,7 +144,7 @@ def build(args):
         'deployment': manifest,
         'programs': [{'path': f'tools/g2pw/{name}', 'sha256': digest(HERE / name)} for name in ['prepare.py', 'core.py', 'validate.py']]}
     if args.preprocess:
-        source = ROOT / 'HY.txt'
+        source = ROOT / 'the_Tower_of_Babel.txt'
         # Decode bytes directly: CR/LF and source offsets must remain unchanged.
         text = source.read_bytes().decode('utf-8')
         readings, confidences, indices = infer(text, metadata, tokenizer_for(cache / 'inputs'), session_for(quantized),
@@ -155,7 +155,7 @@ def build(args):
         dump(ROOT / 'src/data/generated/default-pinyin.json', annotation)
     annotation_path = ROOT / 'src/data/generated/default-pinyin.json'
     annotation = json.loads(annotation_path.read_text()) if annotation_path.exists() else {}
-    if annotation.get('sourceSha256') != digest(ROOT / 'HY.txt') or annotation.get('modelSha256') != model_sha:
+    if annotation.get('sourceSha256') != digest(ROOT / 'the_Tower_of_Babel.txt') or annotation.get('modelSha256') != model_sha:
         raise ValueError('Missing/stale default annotation; pass --preprocess to rebuild it locally')
     lock['defaultAnnotation'] = {'path': 'src/data/generated/default-pinyin.json', 'bytes': annotation_path.stat().st_size,
         'sha256': digest(annotation_path), 'codepoints': annotation['codepoints'],

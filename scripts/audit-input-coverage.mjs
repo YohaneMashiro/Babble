@@ -39,7 +39,7 @@ async function pinnedExternal(path, expected) {
 
 export async function main(args = process.argv.slice(2)) {
   if (args.includes('--help')) {
-    console.log('Usage: node scripts/audit-input-coverage.mjs [--text FILE] [--official-four-code EXTERNAL_JSON --official-ok EXTERNAL_YAML] [--unicode-properties EXTERNAL_PROPLIST]\nDefaults to HY.txt. Measures actual four-code + confirmed component-spelling unions. No upload; comparison inputs remain outside the project.')
+    console.log('Usage: node scripts/audit-input-coverage.mjs [--text FILE] [--official-four-code EXTERNAL_JSON --official-ok EXTERNAL_YAML] [--unicode-properties EXTERNAL_PROPLIST]\nDefaults to the_Tower_of_Babel.txt. Measures actual four-code + confirmed component-spelling unions. No upload; comparison inputs remain outside the project.')
     return
   }
   const options = {}
@@ -93,7 +93,7 @@ export async function main(args = process.argv.slice(2)) {
         candidateSpellingCharacters: intersectCount(candidates, target), missingCharacters: target.size - covered,
         coverage: Number((covered / target.size).toFixed(6)), sourceSha256: version.sourceSha256 }
     })
-    const text = new TextDecoder('utf8', { fatal: true }).decode(await readFile(options.text ? resolve(options.text) : resolve(root, 'HY.txt')))
+    const text = new TextDecoder('utf8', { fatal: true }).decode(await readFile(options.text ? resolve(options.text) : resolve(root, 'the_Tower_of_Babel.txt')))
     const han = Array.from(text).filter(isHanCharacter), occurrences = new Map()
     for (const char of han) occurrences.set(char, (occurrences.get(char) ?? 0) + 1)
     const missing = [...occurrences].filter(([char]) => !available.has(char)).map(([char, count]) => ({ char, occurrences: count }))

@@ -2,7 +2,11 @@
 
 这些文件保存本机已经执行的研究与独立复核程序版本，供工程师审查、复跑和移植。**不是生产生成器，也不是已经参数化的跨机器CLI**。程序仍包含当次实验的绝对目录；正式工程应将输入、输出和参照路径参数化，并继续采用项目外参照与固定摘要检查。网页不导入或执行本目录。
 
-`programs.lock.json`记录每份副本的SHA256、字节数及原研究位置。可在项目根执行：
+`programs.lock.json`记录每份副本的SHA256、字节数及原研究位置。
+
+练习文本统一为 `the_Tower_of_Babel.txt` 后，相关副本只适配了文件路径；锁中的 `originalSha256` 和 `originalBytes` 保留研究时的原始摘要，`sha256` 和 `bytes` 对应当前分发版本。研究输入、文章内容和既有结果未改变。
+
+可在项目根执行：
 
 ```sh
 node tools/coverage-next-research/check-snapshots.mjs

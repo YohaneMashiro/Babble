@@ -64,7 +64,7 @@ describe('contextual suggestions select only existing source options', () => {
 
 describe('built-in article uses locally generated annotations', () => {
   it('binds preprocessed readings to the exact original file and all codepoint positions', () => {
-    const bytes = readFileSync(new URL('../HY.txt', import.meta.url))
+    const bytes = readFileSync(new URL('../the_Tower_of_Babel.txt', import.meta.url))
     expect(createHash('sha256').update(bytes).digest('hex')).toBe(annotation.sourceSha256)
     const result = getPreprocessedPinyin(DEFAULT_PRACTICE_TEXT.text)!
     expect(result.items.length).toBe(Array.from(DEFAULT_PRACTICE_TEXT.text).length)

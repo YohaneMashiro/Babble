@@ -227,7 +227,7 @@ try {
     await switchLevel(page, 'yinxing')
     assert.equal(await currentChar(page), '某')
     assert.deepEqual(await states(page), ['hidden', 'hidden', 'hidden', 'hidden'])
-    assert.match(await page.locator('.character-caption').innerText(), /两个音码，两个形码/)
+    assert.equal(await page.locator('.character-caption').count(), 0)
     assert.equal(await page.evaluate(() => localStorage.getItem('babble:learning-level')), 'yinxing')
     await page.reload(); await waitSaved(page)
     assert.equal(await levelButton(page, 'yinxing').getAttribute('aria-pressed'), 'true')

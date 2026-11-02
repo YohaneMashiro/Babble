@@ -84,7 +84,7 @@ try {
     await reset()
     await page.keyboard.press('Space')
     assert.deepEqual(await keys(), ['·', '·', '·', '·'])
-    assert.match(await feedback(), /先想一想/)
+    assert.match(await feedback(), /按读音取码/)
     await page.keyboard.press('Space')
     assert.deepEqual(await keys(), ['·', '·', '·', '·'])
     assert.match(await feedback(), /声母是 m/)
@@ -93,7 +93,7 @@ try {
     assert.equal(await page.locator('.keyboard-key.target').count(), 1)
     await page.keyboard.press('Space')
     assert.deepEqual(await keys(), ['M', 'Z', 'G', 'M'])
-    assert.match(await feedback(), /完整解释/)
+    assert.match(await feedback(), /完整提示/)
     assert.deepEqual(await states(), ['revealed', 'revealed', 'revealed', 'revealed'])
   })
   await audit('desktop-full-hints')
@@ -156,10 +156,10 @@ try {
 
   await check('focused hint button Space activates only once', async () => {
     await reset()
-    await page.getByRole('button', { name: /给我一点提示/ }).focus()
+    await page.locator('.stage-actions .primary-button').focus()
     await page.keyboard.press('Space')
     assert.deepEqual(await keys(), ['·', '·', '·', '·'])
-    assert.match(await feedback(), /先想一想/)
+    assert.match(await feedback(), /按读音取码/)
   })
 
   await check('Inspector preserves partial input and shows source-backed shape paths', async () => {

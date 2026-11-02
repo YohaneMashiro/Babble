@@ -119,7 +119,7 @@ try {
     await hint.focus(); await sound.keyboard.press('Space')
     await sound.waitForFunction(() => document.querySelector('.code-slot')?.dataset.state === 'hinted')
     await waitIndex(sound, 0); assert.equal(await current(sound).getAttribute('data-target-index'), '0')
-    assert.equal(await sound.locator('.feedback').innerText().then(text => /从读音开始/.test(text)), false)
+    assert.match(await sound.locator('.feedback').innerText(), /按读音取码/)
     await sound.locator('.space-key').click(); await waitIndex(sound, 1)
     await sound.locator('.space-key').focus(); await sound.keyboard.press('Space'); await waitIndex(sound, 2)
     assert.equal(await current(sound).getAttribute('data-target-index'), '2')

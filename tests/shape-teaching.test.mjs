@@ -117,7 +117,7 @@ describe('partial position-specific root use and missing review', () => {
   })
 
   it('keeps the remaining HY review complete and answer-free after independently verified code additions', () => {
-    const article = readFileSync(new URL('../HY.txt', import.meta.url), 'utf8')
+    const article = readFileSync(new URL('../the_Tower_of_Babel.txt', import.meta.url), 'utf8')
     expect(missingReview.records).toHaveLength(8)
     expect(missingReview.records.reduce((sum, row) => sum + row.occurrences, 0)).toBe(25)
     expect(missingReview.records.filter(row => row.gap === 'endpoint-derivation')).toHaveLength(7)

@@ -36,7 +36,7 @@ finite=set()
 if (OUT/'common-finite-independent-audit.json').exists():
  common=json.loads((OUT/'common-finite-independent-audit.json').read_text());finite={r['char'] for r in common['codeComparison'] if r['exact'] and not r['contextHeld']};stages['with-reviewed-finite-endpoints']=stages['equivalent-glyph-transfer']
  if 'without-cjkvi' in stages:stages['without-cjkvi-with-reviewed-finite-endpoints']=stages['without-cjkvi']
-hy=[c for c in (ROOT/'HY.txt').read_text() if c in uni18];assert len(hy)==1840
+hy=[c for c in (ROOT/'the_Tower_of_Babel.txt').read_text() if c in uni18];assert len(hy)==1840
 results={}
 for key,candidates in stages.items():
  exact=candidates&ref;chars={c for c,k in exact};stagefour=four|finite if 'with-reviewed-finite-endpoints' in key else four;union=stagefour|chars;missing={c:hy.count(c) for c in dict.fromkeys(hy) if c not in union}

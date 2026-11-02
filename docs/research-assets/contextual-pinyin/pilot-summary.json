@@ -2339,7 +2339,7 @@
     }
   },
   "localDefaultArticleAggregates": {
-    "source": "authorized local HY.txt; only aggregate counts recorded; no source sent to a service",
+    "source": "authorized local the_Tower_of_Babel.txt; only aggregate counts recorded; no source sent to a service",
     "hanOccurrences": 1840,
     "modes": {
       "shuangpin": {

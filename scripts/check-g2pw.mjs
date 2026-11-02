@@ -67,7 +67,7 @@ try {
   }
   await resource(root, lock.defaultAnnotation)
   const annotation = await json(within(root, lock.defaultAnnotation.path))
-  const sourceBytes = await readFile(resolve(root, 'HY.txt'))
+  const sourceBytes = await readFile(resolve(root, 'the_Tower_of_Babel.txt'))
   const chars = Array.from(sourceBytes.toString('utf8'))
   assert.equal(annotation.sourceSha256, sha(sourceBytes))
   assert.equal(annotation.modelSha256, manifest.model.sha256)

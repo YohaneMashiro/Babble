@@ -50,7 +50,6 @@ export function LearningPath({ lessons, groups, activeLessonId, progress, experi
 
   return <Dialog title="学习路径" onClose={onClose} wide>
     <div className="learning-path">
-      <p className="path-introduction">{soundOnly ? '从声母、韵母和零声母规则开始，逐步练习完整的双拼两码。所有课程都可以直接进入，也可以随时跳过。' : '按你已经会的内容选择起点。所有课程都可以直接进入，也可以随时跳过。'}</p>
       {!soundOnly && <div className="path-experience">
         <label htmlFor={experienceId}>我目前的程度</label>
         <select id={experienceId} value={experience} onChange={event => {

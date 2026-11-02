@@ -10,7 +10,7 @@ Babble: A better place to learn Xiaohe。2026-10-26 当前阶段已接入自定�
 | `components/CodeSlots`、`VirtualKeyboard` | 区分已提供与需练码位，显示逐位状态、鼠标 / 物理键输入、上下文含义及按需映射。 |
 | `components/CharacterInspector`、`LearningPath` | 本地查字与显式读音选择；自由进入课程、程度推荐、进度与继续练习入口。 |
 | `components/TextEditor`、`TextTrainer` | 默认文本预填、粘贴 / UTF-8 TXT 本地导入与限制反馈、原文分页、逐次定位、缺失字查询及本处读音选择。 |
-| `data/practice-text.ts`、根目录 `HY.txt` | 导入用户指定的默认练习文章《花园中》，与编码字典独立。 |
+| `data/practice-text.ts`、根目录 `the_Tower_of_Babel.txt` | 导入用户指定的默认练习文章《花园中》，与编码字典独立。 |
 | `domain/encoding.ts`、`training.ts` | 四码解释、一致性校验与支持目标码位的纯 reducer；UI 不猜编码。 |
 | `domain/text.ts` | Unicode 码点分词、来源选项、文本计数、400 目标分页及 token / target / page 定位。 |
 | `domain/lessons.ts`、`data/lessons.ts` | 课程类型、可用字校验、来源排序和 15 个课程定义；先修项只作推荐。 |
@@ -41,7 +41,7 @@ Babble: A better place to learn Xiaohe。2026-10-26 当前阶段已接入自定�
 
 ## 自定义文本与位置模型
 
-根目录 `HY.txt` 由用户提供的 `HY.docx` 按正文段落转为 UTF-8 文本，`data/practice-text.ts` 使用 Vite `?raw` 导入，并通过 `DEFAULT_PRACTICE_TEXT` 提供标题与内容。它随应用分发，只作为题目来源，不参与编码推断。初始页面仍是自由学习；首次打开自定义文本编辑器才预填《花园中》。已有文本会话编辑时保留其自身内容，清除文本后本次页面继续使用空白编辑器，可主动点击填回默认文章。
+根目录 `the_Tower_of_Babel.txt` 由用户提供的 `HY.docx` 按正文段落转为 UTF-8 文本，`data/practice-text.ts` 使用 Vite `?raw` 导入，并通过 `DEFAULT_PRACTICE_TEXT` 提供标题与内容。它随应用分发，只作为题目来源，不参与编码推断。初始页面仍是自由学习；首次打开自定义文本编辑器才预填《花园中》。已有文本会话编辑时保留其自身内容，清除文本后本次页面继续使用空白编辑器，可主动点击填回默认文章。
 
 `TextEditor` 直接接受粘贴，也可从 file input 读取 `.txt`。读取前校验扩展名及 80,003 字节上限（20,000 个最多四字节的 UTF-8 码点加 BOM），读取后以严格 UTF-8 解码并再次检查 20,000 码点上限；拒绝时保留编辑框原文，不截断。读取异步结果通过请求编号约束，新文件选择或手工编辑会使旧读取结果失效，卸载后不再应用结果。文件只在浏览器内读取，无上传接口。
 
@@ -94,4 +94,4 @@ hook 先完成读取 / 校验，再允许记录；更新立即反映到内存，
 
 `keydown → 焦点 / 修饰键过滤 → reducer → 内存查表 → render`。记录异步写入本机，不增加网络逐字请求。原生 dialog 管理焦点；查看 Inspector、设置、课程选择、文本编辑器与键位浮层时暂停实体训练，搜索框与文本编辑不污染编码输入。文本读音尚未明确或所选读音缺少可靠四码时，不接受训练字母键，仍可使用 Enter 跳过。
 
-源码归档、工具、锁定输入与原许可通知继续随构建提供，组合分发保留 AGPL 义务，原创 MIT 授权仍保留。归档白名单包含默认练习所需的根目录 `HY.txt` 和独立来源通知，不包含原始 `HY.docx`。文章未附作者或独立许可证声明，不将其混同于代码或字典授权。下一阶段打磨初版交互与教学，再按实际仓库配置 GitHub Pages；当前没有部署站点。
+源码归档、工具、锁定输入与原许可通知继续随构建提供，组合分发保留 AGPL 义务，原创 MIT 授权仍保留。归档白名单包含默认练习所需的根目录 `the_Tower_of_Babel.txt` 和独立来源通知，不包含原始 `HY.docx`。文章未附作者或独立许可证声明，不将其混同于代码或字典授权。下一阶段打磨初版交互与教学，再按实际仓库配置 GitHub Pages；当前没有部署站点。

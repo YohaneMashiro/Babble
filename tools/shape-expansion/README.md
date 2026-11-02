@@ -25,4 +25,4 @@ python3 tools/shape-expansion/generate.py \
 
 新记录保留 AGPL-3.0-only 生成资料义务与各输入的独立许可 / 署名，不能套用旧发布全码表的 CC0 声明。完整 AGPL 文本随项目根目录 `LICENSE` 及旧工具的 `LICENSE` 分发。
 
-可用 `node scripts/audit-coverage.mjs [text-file]` 统计实际运行库的全文覆盖，默认读取 `HY.txt`，只输出统计与缺字，不上传原文。
+可用 `node scripts/audit-coverage.mjs [text-file]` 统计实际运行库的全文覆盖，默认读取 `the_Tower_of_Babel.txt`，只输出统计与缺字，不上传原文。
