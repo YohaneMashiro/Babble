@@ -4,7 +4,7 @@
 
 Learn Xiaohe Shuangpin and Xiaohe Yinxing through clear feedback, guided practice, and text you actually want to type. Free to use, with no account required.
 
-[简体中文](README.md) · [Run locally](docs/development.md) · [Data and attribution](docs/data-sources.md)
+[Try Babble](https://yohanemashiro.github.io/Babble/) · [简体中文](README.md) · [Run locally](docs/development.md) · [Data and attribution](docs/data-sources.md)
 
 ![Xiaohe Shuangpin practice with a continuous passage and a two-key keyboard guide](docs/images/babble-shuangpin.png)
 

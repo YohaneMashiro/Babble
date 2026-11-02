@@ -4,7 +4,7 @@
 
 从小鹤双拼到小鹤音形，在熟悉的文字里练出输入的节奏。即时反馈、键位提示和逐字解释，陪你从第一组声韵开始。免费使用，无需注册。
 
-[English](README.en.md) · [本地使用](docs/development.md) · [数据与致谢](docs/data-sources.md)
+[在线使用](https://yohanemashiro.github.io/Babble/) · [English](README.en.md) · [本地使用](docs/development.md) · [数据与致谢](docs/data-sources.md)
 
 ![Babble 双拼练习：连续原文、两码反馈与键盘提示](docs/images/babble-shuangpin.png)
 
