@@ -1,0 +1,17 @@
+node_modules/
+dist/
+*.local
+.env
+.env.*
+coverage/
+test-results/
+__pycache__/
+.DS_Store
+
+# Rebuild using tools/g2pw/prepare.py; integrity is pinned in the manifest.
+public/models/g2pw/*.bin
+public/models/g2pw/runtime/*.wasm
+public/models/g2pw/runtime/*.mjs
+
+# Original local document; the selected practice text has its own notice.
+HY.docx

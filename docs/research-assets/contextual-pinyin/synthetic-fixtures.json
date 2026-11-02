@@ -1,0 +1,887 @@
+{
+  "date": "2026-11-02",
+  "description": "Original synthetic cases; not user text. Target indices count Unicode codepoints. Expected readings omit tones. Not a benchmark or representative accuracy sample.",
+  "cases": [
+    {
+      "kind": "core",
+      "text": "我在银行工作。",
+      "targets": [
+        {
+          "index": 3,
+          "char": "行",
+          "expected": "hang",
+          "expectedCode": "HH"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "请走人行道。",
+      "targets": [
+        {
+          "index": 3,
+          "char": "行",
+          "expected": "xing",
+          "expectedCode": "XK"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "我写了一行代码。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "行",
+          "expected": "hang",
+          "expectedCode": "HH"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这个计划行不通。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "行",
+          "expected": "xing",
+          "expectedCode": "XK"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "他是这个领域的行家。",
+      "targets": [
+        {
+          "index": 7,
+          "char": "行",
+          "expected": "hang",
+          "expectedCode": "HH"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "三百六十行，行行出状元。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "行",
+          "expected": "hang",
+          "expectedCode": "HH"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "校长看着孩子长大。",
+      "targets": [
+        {
+          "index": 1,
+          "char": "长",
+          "expected": "zhang",
+          "expectedCode": "VH"
+        },
+        {
+          "index": 6,
+          "char": "长",
+          "expected": "zhang",
+          "expectedCode": "VH"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这条路很长。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "长",
+          "expected": "chang",
+          "expectedCode": "IH"
+        }
+      ]
+    },
+    {
+      "kind": "proper",
+      "text": "我们去了长安。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "长",
+          "expected": "chang",
+          "expectedCode": "IH"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "请重新开始。",
+      "targets": [
+        {
+          "index": 1,
+          "char": "重",
+          "expected": "chong",
+          "expectedCode": "IS"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这个箱子很重。",
+      "targets": [
+        {
+          "index": 5,
+          "char": "重",
+          "expected": "zhong",
+          "expectedCode": "VS"
+        }
+      ]
+    },
+    {
+      "kind": "proper",
+      "text": "他住在重庆。",
+      "targets": [
+        {
+          "index": 3,
+          "char": "重",
+          "expected": "chong",
+          "expectedCode": "IS"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "他承担了重担。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "重",
+          "expected": "zhong",
+          "expectedCode": "VS"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "他朝着北方走。",
+      "targets": [
+        {
+          "index": 1,
+          "char": "朝",
+          "expected": "chao",
+          "expectedCode": "IC"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "珍惜每个朝夕。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "朝",
+          "expected": "zhao",
+          "expectedCode": "VC"
+        }
+      ]
+    },
+    {
+      "kind": "proper",
+      "text": "他住在北京朝阳区。",
+      "targets": [
+        {
+          "index": 5,
+          "char": "朝",
+          "expected": "chao",
+          "expectedCode": "IC"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "我喜欢音乐。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "乐",
+          "expected": "yue",
+          "expectedCode": "YT"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "祝你快乐。",
+      "targets": [
+        {
+          "index": 3,
+          "char": "乐",
+          "expected": "le",
+          "expectedCode": "LE"
+        }
+      ]
+    },
+    {
+      "kind": "proper",
+      "text": "浙江乐清。",
+      "targets": [
+        {
+          "index": 2,
+          "char": "乐",
+          "expected": "yue",
+          "expectedCode": "YT"
+        }
+      ]
+    },
+    {
+      "kind": "proper",
+      "text": "四川乐山。",
+      "targets": [
+        {
+          "index": 2,
+          "char": "乐",
+          "expected": "le",
+          "expectedCode": "LE"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "记得还钱。",
+      "targets": [
+        {
+          "index": 2,
+          "char": "还",
+          "expected": "huan",
+          "expectedCode": "HR"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "他还在等。",
+      "targets": [
+        {
+          "index": 1,
+          "char": "还",
+          "expected": "hai",
+          "expectedCode": "HD"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "你觉得怎么样？",
+      "targets": [
+        {
+          "index": 1,
+          "char": "觉",
+          "expected": "jue",
+          "expectedCode": "JT"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "他正在睡觉。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "觉",
+          "expected": "jiao",
+          "expectedCode": "JN"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "他看着门外。",
+      "targets": [
+        {
+          "index": 2,
+          "char": "着",
+          "expected": "zhe",
+          "expectedCode": "VE"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "孩子睡着了。",
+      "targets": [
+        {
+          "index": 3,
+          "char": "着",
+          "expected": "zhao",
+          "expectedCode": "VC"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "我们着手准备。",
+      "targets": [
+        {
+          "index": 2,
+          "char": "着",
+          "expected": "zhuo",
+          "expectedCode": "VO"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "大家很着急。",
+      "targets": [
+        {
+          "index": 3,
+          "char": "着",
+          "expected": "zhao",
+          "expectedCode": "VC"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "请系好鞋带。",
+      "targets": [
+        {
+          "index": 1,
+          "char": "系",
+          "expected": "ji",
+          "expectedCode": "JI"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这件事没有关系。",
+      "targets": [
+        {
+          "index": 6,
+          "char": "系",
+          "expected": "xi",
+          "expectedCode": "XI"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这两个东西差不多。",
+      "targets": [
+        {
+          "index": 5,
+          "char": "差",
+          "expected": "cha",
+          "expectedCode": "IA"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "他去北京出差了。",
+      "targets": [
+        {
+          "index": 5,
+          "char": "差",
+          "expected": "chai",
+          "expectedCode": "ID"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这种质量很差。",
+      "targets": [
+        {
+          "index": 5,
+          "char": "差",
+          "expected": "cha",
+          "expectedCode": "IA"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这些树参差不齐。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "差",
+          "expected": "ci",
+          "expectedCode": "CI"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "我来参加会议。",
+      "targets": [
+        {
+          "index": 2,
+          "char": "参",
+          "expected": "can",
+          "expectedCode": "CJ"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这是野山参。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "参",
+          "expected": "shen",
+          "expectedCode": "UF"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这些树参差不齐。",
+      "targets": [
+        {
+          "index": 3,
+          "char": "参",
+          "expected": "cen",
+          "expectedCode": "CF"
+        }
+      ]
+    },
+    {
+      "kind": "proper",
+      "text": "德国柏林。",
+      "targets": [
+        {
+          "index": 2,
+          "char": "柏",
+          "expected": "bo",
+          "expectedCode": "BO"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "门前有棵柏树。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "柏",
+          "expected": "bai",
+          "expectedCode": "BD"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "我已了解情况了。",
+      "targets": [
+        {
+          "index": 2,
+          "char": "了",
+          "expected": "liao",
+          "expectedCode": "LN"
+        },
+        {
+          "index": 6,
+          "char": "了",
+          "expected": "le",
+          "expectedCode": "LE"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这种事让人受不了。",
+      "targets": [
+        {
+          "index": 7,
+          "char": "了",
+          "expected": "liao",
+          "expectedCode": "LN"
+        }
+      ]
+    },
+    {
+      "kind": "toneOnly",
+      "text": "他对这件事很好奇。",
+      "targets": []
+    },
+    {
+      "kind": "core",
+      "text": "单独行动。",
+      "targets": [
+        {
+          "index": 0,
+          "char": "单",
+          "expected": "dan",
+          "expectedCode": "DJ"
+        }
+      ]
+    },
+    {
+      "kind": "proper",
+      "text": "他是匈奴单于。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "单",
+          "expected": "chan",
+          "expectedCode": "IJ"
+        }
+      ]
+    },
+    {
+      "kind": "proper",
+      "text": "这位单先生来了。",
+      "targets": [
+        {
+          "index": 2,
+          "char": "单",
+          "expected": "shan",
+          "expectedCode": "UJ"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "他曾经来过。",
+      "targets": [
+        {
+          "index": 1,
+          "char": "曾",
+          "expected": "ceng",
+          "expectedCode": "CG"
+        }
+      ]
+    },
+    {
+      "kind": "proper",
+      "text": "曾先生来了。",
+      "targets": [
+        {
+          "index": 0,
+          "char": "曾",
+          "expected": "zeng",
+          "expectedCode": "ZG"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "请解开绳子。",
+      "targets": [
+        {
+          "index": 1,
+          "char": "解",
+          "expected": "jie",
+          "expectedCode": "JP"
+        }
+      ]
+    },
+    {
+      "kind": "proper",
+      "text": "解先生来了。",
+      "targets": [
+        {
+          "index": 0,
+          "char": "解",
+          "expected": "xie",
+          "expectedCode": "XP"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这是阿胶。",
+      "targets": [
+        {
+          "index": 2,
+          "char": "阿",
+          "expected": "e",
+          "expectedCode": "EE"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "阿姨来了。",
+      "targets": [
+        {
+          "index": 0,
+          "char": "阿",
+          "expected": "a",
+          "expectedCode": "AA"
+        }
+      ]
+    },
+    {
+      "kind": "proper",
+      "text": "福建厦门。",
+      "targets": [
+        {
+          "index": 2,
+          "char": "厦",
+          "expected": "xia",
+          "expectedCode": "XX"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "远处有一座大厦。",
+      "targets": [
+        {
+          "index": 6,
+          "char": "厦",
+          "expected": "sha",
+          "expectedCode": "UA"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这是薄荷叶。",
+      "targets": [
+        {
+          "index": 2,
+          "char": "薄",
+          "expected": "bo",
+          "expectedCode": "BO"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "切成一张薄片。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "薄",
+          "expected": "bao",
+          "expectedCode": "BC"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这个环节比较薄弱。",
+      "targets": [
+        {
+          "index": 6,
+          "char": "薄",
+          "expected": "bo",
+          "expectedCode": "BO"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "给予帮助。",
+      "targets": [
+        {
+          "index": 0,
+          "char": "给",
+          "expected": "ji",
+          "expectedCode": "JI"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "请给我一本书。",
+      "targets": [
+        {
+          "index": 1,
+          "char": "给",
+          "expected": "gei",
+          "expectedCode": "GW"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这个东西很便宜。",
+      "targets": [
+        {
+          "index": 5,
+          "char": "便",
+          "expected": "pian",
+          "expectedCode": "PM"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "这里交通便利。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "便",
+          "expected": "bian",
+          "expectedCode": "BM"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "请你先和面。",
+      "targets": [
+        {
+          "index": 3,
+          "char": "和",
+          "expected": "huo",
+          "expectedCode": "HO"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "他为人和气。",
+      "targets": [
+        {
+          "index": 3,
+          "char": "和",
+          "expected": "he",
+          "expectedCode": "HE"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "不要随声附和。",
+      "targets": [
+        {
+          "index": 5,
+          "char": "和",
+          "expected": "he",
+          "expectedCode": "HE"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "他说服了同学。",
+      "targets": [
+        {
+          "index": 1,
+          "char": "说",
+          "expected": "shuo",
+          "expectedCode": "UO"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "他去游说。",
+      "targets": [
+        {
+          "index": 3,
+          "char": "说",
+          "expected": "shui",
+          "expectedCode": "UV"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "他有倔强的性格。",
+      "targets": [
+        {
+          "index": 3,
+          "char": "强",
+          "expected": "jiang",
+          "expectedCode": "JL"
+        }
+      ]
+    },
+    {
+      "kind": "core",
+      "text": "我们强迫他离开。",
+      "targets": [
+        {
+          "index": 2,
+          "char": "强",
+          "expected": "qiang",
+          "expectedCode": "QL"
+        }
+      ]
+    },
+    {
+      "kind": "sameCodeTone",
+      "text": "记载这些故事。",
+      "targets": [
+        {
+          "index": 1,
+          "char": "载",
+          "expected": "zai",
+          "expectedCode": "ZD"
+        }
+      ]
+    },
+    {
+      "kind": "sameCodeTone",
+      "text": "这辆车可以载重三吨。",
+      "targets": [
+        {
+          "index": 5,
+          "char": "载",
+          "expected": "zai",
+          "expectedCode": "ZD"
+        }
+      ]
+    },
+    {
+      "kind": "contextHard",
+      "text": "这衣服真漂亮。",
+      "targets": [
+        {
+          "index": 4,
+          "char": "漂",
+          "expected": "piao",
+          "expectedCode": "PN"
+        }
+      ]
+    },
+    {
+      "kind": "contextHard",
+      "text": "小船漂在水上。",
+      "targets": [
+        {
+          "index": 2,
+          "char": "漂",
+          "expected": "piao",
+          "expectedCode": "PN"
+        }
+      ]
+    },
+    {
+      "kind": "contextHard",
+      "text": "我们准备去漂白衣服。",
+      "targets": [
+        {
+          "index": 5,
+          "char": "漂",
+          "expected": "piao",
+          "expectedCode": "PN"
+        }
+      ]
+    },
+    {
+      "kind": "mixed",
+      "text": "English 2026\n银行，行走。𠀀😀，A股。",
+      "targets": [
+        {
+          "index": 14,
+          "char": "行",
+          "expected": "hang",
+          "expectedCode": "HH"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "authoredAt": "2026-10-28",
+  "records": [
+    {
+      "char": "平",
+      "strokeSource": { "path": "tools/shape-expansion/inputs/Strokes.txt", "line": 244, "pattern": "^㇐㇔㇒㇐㇑$" },
+      "first": { "root": "一", "strokeIndices": [0], "expectedStrokes": "㇐" },
+      "last": { "root": "十", "strokeIndices": [3, 4], "expectedStrokes": "㇐㇑" },
+      "unexpandedStrokeIndices": [1, 2],
+      "ruleId": "no-isolation-ping",
+      "ruleUrl": "https://flypy.cc/help/#/gz",
+      "ruleLocator": "插隔不取条中的平例",
+      "explanation": "平中的干被中间两笔隔开，不能把干整体作为根；按当前字的取根过程，首根取一，剩余末根取十。这里记录两端的明确笔画范围，中间两笔没有被编成额外形码。",
+      "scope": "verified-endpoints-with-stroke-selection"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+.glyph-font-text { font-family: "Babble Glyphs", "Songti SC", "STSong", "Noto Serif CJK SC", "SimSun", serif; font-weight: 400; }
+.glyph-font-status { max-width: 640px; margin: 8px auto; color: var(--muted); font-size: 11px; line-height: 1.7; overflow-wrap: anywhere; }
+.glyph-font-status[data-status="ready"] { margin: 0; }
+.glyph-font-status p { margin: 0; }
+.glyph-font-status[data-status="error"], .glyph-font-status[data-status="unavailable"] { color: var(--secondary); }

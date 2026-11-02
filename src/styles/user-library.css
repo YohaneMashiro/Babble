@@ -1,0 +1,11 @@
+.user-library-import { display: grid; gap: .75rem; min-width: 0; }
+.user-library-import > h3, .user-library-import p { margin: 0; }
+.user-library-import input[type="file"] { max-width: 100%; width: 100%; font: inherit; }
+.user-library-help, .user-library-current, .user-library-status { font-size: .85rem; line-height: 1.7; overflow-wrap: anywhere; }
+.user-library-help { color: var(--muted); }
+.user-library-preview { display: grid; gap: .65rem; border: 1px solid var(--line); border-radius: 10px; padding: .9rem; min-width: 0; }
+.user-library-preview p { overflow-wrap: anywhere; }
+.user-library-persist { display: flex; align-items: center; gap: .5rem; font-size: .9rem; }
+.user-library-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+.user-library-status { min-height: 1.7em; }
+.user-library-status.is-error { color: var(--error, #a13b34); }

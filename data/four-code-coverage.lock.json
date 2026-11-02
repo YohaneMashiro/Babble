@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "inputs": {
+    "src/data/generated/readings.json": {
+      "sha256": "f8347fc97e9ecbb593e770dd72e7c4814c3ea488aea179a2089367f6ada260fb",
+      "bytes": 3218048
+    },
+    "src/data/generated/sound-mapping.json": {
+      "sha256": "71b8e6850c77d28b0e4e271c3d7a808a569e1eaecfee553dc31e58b1514c77a9",
+      "bytes": 1069
+    },
+    "src/data/generated/shape-traces.json": {
+      "sha256": "0fa139ecc338c6ce6991749f93c1ba9356254c1cc4ede42b0f7a79359dbf6c17",
+      "bytes": 989573
+    },
+    "src/data/generated/shape-expansion.json": {
+      "sha256": "5c232ab043b15c3631db40b4b32996d401674e433147a8afa9ed40d89c974fe6",
+      "bytes": 523377
+    },
+    "tools/libre-flypy-audit/inputs/release-output-1.2.0.txt": {
+      "sha256": "bde3928b0193c9fc462f974e81c10181feaf533fe7fd038a81cb4a60ec6e0cb7",
+      "bytes": 490776
+    },
+    "tools/libre-flypy-audit/src/roots.rs": {
+      "sha256": "a225c7d6bf881df18d58f85dafed280b31746f68812dd10ba503323d59ab5604",
+      "bytes": 11812
+    },
+    "tools/shape-expansion/inputs/Strokes.txt": {
+      "sha256": "314bb2f74362eda6ba504a345fd12ad2b743010e9ea0a9cfd1cd0743903f2f1e",
+      "bytes": 16141
+    },
+    "tools/code-coverage/generate.mjs": {
+      "sha256": "7b4e0f4315b83b27f31df54824aaaad443c7ef49aa571b138015ca78af2db242",
+      "bytes": 10915
+    },
+    "data/curated-shape-supplement.json": {
+      "sha256": "a68571ed1a15336f6dd507c544007855c7b09ce0cee0498157bf5df666cac0a0",
+      "bytes": 876
+    },
+    "src/domain/sound.ts": {
+      "sha256": "1f2c37c2f93f5e11b0c933277df95aa1e47879ca672794b4f07e747e8be6d045",
+      "bytes": 2208
+    },
+    "src/domain/dictionary.ts": {
+      "sha256": "8e94673d35718915eb0834cd3ad045d41ee6671268a93c479b81379f105ed35c",
+      "bytes": 3093
+    },
+    "src/domain/encoding.ts": {
+      "sha256": "ef8188d0ce953464c038f5369d7163b6ff5674242e75cded0c0da9765603d25d",
+      "bytes": 2988
+    },
+    "scripts/official-ix-audit.mjs": {
+      "sha256": "54204a24fc429df9a3df5a407326b5780e166861118111479e76ac5923d93c47",
+      "bytes": 22358
+    },
+    "data/NOTICE-four-code-coverage.md": {
+      "sha256": "70a01edd7add2ecd5c0fbf32802ddc080bdd8f7b7a02e7097fe2341504ccca05",
+      "bytes": 2416
+    }
+  },
+  "reference": {
+    "url": "https://flypy.cc/ix/ixdata.json",
+    "sha256": "252025614bca2f44f1c8fbcad3a4ed80bef45d224ede40102781a438a20eca17",
+    "comparisonOnly": true
+  },
+  "generated": {
+    "path": "src/data/generated/four-code-coverage.json",
+    "sha256": "b181fb27a4a45439a0ebb909f9b5f2caaee6480cb7155a7efb0b1eab40a1bc12",
+    "bytes": 14650
+  },
+  "statistics": {
+    "baselineCharacters": 8143,
+    "publishedCharacters": 158,
+    "publishedToneEntries": 171,
+    "curatedCharacters": 1,
+    "totalSupplementCharacters": 159,
+    "totalSupplementToneEntries": 172
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "property": "Unified_Ideograph",
+  "license": "Unicode-3.0; see NOTICE-Unicode-targets.txt",
+  "versions": [
+    {
+      "version": "17.0.0",
+      "url": "https://www.unicode.org/Public/17.0.0/ucd/PropList.txt",
+      "sourceSha256": "130dcddcaadaf071008bdfce1e7743e04fdfbc910886f017d9f9ac931d8c64dd",
+      "count": 101996,
+      "ranges": [
+        [
+          "3400",
+          "4DBF"
+        ],
+        [
+          "4E00",
+          "9FFF"
+        ],
+        [
+          "FA0E",
+          "FA0F"
+        ],
+        [
+          "FA11",
+          "FA11"
+        ],
+        [
+          "FA13",
+          "FA14"
+        ],
+        [
+          "FA1F",
+          "FA1F"
+        ],
+        [
+          "FA21",
+          "FA21"
+        ],
+        [
+          "FA23",
+          "FA24"
+        ],
+        [
+          "FA27",
+          "FA29"
+        ],
+        [
+          "20000",
+          "2A6DF"
+        ],
+        [
+          "2A700",
+          "2B81D"
+        ],
+        [
+          "2B820",
+          "2CEAD"
+        ],
+        [
+          "2CEB0",
+          "2EBE0"
+        ],
+        [
+          "2EBF0",
+          "2EE5D"
+        ],
+        [
+          "30000",
+          "3134A"
+        ],
+        [
+          "31350",
+          "33479"
+        ]
+      ]
+    },
+    {
+      "version": "18.0.0",
+      "url": "https://www.unicode.org/Public/18.0.0/ucd/PropList.txt",
+      "sourceSha256": "f438f532e8737bb8a2702126cdf9c4af5e357c58c7acf9d9eb2fc7c1a1d955d6",
+      "count": 101997,
+      "ranges": [
+        [
+          "3400",
+          "4DBF"
+        ],
+        [
+          "4E00",
+          "9FFF"
+        ],
+        [
+          "FA0E",
+          "FA0F"
+        ],
+        [
+          "FA11",
+          "FA11"
+        ],
+        [
+          "FA13",
+          "FA14"
+        ],
+        [
+          "FA1F",
+          "FA1F"
+        ],
+        [
+          "FA21",
+          "FA21"
+        ],
+        [
+          "FA23",
+          "FA24"
+        ],
+        [
+          "FA27",
+          "FA29"
+        ],
+        [
+          "20000",
+          "2A6DF"
+        ],
+        [
+          "2A700",
+          "2B81E"
+        ],
+        [
+          "2B820",
+          "2CEAD"
+        ],
+        [
+          "2CEB0",
+          "2EBE0"
+        ],
+        [
+          "2EBF0",
+          "2EE5D"
+        ],
+        [
+          "30000",
+          "3134A"
+        ],
+        [
+          "31350",
+          "33479"
+        ]
+      ]
+    }
+  ]
+}

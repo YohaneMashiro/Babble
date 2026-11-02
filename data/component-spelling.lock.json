@@ -1,0 +1,576 @@
+{
+  "schemaVersion": 1,
+  "policyId": "radical-aliases-public-rules-bounded-v1",
+  "inputsLockSha256": "d49405d55b50b25da58aa7a63e35f590f7d22d2922312c52f7faf31da4db2200",
+  "configSha256": "f932bfb1e32d7be12c2d422196f901490b2bb180d6d5e925ce861a54db03a220",
+  "generatorFiles": [
+    {
+      "path": "tools/component-spelling/generate.mjs",
+      "bytes": 16941,
+      "sha256": "3c0f24d9b34afb695bccb0f74091c6e273833b472d9a3d6575e0d4ce601531c2"
+    },
+    {
+      "path": "tools/coverage-research/run.mjs",
+      "bytes": 15679,
+      "sha256": "14e8c0f154461061cc1464cb6c9539e60527737d9a3482543635f2d0c3127df1"
+    },
+    {
+      "path": "src/domain/sound.ts",
+      "bytes": 2208,
+      "sha256": "1f2c37c2f93f5e11b0c933277df95aa1e47879ca672794b4f07e747e8be6d045"
+    },
+    {
+      "path": "src/domain/dictionary.ts",
+      "bytes": 3093,
+      "sha256": "8e94673d35718915eb0834cd3ad045d41ee6671268a93c479b81379f105ed35c"
+    },
+    {
+      "path": "src/domain/encoding.ts",
+      "bytes": 2988,
+      "sha256": "ef8188d0ce953464c038f5369d7163b6ff5674242e75cded0c0da9765603d25d"
+    }
+  ],
+  "comparisonOnly": {
+    "url": "https://github.com/kchen0x/rime-crane/blob/71f3add6a39d58a8e8b35abc7ca9c998d766b274/xhup_dicts/xhup.ok.dict.yaml",
+    "commit": "71f3add6a39d58a8e8b35abc7ca9c998d766b274",
+    "sha256": "510c6d7ab85b125d37a8b95cd1eb615371234aec353851f052e7a7a5ccf68d4a",
+    "use": "Only read after all candidates are generated; no raw comparison records are redistributed."
+  },
+  "statistics": {
+    "candidateCharacters": 89189,
+    "candidatePairs": 112553,
+    "confirmedCharacters": 59926,
+    "confirmedPairs": 59930,
+    "unconfirmedPairs": 52623,
+    "componentReadings": 7994,
+    "shardCount": 103,
+    "rejectedRows": {
+      "length": 7838,
+      "missingReading": 6655,
+      "combinationLimit": 0
+    },
+    "maximumCombinationsPerSourceRowObserved": 12
+  },
+  "generated": [
+    {
+      "path": "src/data/generated/component-spelling-00d.json",
+      "bytes": 38448,
+      "sha256": "efb55bf4aa05357356de2c1c4e470efd54af22407200eed2e8baa57137df6536"
+    },
+    {
+      "path": "src/data/generated/component-spelling-00e.json",
+      "bytes": 40651,
+      "sha256": "89735873d027fdfa51ca133236f8109c43eef8f4fcf41f50f58d8d3f74fd6cdd"
+    },
+    {
+      "path": "src/data/generated/component-spelling-00f.json",
+      "bytes": 41188,
+      "sha256": "87fcebe2196e2c28ce9eeff508dbc0e9fb3568ece9a2f6a83403e993b86c0884"
+    },
+    {
+      "path": "src/data/generated/component-spelling-010.json",
+      "bytes": 48084,
+      "sha256": "66cff200033df13830da6741fb84dff600514469ca5d1332c018bc80f0dddad5"
+    },
+    {
+      "path": "src/data/generated/component-spelling-011.json",
+      "bytes": 40294,
+      "sha256": "3c31f3240da81eebc4fcb4473bf4e2db4d5ba211aee477434db29a6cb8c5f554"
+    },
+    {
+      "path": "src/data/generated/component-spelling-012.json",
+      "bytes": 37492,
+      "sha256": "d96c0f3d6b3991df51307f5e7acef05b7df70d07a6bab125ea672bc78323f52f"
+    },
+    {
+      "path": "src/data/generated/component-spelling-013.json",
+      "bytes": 40344,
+      "sha256": "6e197433744e6f5d1764ae56068a203bfa51cf432373bfb67068d1b315c41139"
+    },
+    {
+      "path": "src/data/generated/component-spelling-014.json",
+      "bytes": 52894,
+      "sha256": "3ea2345f8f52f38a1f82b42e8d3bab994a02d4273243d74b1059342f872397dd"
+    },
+    {
+      "path": "src/data/generated/component-spelling-015.json",
+      "bytes": 50792,
+      "sha256": "41b31d7035d92c92dbecbf0d25bbe814151593688cfcea130b66acefa11638be"
+    },
+    {
+      "path": "src/data/generated/component-spelling-016.json",
+      "bytes": 48762,
+      "sha256": "66b11ef7912c068ada2e1d75d8dfce92cb5549389b3a02511675b0774df26a57"
+    },
+    {
+      "path": "src/data/generated/component-spelling-017.json",
+      "bytes": 49880,
+      "sha256": "b6b7b22be7889ea65a2c0ec10242661a9495c326ed73e087d386229bf253143f"
+    },
+    {
+      "path": "src/data/generated/component-spelling-018.json",
+      "bytes": 63795,
+      "sha256": "3460eebb130c824bfb09591fa6c4c1607741d6f30c14396ca29288b977b7a28c"
+    },
+    {
+      "path": "src/data/generated/component-spelling-019.json",
+      "bytes": 62166,
+      "sha256": "08946be11c9e7d698277ad3b33c6997e4a5963a634fa69223625596777c8d18d"
+    },
+    {
+      "path": "src/data/generated/component-spelling-01a.json",
+      "bytes": 47778,
+      "sha256": "6452a7dcb2ebcf1edd421640fe59f3c2693890efcc2eb0cdf07c04ed6bfe7278"
+    },
+    {
+      "path": "src/data/generated/component-spelling-01b.json",
+      "bytes": 45770,
+      "sha256": "f2bc60dfa4e21e44c29962f288289f6953a8966ae56fe05ae0727312e9870496"
+    },
+    {
+      "path": "src/data/generated/component-spelling-01c.json",
+      "bytes": 50709,
+      "sha256": "1f183f98cf7516103fb0cb670feabc275c2d8030001ad54aedc937e8c06e086c"
+    },
+    {
+      "path": "src/data/generated/component-spelling-01d.json",
+      "bytes": 67332,
+      "sha256": "7cf69c6cba9c29921263ff0c25215b94a6c376b95be53f143bc39291150ecb22"
+    },
+    {
+      "path": "src/data/generated/component-spelling-01e.json",
+      "bytes": 69608,
+      "sha256": "ce5edaa5ecf2f40c20b4ec841167ea92ab7b8acbfcfb67a92b390624b7a97808"
+    },
+    {
+      "path": "src/data/generated/component-spelling-01f.json",
+      "bytes": 69177,
+      "sha256": "b925bac4da4a635351139e8e2bae097b19c6197d6c9972a969178e7bc7d22f39"
+    },
+    {
+      "path": "src/data/generated/component-spelling-020.json",
+      "bytes": 61362,
+      "sha256": "65e55c9172c3bcabb436da455c95bccef2c0c938b3e9d4594791244e207f1b26"
+    },
+    {
+      "path": "src/data/generated/component-spelling-021.json",
+      "bytes": 48803,
+      "sha256": "57fab0bea009c5993661b7dc64e885de57ef3acf05206a97942bad7907256194"
+    },
+    {
+      "path": "src/data/generated/component-spelling-022.json",
+      "bytes": 63635,
+      "sha256": "138e2ee897861b097a30ffff859a4718ee322b207d9a9eba80e91cbd2f79b669"
+    },
+    {
+      "path": "src/data/generated/component-spelling-023.json",
+      "bytes": 55630,
+      "sha256": "7046164f44a62f78149538d331af4c02a212989c685fc15815d3ed75ae3f6aea"
+    },
+    {
+      "path": "src/data/generated/component-spelling-024.json",
+      "bytes": 59177,
+      "sha256": "a1d1c5262bcb9d2e1e75380a22e18fb07b69713bc0b502e8cf3172eaa98b7443"
+    },
+    {
+      "path": "src/data/generated/component-spelling-025.json",
+      "bytes": 52117,
+      "sha256": "f9c1a2348bd8fc9ed9f612ed239152e42de53d080165346b6875801125e3b7a6"
+    },
+    {
+      "path": "src/data/generated/component-spelling-026.json",
+      "bytes": 51956,
+      "sha256": "1cd3e5a7c8fb63d3cf6f79f327ffc3ee1963356cd71a7a71bf1d6dbfb7942829"
+    },
+    {
+      "path": "src/data/generated/component-spelling-027.json",
+      "bytes": 48023,
+      "sha256": "56c99f4ca758c63dbc2856d0dd89f4b88fc6ec54b45c3c8190d030b0fd6bbd62"
+    },
+    {
+      "path": "src/data/generated/component-spelling-03e.json",
+      "bytes": 455,
+      "sha256": "438331b26c986b8c3a9cab4fac2c6a79aed9d15936eacfdb7ca79f61eb94ed00"
+    },
+    {
+      "path": "src/data/generated/component-spelling-080.json",
+      "bytes": 31358,
+      "sha256": "f5dd865e4098825524628b4854f1499a0cf3a67d8dd259822a7fd3d93ecd5341"
+    },
+    {
+      "path": "src/data/generated/component-spelling-081.json",
+      "bytes": 36957,
+      "sha256": "430c968f54d2007f0616a1357a45dedf000ac30495165a311440a05f5888a84c"
+    },
+    {
+      "path": "src/data/generated/component-spelling-082.json",
+      "bytes": 34305,
+      "sha256": "b8e8a5a56877ff8f9b747db78583b601820f2579f19d4d7bd2e2761522896b46"
+    },
+    {
+      "path": "src/data/generated/component-spelling-083.json",
+      "bytes": 34496,
+      "sha256": "ef6636c6bfc44e6440f88f5cbb7d7cab8b75caa982987797f5029d191612941f"
+    },
+    {
+      "path": "src/data/generated/component-spelling-084.json",
+      "bytes": 43631,
+      "sha256": "8a2567dd4dd5f9e35bb6a54b3a4a5674df15fc97a02cf3ffeac6631606a65170"
+    },
+    {
+      "path": "src/data/generated/component-spelling-085.json",
+      "bytes": 36108,
+      "sha256": "22714632f952c443e342ff5248b9960794a2cfdbd27a21f6760dfbf51d9d259a"
+    },
+    {
+      "path": "src/data/generated/component-spelling-086.json",
+      "bytes": 33911,
+      "sha256": "83a871b275b7f336083065d755eaac61aaa5f9778a1c8a3da7e4d5f9d42c4f4d"
+    },
+    {
+      "path": "src/data/generated/component-spelling-087.json",
+      "bytes": 37047,
+      "sha256": "41de7be215171b4c512f2797277af39a83eba95c49851c706a292dee08664d0d"
+    },
+    {
+      "path": "src/data/generated/component-spelling-088.json",
+      "bytes": 35899,
+      "sha256": "4029da6f2f517e0b3c3f894d876c0ba77cc96412333cd90dfbb19253960ba30e"
+    },
+    {
+      "path": "src/data/generated/component-spelling-089.json",
+      "bytes": 43559,
+      "sha256": "ac9157b275a14a9fca79e4562bb3bc6f4a09d441d5e9f51b0872941cfeb30d94"
+    },
+    {
+      "path": "src/data/generated/component-spelling-08a.json",
+      "bytes": 37224,
+      "sha256": "553536d22e8a9e42d37e3105ef45f7f2ef6194ee4cebe669db1c05185029e653"
+    },
+    {
+      "path": "src/data/generated/component-spelling-08b.json",
+      "bytes": 36558,
+      "sha256": "a35e13c7756d699d823740a714eb25be315358194d8dc9231764dbe35a89efea"
+    },
+    {
+      "path": "src/data/generated/component-spelling-08c.json",
+      "bytes": 34418,
+      "sha256": "348a7432fd007c300cbfec53757e739b48f7ac20b66983d539d3f35a77b2943c"
+    },
+    {
+      "path": "src/data/generated/component-spelling-08d.json",
+      "bytes": 33476,
+      "sha256": "f14569dd6f7fbc6af73d83faa6224f744fe986527f6f9223cf1bd743517f7c38"
+    },
+    {
+      "path": "src/data/generated/component-spelling-08e.json",
+      "bytes": 33655,
+      "sha256": "756c3bbf4940b9c2acac1a61e21b752570395d76412d82a6f12ac3fa1138e9ca"
+    },
+    {
+      "path": "src/data/generated/component-spelling-08f.json",
+      "bytes": 34849,
+      "sha256": "0a5e241d25edffe640b3ede24f1c7929c278ccddf6fd8fe2d758e139ebcc5fc4"
+    },
+    {
+      "path": "src/data/generated/component-spelling-090.json",
+      "bytes": 34145,
+      "sha256": "b5614a185604dc2e9cf48b0cf0b8af0979f4d13da54c29051589313db897d22e"
+    },
+    {
+      "path": "src/data/generated/component-spelling-091.json",
+      "bytes": 36431,
+      "sha256": "b5845e48f60b449b77c6632ba96f21913afdf620edf1058fca6edbb154d3bcdf"
+    },
+    {
+      "path": "src/data/generated/component-spelling-092.json",
+      "bytes": 48086,
+      "sha256": "b1d2a0951f399b3bef57d9ca544945c1ada38d8ac0e9d404b3f5bba1e0b1e466"
+    },
+    {
+      "path": "src/data/generated/component-spelling-093.json",
+      "bytes": 36680,
+      "sha256": "776e4f437d2436c3c3c7c0a8df7069e774cf5baa2adb3ede523406e9d9c6a488"
+    },
+    {
+      "path": "src/data/generated/component-spelling-094.json",
+      "bytes": 37282,
+      "sha256": "3a63948b684160964c0274373c16eba54ee33f1dd7467b08535c3f971e9b363e"
+    },
+    {
+      "path": "src/data/generated/component-spelling-095.json",
+      "bytes": 52121,
+      "sha256": "f4b7b13dbf66b14c53fb469bf4d7397c1eb8eaa6b3e9e0f7e85e668ed123f702"
+    },
+    {
+      "path": "src/data/generated/component-spelling-096.json",
+      "bytes": 33261,
+      "sha256": "db6964537fd10d4f5bac99e32711b8d95e3e7d007a1c3549f79bf4d1268a1afa"
+    },
+    {
+      "path": "src/data/generated/component-spelling-097.json",
+      "bytes": 40001,
+      "sha256": "3c6d293457bd761c4cad9989f7ed3db8d0b849939f295131d3930e48f79dbe1a"
+    },
+    {
+      "path": "src/data/generated/component-spelling-098.json",
+      "bytes": 55938,
+      "sha256": "0981ebab411d61490e6e109af0724ccbf8cc875e7aecd8b6ebb3b3560d66ac9d"
+    },
+    {
+      "path": "src/data/generated/component-spelling-099.json",
+      "bytes": 37237,
+      "sha256": "a4121d25ec985b1348c5935373144bacc9b4bc8354bf016b77a9439d8f5ae944"
+    },
+    {
+      "path": "src/data/generated/component-spelling-09a.json",
+      "bytes": 35653,
+      "sha256": "74dae973047b2a6cf86e9377a029e6a51e10a7f67a0ac6cc495143142adeee6c"
+    },
+    {
+      "path": "src/data/generated/component-spelling-09b.json",
+      "bytes": 34830,
+      "sha256": "5ab86a0922ee6a381bbb6b0f2acc2a17cf0aa95504eaa086287babf7e7017db9"
+    },
+    {
+      "path": "src/data/generated/component-spelling-09c.json",
+      "bytes": 35022,
+      "sha256": "1c72fc94fe82f5eb8efd80efc941bdee5aece8323def0fba704da49434866d66"
+    },
+    {
+      "path": "src/data/generated/component-spelling-09d.json",
+      "bytes": 39828,
+      "sha256": "03f0e141de0108c2205db4424bcb3748b268d674e3afcb101c7087129729341d"
+    },
+    {
+      "path": "src/data/generated/component-spelling-09e.json",
+      "bytes": 39876,
+      "sha256": "d7c0c661fa51eb6d050309f82d6477b47ad193fc2c11fcd69ad270dcffd4812d"
+    },
+    {
+      "path": "src/data/generated/component-spelling-09f.json",
+      "bytes": 41588,
+      "sha256": "660f5fc346d847cdc31a4fb15ccb22aca5b8712b5aad2e728f6f9bab9373e14b"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0a0.json",
+      "bytes": 35106,
+      "sha256": "f17eb7975935ed1da583bcaa5eede2a988c7782ab9911e5bd5a84cd7544aa197"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0a1.json",
+      "bytes": 34995,
+      "sha256": "655365195726feb2ea857365a625292b5e3a3d411e809bb5106b71a8295b2694"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0a2.json",
+      "bytes": 34818,
+      "sha256": "bf65af52b51040c6ac49e30dfc3a0468cfad08b197486ae4f34f1b12a6c2ba03"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0a3.json",
+      "bytes": 35220,
+      "sha256": "43b7a0abd6811a4ec6dfac58e0f38912420f4fb5f73146ea149158bdaf3abf3b"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0a4.json",
+      "bytes": 35910,
+      "sha256": "65b8e7a6f35c7d6a539c08e63dafd8d08210cacbef7855197cc5d3e831bea2dd"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0a5.json",
+      "bytes": 36127,
+      "sha256": "15a1344bce934093d4eda817c05b7b52771c48c6c5e2ca33d8e280b0f6ca4bf1"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0a6.json",
+      "bytes": 36528,
+      "sha256": "30c6912cde5058a1af7fba410e0f8d5c762a13e3229ca4419d8c4825ca95fc1b"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0a7.json",
+      "bytes": 38831,
+      "sha256": "2ddc8b5779c0c2d22d58f41400383e328193f3334e24a11adf9904934d5241db"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0a8.json",
+      "bytes": 36393,
+      "sha256": "bc99fc23326366574d728eb36169b94c8cc99de574ef0e636d5a21cb88f2e0db"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0a9.json",
+      "bytes": 36755,
+      "sha256": "beceab2a1573bc1ac6ec937dce9e6d4d36a4906ded0c661480b32439b813c97a"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0aa.json",
+      "bytes": 39747,
+      "sha256": "b7fd21df45bb8d566bc2233b03f4bad4c4247d4e51a4bac55f49615d3e1a1fb7"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0ab.json",
+      "bytes": 42164,
+      "sha256": "25964db3c086b5115346059f9f2e4518ec3f59a7c11faedde66cf0458cddad26"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0ac.json",
+      "bytes": 43065,
+      "sha256": "7c9df124dbed2c4add4bb7c074df9659abb1201b34392010b2b415a26d01ae11"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0ad.json",
+      "bytes": 39213,
+      "sha256": "c0fb4f7e7d255376abd0bce6a35b057de7a4da4378e254c91b668eaf8302344e"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0ae.json",
+      "bytes": 40116,
+      "sha256": "0a00032524e98b7ff3251aa6b74104514a35790ed9db3a4be851d5008cf7bf8c"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0af.json",
+      "bytes": 38284,
+      "sha256": "b0099b929b418534e3caa311bd8e8006c94dba1fbd7fe3313f9cc53b8ef4a780"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0b0.json",
+      "bytes": 41043,
+      "sha256": "66d58ab504bca54e0911b661399abfceba9a06f0d62085c2a00234311d71144a"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0b1.json",
+      "bytes": 42275,
+      "sha256": "e1a1937a780b6b6a8a3b50fbde1779aeda9fe073587781b8c5c30a9ea6ef4c38"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0b2.json",
+      "bytes": 40665,
+      "sha256": "b6a15d177f10d6db52089c7794bf5afdd6206ff2c63ab648f68c12c94e938d1b"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0b3.json",
+      "bytes": 36137,
+      "sha256": "74f36f2412bd799cb5f91cf9622a38cef44f4bd2aec11217cc3155ff516ca47c"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0b4.json",
+      "bytes": 34798,
+      "sha256": "16c7f0a19a4b962dcbb81ac020c0469e1dcc9bb3b50169f03e11722a2428094e"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0b5.json",
+      "bytes": 34979,
+      "sha256": "4cae9fc09708fe4b8be11635582054d7ad217b98696f030553ec442990d95653"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0b6.json",
+      "bytes": 33965,
+      "sha256": "61761a20373358c07e2915cd82255a5a779746cf02b3bc89aab6a7a7562e2764"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0b7.json",
+      "bytes": 36799,
+      "sha256": "4acd3935bc4533f562fdfc374cd6e18a8413fe98d0a01c15074db176c1dcfd73"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0b8.json",
+      "bytes": 39567,
+      "sha256": "48ad85de841888bcab5f6e82680944360af1658224e726a91ee44e89f32f8403"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0b9.json",
+      "bytes": 34179,
+      "sha256": "a3630d995d1918553b8f8b6eb9f0990906b9a12882fc8c369c6e6f097311691d"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0ba.json",
+      "bytes": 33022,
+      "sha256": "37c45ef8df2d2084b967f954b0bb4dc9048748e741b502770feb30dcc5b20b78"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0bb.json",
+      "bytes": 27057,
+      "sha256": "6c4e8494fa0326474dd9e06d06957ba96d48450c64218d49673fee1020874765"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0be.json",
+      "bytes": 172,
+      "sha256": "88ba34d1dcea186544f297c1c794b646ea94a2e3b69e74de904e659e8befd91e"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0c0.json",
+      "bytes": 40236,
+      "sha256": "df91aa5d36983d5d429c6ead6f82d6edf07683308b8b5eb23c6fb9b4037d7719"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0c1.json",
+      "bytes": 38938,
+      "sha256": "620e01732d3939f74e6ac2c0f3e1eb0b3d8886a6ceade0feda5241cd334a4b2e"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0c2.json",
+      "bytes": 43720,
+      "sha256": "80788d1831c7817e75307c31f603670545f000ba44cc1e310ac9942e6876dec9"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0c3.json",
+      "bytes": 43260,
+      "sha256": "4bde8d10cfe1cc73397c123a83cd2d307812db74c0de49c551d70987f1a9848d"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0c4.json",
+      "bytes": 38217,
+      "sha256": "ebc2caed53f4587af85c1a23f5c23f414cb74f35f899166dbb984e09a6f8ae52"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0c5.json",
+      "bytes": 41155,
+      "sha256": "39ebe6d21ea25b509f5dbf814046ba992e6ef806a3ef9960ea52ecdbcbe5c219"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0c6.json",
+      "bytes": 31941,
+      "sha256": "a12dd56e3347a8050baa024436b615f7ed97261d384149ad8dba3af6d4363e71"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0c7.json",
+      "bytes": 39521,
+      "sha256": "b33160a9bc2d81eb5a51b1720eec2135e01e799b75fb84dd8773a70722de963d"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0c8.json",
+      "bytes": 39029,
+      "sha256": "43eccac76b1db19bfb6296166562e9358ec29c8b5084dd4dc3199b3b5608a219"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0c9.json",
+      "bytes": 40571,
+      "sha256": "03f92d5fdcf43605699bd07438e4b63f7b0358a72f0d8e53889e535a39f1a205"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0ca.json",
+      "bytes": 39731,
+      "sha256": "8b0edb3acf90272f3ba19bc094b8ad6779eef6c860852440534c473bd3e14f29"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0cb.json",
+      "bytes": 45365,
+      "sha256": "07f3105d97937ef5bf58608d463d23d4d9bd9d866efabefecd3195708ee0f5e4"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0cc.json",
+      "bytes": 42972,
+      "sha256": "204b51c6e43139bbba08914f445fbc4a2c2b937defb1059f9183f45993499099"
+    },
+    {
+      "path": "src/data/generated/component-spelling-0cd.json",
+      "bytes": 5003,
+      "sha256": "7cdd1a618aeb4b9ffaa9a049fcb213e07bea7d62354fe85fb43d8b7a090f77a5"
+    },
+    {
+      "path": "src/data/generated/component-spelling-manifest.json",
+      "bytes": 375116,
+      "sha256": "a10c134fc7238b5beeca2f3d9020c6c3faede81f165e9dafe54e6b37ebd6fa51"
+    }
+  ]
+}

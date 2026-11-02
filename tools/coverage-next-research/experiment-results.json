@@ -1,0 +1,102 @@
+{
+  "scope": "Research only. Final production remains 60,891 characters. Source-labeled whole-character dictionary readings are excluded from recommended defaults.",
+  "production": {
+    "ordinaryCharacters": 8302,
+    "ordinaryReadingCodeOptions": 8978,
+    "confirmedSpellingCharacters": 59926,
+    "confirmedSpellingPairs": 59930,
+    "inputUnion": 60891
+  },
+  "defaultResearch": {
+    "inputUnion": 71551,
+    "netAdded": 10660,
+    "ordinaryEndpointAdditions": 7,
+    "newUnionEndpointCharacters": 6,
+    "confirmedSpellingCharacters": 70785,
+    "confirmedSpellingPairs": 70837,
+    "unicode18Target": 101997,
+    "unicode18Missing": 30446,
+    "knownReferenceTarget": 87950,
+    "knownReferenceMissing": 16399,
+    "normative": {
+      "covered": 8090,
+      "target": 8105
+    },
+    "hy": {
+      "coveredOccurrences": 1840,
+      "targetOccurrences": 1840
+    },
+    "remainingReferenceClasses": {
+      "noPermittedCut": 2080,
+      "missingPartChoices": 2490,
+      "candidatesNoExactPair": 11829
+    }
+  },
+  "fullSourceResearchUpper": {
+    "inputUnion": 71947,
+    "netAdded": 11056,
+    "note": "Includes direct CJKVI source witnesses; not the default redistribution input."
+  },
+  "evidence": [
+    {
+      "path": "/root/.cache/babble-coverage-next/checker/leaf-full-independent-audit.json",
+      "bytes": 1283,
+      "sha256": "e5b4ba59277d095f00a994f188c8fdbdf437059167c29e322c997afbda1a0e32"
+    },
+    {
+      "path": "/root/.cache/babble-coverage-next/checker/leaf-no-cjkvi-independent-audit.json",
+      "bytes": 1327,
+      "sha256": "043ce77980865fbe5e75fbdd7a232fedef25ff68e3df6c2491ff0380eb9dec26"
+    },
+    {
+      "path": "/root/.cache/babble-coverage-next/checker/common-finite-independent-audit.json",
+      "bytes": 2018,
+      "sha256": "5b5e4779d324dae496bc6d3d950dc0fa3ec3ab01309922c2e513ee0234bd9bc0"
+    },
+    {
+      "path": "/root/.cache/babble-coverage-next/checker/reading-independent-audit.json",
+      "bytes": 8870,
+      "sha256": "0539d69594e8c0156eea71f09f60f61fcc1c727df426746d30917e4e654c8bee"
+    },
+    {
+      "path": "/root/.cache/babble-coverage-next/checker/equivalent-transfer-independent-audit.json",
+      "bytes": 2207,
+      "sha256": "3d6bd7b086096d57f0d58dffbb9654be61f522b3de6f9e37a95163a14557b3a2"
+    },
+    {
+      "path": "/root/.cache/babble-coverage-next/decomposition/leaf-expansion/generation-summary.json",
+      "bytes": 407852,
+      "sha256": "ab9a913f62a97d492d7eb13bd9aaf74e57ae4fc3b4dc88103a2e4d062c1d3f94"
+    },
+    {
+      "path": "/root/.cache/babble-coverage-next/decomposition/leaf-expansion/no-cjkvi/generation-summary.json",
+      "bytes": 400381,
+      "sha256": "104f81e2075f77dd3ac9abc7c3bed42bc58af395317d129eff9993dd438af03a"
+    },
+    {
+      "path": "/root/.cache/babble-coverage-next/decomposition/leaf-expansion/comparison-summary.json",
+      "bytes": 2948,
+      "sha256": "f3b741131d5c8e11ce98ae50af838f84769b85c4631a7f04db2742f32b088cd7"
+    },
+    {
+      "path": "/root/.cache/babble-coverage-next/decomposition/leaf-expansion/no-cjkvi/comparison-summary.json",
+      "bytes": 2945,
+      "sha256": "7aa0e7cbd8bea83311d464a6ab45bf6629c88542a06b0260bf942f7f9eda9661"
+    },
+    {
+      "path": "/root/.cache/babble-coverage-next/common/finite-candidates-before-comparison.json",
+      "bytes": 14671,
+      "sha256": "a7f9291d4774738b811055ebc35b8d465f88c0e948322eeaa5b858a7ab76a317"
+    },
+    {
+      "path": "/root/.cache/babble-coverage-next/reading-policy/whole-character/generation-manifest.json",
+      "bytes": 1355,
+      "sha256": "2b5ff849f4c5efe92e7abd5fcdf821720ebb3cccf73375adc8ed997dbfce7112"
+    },
+    {
+      "path": "/root/.cache/babble-coverage-next/reading-policy/whole-character/comparison-summary.json",
+      "bytes": 15541,
+      "sha256": "f47e8928831d582243364edfaa2f499a651c0473c4a93165d8474048ff9b95d9"
+    }
+  ]
+}

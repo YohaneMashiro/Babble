@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-28",
+  "article": "HY.txt",
+  "status": "review-required-no-training-answers",
+  "boundary": "Remaining gaps after the independently compared published-code supplement and curated ping endpoint record. Only characters, counts and evidence gaps are retained; no official answers or Chai candidates. Not imported by the application.",
+  "requiredEvidence": {
+    "endpoint-derivation": "Licensed source for stroke/root boundaries and any intersection, isolation or small-character rule; independently verify endpoints and full codes against modern reading sources.",
+    "named-component": "Licensed definition and coverage of the named component, its identity in this character and its first/last role; independently verify endpoints and full codes without substituting a similar-looking glyph."
+  },
+  "records": [
+    {
+      "char": "无",
+      "occurrences": 6,
+      "lookupStatus": "pronunciation-only",
+      "gap": "endpoint-derivation"
+    },
+    {
+      "char": "生",
+      "occurrences": 6,
+      "lookupStatus": "pronunciation-only",
+      "gap": "endpoint-derivation"
+    },
+    {
+      "char": "大",
+      "occurrences": 5,
+      "lookupStatus": "pronunciation-only",
+      "gap": "endpoint-derivation"
+    },
+    {
+      "char": "见",
+      "occurrences": 4,
+      "lookupStatus": "pronunciation-only",
+      "gap": "named-component"
+    },
+    {
+      "char": "升",
+      "occurrences": 1,
+      "lookupStatus": "pronunciation-only",
+      "gap": "endpoint-derivation"
+    },
+    {
+      "char": "夜",
+      "occurrences": 1,
+      "lookupStatus": "pronunciation-only",
+      "gap": "endpoint-derivation"
+    },
+    {
+      "char": "断",
+      "occurrences": 1,
+      "lookupStatus": "pronunciation-only",
+      "gap": "endpoint-derivation"
+    },
+    {
+      "char": "继",
+      "occurrences": 1,
+      "lookupStatus": "pronunciation-only",
+      "gap": "endpoint-derivation"
+    }
+  ]
+}

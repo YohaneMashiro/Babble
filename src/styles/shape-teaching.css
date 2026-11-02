@@ -1,0 +1,36 @@
+.shape-explanation { border-top: 1px solid var(--line); padding-top: 15px; margin-top: 16px; text-align: left; font-size: 12px; line-height: 1.7; min-width: 0; }
+.shape-teaching-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.shape-teaching-heading :is(h2, h4) { margin: 0; font-size: 13px; }
+.shape-teaching-heading > span, .shape-sequence-caption { font-size: 10px; color: var(--secondary); }
+.shape-explanation p { margin: 7px 0; }
+.shape-explanation kbd { border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; color: var(--accent); background: var(--accent-soft); }
+.shape-teaching-parts { list-style: none; display: flex; flex-wrap: wrap; gap: 7px; margin: 12px 0; padding: 0; }
+.shape-teaching-parts li { min-width: 64px; flex: 1 1 64px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 10px 6px; border: 1px solid var(--line); border-radius: 7px; }
+.shape-teaching-parts li > strong { font-size: 23px; font-weight: 500; }
+.shape-teaching-parts li > span { font-size: 10px; color: var(--secondary); }
+.shape-teaching-parts .is-endpoint { color: var(--accent); background: var(--accent-soft); }
+.shape-teaching-parts .is-focused { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.shape-teaching-parts .is-unexpanded { border-style: dashed; flex-basis: 110px; }
+.shape-teaching-parts .is-unexpanded > strong { font-family: inherit; font-size: 11px; text-align: center; }
+.shape-teaching-limitation { padding: 9px 11px; border-left: 2px solid var(--accent); color: var(--secondary); background: var(--accent-soft); }
+.shape-teaching-steps { padding-left: 20px; margin: 12px 0; }
+.shape-teaching-steps li { padding-left: 2px; }
+.shape-teaching-steps li > strong { font-size: 11px; color: var(--accent); }
+.shape-teaching-evidence, .shape-rule-directory { margin-top: 12px; font-size: 11px; }
+.shape-explanation summary { cursor: pointer; color: var(--accent); padding: 3px 0; }
+.shape-explanation summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.shape-explanation a { text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.shape-teaching-evidence ol, .shape-rule-directory ol { padding-left: 21px; margin: 10px 0; }
+.shape-teaching-evidence li, .shape-rule-directory li { margin: 11px 0; }
+.shape-teaching-evidence li > span { display: block; color: var(--secondary); overflow-wrap: anywhere; }
+.shape-teaching-evidence li > small { display: block; color: var(--secondary); }
+.shape-small-guidance { border-top: 1px solid var(--line); padding-top: 10px; }
+.shape-root-positions { display: grid; grid-template-columns: 1fr; gap: 7px; margin: 8px 0; }
+.shape-root-positions dt { color: var(--accent); font-weight: 600; }
+.shape-root-positions dd { margin: 0; overflow-wrap: anywhere; }
+.key-all-mappings li { overflow-wrap: anywhere; }
+@media (max-width: 420px) {
+  .shape-teaching-parts li { min-width: 55px; flex-basis: 55px; }
+  .shape-teaching-parts .is-unexpanded { flex-basis: 88px; }
+  .shape-endpoints > span { display: block; height: 0; visibility: hidden; }
+}

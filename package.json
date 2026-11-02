@@ -1,0 +1,42 @@
+{
+  "name": "babble",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "npm run check:runtime && npm run check:four-code && npm run check:component-spelling && npm run check:glyph-font && npm run check:g2pw && tsc --noEmit && vite build && node scripts/package-source.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "audit:coverage": "node scripts/audit-coverage.mjs",
+    "audit:official": "node scripts/official-ix-audit.mjs",
+    "audit:chai": "node tools/chai-pilot/run.mjs",
+    "audit:coverage-research": "node tools/coverage-research/run.mjs",
+    "generate:runtime": "node scripts/pack-runtime-data.mjs",
+    "check:runtime": "node scripts/pack-runtime-data.mjs --check",
+    "generate:four-code": "node tools/code-coverage/generate.mjs",
+    "check:four-code": "node tools/code-coverage/generate.mjs --check",
+    "generate:component-spelling": "node tools/component-spelling/generate.mjs",
+    "check:component-spelling": "node tools/component-spelling/generate.mjs --check",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit --noUnusedLocals --noUnusedParameters",
+    "audit:input-coverage": "node scripts/audit-input-coverage.mjs",
+    "check:glyph-font": "node tools/glyph-font/check.mjs",
+    "check:g2pw": "node scripts/check-g2pw.mjs"
+  },
+  "dependencies": {
+    "onnxruntime-web": "1.31.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

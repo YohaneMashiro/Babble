@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "purpose": "External research inputs only; not adopted into the training library",
+  "radicalSource": {
+    "repository": "https://github.com/mirtlecn/rime-radical-pinyin",
+    "commit": "87e73d7182916f3db9dbc0b6a4d18a78a775b298",
+    "license": "GPL-3.0; retains CC-BY-3.0, GPL-2.0-or-later and MIT input attribution",
+    "files": {
+      "src/dict/radical.yaml": {
+        "bytes": 1663188,
+        "sha256": "c648dfd43a90f6ba60c123a7d57977cf8fc02dd470f2bee4e8fb2ef9343582b5"
+      },
+      "src/script/gen_dict.py": {
+        "bytes": 8231,
+        "sha256": "a59728fcfd1265852ace76295edfc8669c1992e41d0061405b7ffc53fa6aa5ee"
+      },
+      "src/README.md": {
+        "bytes": 1725,
+        "sha256": "20c8f02136554444af8929a846853bb37f7c6a42d06f7a20bbab504ae9fd6b4f"
+      },
+      "LICENSE": {
+        "bytes": 35149,
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      }
+    }
+  },
+  "localInputs": {
+    "src/data/generated/readings.json": "f8347fc97e9ecbb593e770dd72e7c4814c3ea488aea179a2089367f6ada260fb",
+    "src/data/generated/sound-mapping.json": "71b8e6850c77d28b0e4e271c3d7a808a569e1eaecfee553dc31e58b1514c77a9",
+    "src/domain/sound.ts": "1f2c37c2f93f5e11b0c933277df95aa1e47879ca672794b4f07e747e8be6d045",
+    "src/domain/dictionary.ts": "8e94673d35718915eb0834cd3ad045d41ee6671268a93c479b81379f105ed35c",
+    "src/domain/encoding.ts": "ef8188d0ce953464c038f5369d7163b6ff5674242e75cded0c0da9765603d25d",
+    "tools/shape-expansion/inputs/CC-BY-3.0.txt": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+    "tools/libre-flypy-audit/inputs/IDS-LICENSE": "f1d89fe379529df4166f75142ff82c7cc302795ec992e2a64c189aa8733da419",
+    "data/NOTICE-Unicode.txt": "a5d94080d80e1fd0b0313b7417ca07e927eb48c6139c19ddc025e19ca698e44a",
+    "data/NOTICE-shuangpin-practice.txt": "a647cde6d1715e0e22822feb9b0f7b00db6470e7b4a8bd901ee5c5b2f7ed3c16"
+  },
+  "comparisonOnly": {
+    "repository": "https://github.com/kchen0x/rime-crane",
+    "commit": "71f3add6a39d58a8e8b35abc7ca9c998d766b274",
+    "path": "xhup_dicts/xhup.ok.dict.yaml",
+    "sha256": "510c6d7ab85b125d37a8b95cd1eb615371234aec353851f052e7a7a5ccf68d4a",
+    "sourceClaim": "Upstream labels this as official WindInput v1.26.9c data; this tool does not grant redistribution rights or certify that provenance."
+  }
+}

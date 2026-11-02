@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "auditedAt": "2026-10-26",
+  "sources": [
+    {
+      "id": "kfcd-chaizi-e177ab5",
+      "name": "開放詞典：漢語拆字字典（繁體及簡體）",
+      "author": "開放詞典（kfcd）",
+      "copyright": "© 2015 開放詞典",
+      "version": "e177ab54ce4edf255315a60593ffecbd8167e96b",
+      "sourceUrl": "https://github.com/kfcd/chaizi/tree/e177ab54ce4edf255315a60593ffecbd8167e96b",
+      "license": "CC-BY-3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "retrievedAt": "2026-10-26",
+      "redistribution": "permitted",
+      "noticeFile": "data/NOTICE-shape-expansion.md",
+      "files": [
+        {
+          "path": "tools/shape-expansion/inputs/chaizi-jt.txt",
+          "upstreamPath": "chaizi-jt.txt",
+          "sourceUrl": "https://raw.githubusercontent.com/kfcd/chaizi/e177ab54ce4edf255315a60593ffecbd8167e96b/chaizi-jt.txt",
+          "sha256": "c341a99fc6a4a4f3169279c451ca55057a22603a5d7a520094378f65e817ad26",
+          "bytes": 310925,
+          "modified": false
+        },
+        {
+          "path": "tools/shape-expansion/inputs/chaizi-ft.txt",
+          "upstreamPath": "chaizi-ft.txt",
+          "sourceUrl": "https://raw.githubusercontent.com/kfcd/chaizi/e177ab54ce4edf255315a60593ffecbd8167e96b/chaizi-ft.txt",
+          "sha256": "474659d99bd43573f24c62cc5c4b19b67169f4e1647ebf0249b0762a59f4d2b7",
+          "bytes": 320407,
+          "modified": false
+        },
+        {
+          "path": "tools/shape-expansion/inputs/CHAIZI-LICENSE",
+          "upstreamPath": "LICENSE",
+          "sourceUrl": "https://raw.githubusercontent.com/kfcd/chaizi/e177ab54ce4edf255315a60593ffecbd8167e96b/LICENSE",
+          "sha256": "243ce65e3a5a24669b08b5b6d25e82e961dfc747f841f04f199126a218968100",
+          "bytes": 836,
+          "modified": false
+        },
+        {
+          "path": "tools/shape-expansion/inputs/CHAIZI-README.md",
+          "upstreamPath": "README.md",
+          "sourceUrl": "https://raw.githubusercontent.com/kfcd/chaizi/e177ab54ce4edf255315a60593ffecbd8167e96b/README.md",
+          "sha256": "9b52172aaf8f6170e475288706ce095ab7b5f8d5b1815e75ebf72ffa0b8fcfee",
+          "bytes": 2249,
+          "modified": false
+        }
+      ],
+      "modifications": [
+        "Preserve both upstream decomposition files byte-for-byte as locked inputs.",
+        "Parse tab-separated per-character variants into ordered component sequences.",
+        "Use these components only as candidate derivation paths under documented encoding rules; do not treat ordinary dictionary decompositions as Xiaohe-specific teaching facts without independent validation.",
+        "Retain original attribution and the CC BY 3.0 terms; do not apply the application MIT license to this data."
+      ],
+      "observedCounts": {
+        "chaizi-jt.txt": {
+          "lines": 17951,
+          "uniqueCharacters": 14563
+        },
+        "chaizi-ft.txt": {
+          "lines": 17951,
+          "uniqueCharacters": 17936
+        },
+        "combinedUniqueCharacters": 20466
+      },
+      "notes": "The upstream README describes 17,803 characters. Counts above are measured from the pinned two files, including their union, and are not a claim that all entries have correct Xiaohe codes."
+    },
+    {
+      "id": "unicode-equivalent-ideograph-17.0.0",
+      "name": "Unicode 17.0.0 Equivalent Unified Ideograph mappings",
+      "author": "Unicode, Inc.; original file created by Ken Lunde",
+      "copyright": "© 2025 Unicode, Inc.",
+      "version": "17.0.0",
+      "sourceUrl": "https://www.unicode.org/Public/17.0.0/ucd/EquivalentUnifiedIdeograph.txt",
+      "license": "Unicode-3.0",
+      "licenseUrl": "https://www.unicode.org/license.txt",
+      "retrievedAt": "2026-10-26",
+      "redistribution": "permitted",
+      "noticeFile": "data/NOTICE-shape-expansion.md",
+      "files": [
+        {
+          "path": "tools/shape-expansion/inputs/EquivalentUnifiedIdeograph.txt",
+          "sourceUrl": "https://www.unicode.org/Public/17.0.0/ucd/EquivalentUnifiedIdeograph.txt",
+          "sha256": "38619c05a17e771554000fe604afee92e10eb49e0616ecf0c87af3c1eb0f4320",
+          "bytes": 18371,
+          "modified": false
+        },
+        {
+          "path": "tools/shape-expansion/inputs/UNICODE-LICENSE",
+          "sourceUrl": "https://www.unicode.org/license.txt",
+          "sha256": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96",
+          "bytes": 1995,
+          "modified": false
+        }
+      ],
+      "modifications": [
+        "Preserve the original data and Unicode license bytes.",
+        "Parse declared codepoint and codepoint-range mappings for equivalent or near-identical CJK radicals, strokes and unified ideographs.",
+        "Use only explicitly supplied mappings when generating structural candidates; do not invent glyph aliases."
+      ],
+      "notes": "The input documents visual identity or near-identity, not a universal Xiaohe root assignment. A mapping is not proof that every encoding position accepts the same root; candidates still require independent code/root validation."
+    },
+    {
+      "id": "tjy-strokes-f993e6d",
+      "name": "TJYSunset/Strokes.txt: explicit CJK component stroke sequences",
+      "author": "TJYSunset",
+      "copyright": "Upstream license states Copyright (C) 2018, with no individual name appended.",
+      "version": "f993e6d7cd348e34d35efda29e356c258fb277c5",
+      "sourceUrl": "https://github.com/TJYSunset/Strokes.txt/tree/f993e6d7cd348e34d35efda29e356c258fb277c5",
+      "license": "WTFPL",
+      "licenseUrl": "https://github.com/TJYSunset/Strokes.txt/blob/f993e6d7cd348e34d35efda29e356c258fb277c5/LICENSE",
+      "retrievedAt": "2026-10-26",
+      "redistribution": "permitted",
+      "noticeFile": "data/NOTICE-shape-expansion.md",
+      "files": [
+        {
+          "path": "tools/shape-expansion/inputs/Strokes.txt",
+          "upstreamPath": "src/Strokes.txt",
+          "sourceUrl": "https://raw.githubusercontent.com/TJYSunset/Strokes.txt/f993e6d7cd348e34d35efda29e356c258fb277c5/src/Strokes.txt",
+          "sha256": "314bb2f74362eda6ba504a345fd12ad2b743010e9ea0a9cfd1cd0743903f2f1e",
+          "bytes": 16141,
+          "modified": false
+        },
+        {
+          "path": "tools/shape-expansion/inputs/STROKES-LICENSE",
+          "upstreamPath": "LICENSE",
+          "sourceUrl": "https://raw.githubusercontent.com/TJYSunset/Strokes.txt/f993e6d7cd348e34d35efda29e356c258fb277c5/LICENSE",
+          "sha256": "9df7a478e61e42c7cfd326bc174f595d61f6927512c051466a78defa9840ed17",
+          "bytes": 455,
+          "modified": false
+        },
+        {
+          "path": "tools/shape-expansion/inputs/STROKES-README.md",
+          "upstreamPath": "README.md",
+          "sourceUrl": "https://raw.githubusercontent.com/TJYSunset/Strokes.txt/f993e6d7cd348e34d35efda29e356c258fb277c5/README.md",
+          "sha256": "c2a53a782358bafa2367d689095a5bf423b08c4abe6ddbc12c15015502b60434",
+          "bytes": 5931,
+          "modified": false
+        }
+      ],
+      "observedCounts": {
+        "csvRows": 465,
+        "unicodeCharacterRows": 406
+      },
+      "modifications": [
+        "Preserve upstream stroke sequences, README provenance discussion and license byte-for-byte.",
+        "Parse explicitly encoded Unicode CJK stroke tokens and alternative character classes to derive candidate first/last stroke endpoints under documented local rules.",
+        "Use only source-backed sequences; do not infer a full stroke order from ordinary IDS tree order.",
+        "Filter all candidate training facts against an independent reference; do not import reference fields as the stroke source."
+      ],
+      "notes": "The author describes this as supplemental data for unsplit IDS components, chiefly referring to zdic stroke orders. The README explicitly discusses its source chain and the historical zdic CC0 statement, and warns about regional variants and confusion between several stroke classes. The original README and WTFPL declaration are retained; these sequences are candidates, not a claim that all upstream data is correct."
+    }
+  ],
+  "licenseTexts": [
+    {
+      "path": "tools/shape-expansion/inputs/CC-BY-3.0.txt",
+      "sourceUrl": "https://creativecommons.org/licenses/by/3.0/legalcode.txt",
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+      "bytes": 19467,
+      "retrievedAt": "2026-10-26",
+      "modified": false
+    }
+  ],
+  "existingInputs": [
+    {
+      "sourceLock": "data/shape-sources.lock.json",
+      "sourceIds": [
+        "libre-flypy-trace-1.2.0",
+        "yi-bai-ids-2023"
+      ],
+      "notes": "Reuse the existing locked AGPL generator/root definitions and MIT IDS files without replacing their notices or changing their original byte records."
+    }
+  ],
+  "selectionBoundary": [
+    "No original official research-reference file is redistributed.",
+    "All accepted explanatory fields must originate in a licensed input or a documented deterministic derivation.",
+    "Do not reverse-map code letters into guessed root names.",
+    "Published release records keep their existing provenance; newly derived records must identify the new tool and inputs rather than inheriting the release CC0 claim."
+  ]
+}

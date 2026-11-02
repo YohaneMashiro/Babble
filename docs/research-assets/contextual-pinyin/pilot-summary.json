@@ -1,0 +1,2371 @@
+{
+  "date": "2026-11-02",
+  "scope": "Research only; no automatic annotation shipped. Original synthetic data only; no user text or third-party dictionary/model files included.",
+  "fixtureSha256": "c2215612e6853b2887a4b9fbaf8eb5f1ee6d7f531d30cc96268bb060a6313754",
+  "cases": 73,
+  "targets": 74,
+  "pinyinPro": {
+    "core": {
+      "version": "3.29.5",
+      "cases": 73,
+      "targets": 74,
+      "algorithms": [
+        {
+          "algorithm": 1,
+          "exactBase": 65,
+          "sameCode": 65
+        },
+        {
+          "algorithm": 2,
+          "exactBase": 65,
+          "sameCode": 65
+        },
+        {
+          "algorithm": 3,
+          "exactBase": 65,
+          "sameCode": 65
+        }
+      ],
+      "warmNode20kMedianMs": 26.03628899999967
+    },
+    "modern": {
+      "version": "3.29.5",
+      "cases": 73,
+      "targets": 74,
+      "algorithms": [
+        {
+          "algorithm": 1,
+          "exactBase": 67,
+          "sameCode": 67
+        },
+        {
+          "algorithm": 2,
+          "exactBase": 67,
+          "sameCode": 67
+        },
+        {
+          "algorithm": 3,
+          "exactBase": 66,
+          "sameCode": 66
+        }
+      ],
+      "warmNode20kMedianMs": 26.396042999999736
+    },
+    "complete": {
+      "version": "3.29.5",
+      "cases": 73,
+      "targets": 74,
+      "algorithms": [
+        {
+          "algorithm": 1,
+          "exactBase": 68,
+          "sameCode": 68
+        },
+        {
+          "algorithm": 2,
+          "exactBase": 68,
+          "sameCode": 68
+        },
+        {
+          "algorithm": 3,
+          "exactBase": 67,
+          "sameCode": 67
+        }
+      ],
+      "warmNode20kMedianMs": 29.54243199999928
+    }
+  },
+  "dictionarySizes": [
+    {
+      "name": "modern",
+      "bytes": 1919699,
+      "gzip9": 623366
+    },
+    {
+      "name": "complete",
+      "bytes": 18896053,
+      "gzip9": 3804809
+    },
+    {
+      "name": "traditional",
+      "bytes": 27923,
+      "gzip9": 9927
+    },
+    {
+      "name": "chars",
+      "bytes": 124,
+      "gzip9": 103
+    }
+  ],
+  "g2pM": {
+    "environment": {
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "g2pM": "0.1.2.5",
+      "numpy": "2.3.3",
+      "inference": "Official g2pM 0.1.2.5 G2pM.__call__(text,char_split=True,tone=True), tracked predict() genuinely runs context BiLSTM",
+      "threads": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1"
+    },
+    "summary": {
+      "cases": 73,
+      "targets": 74,
+      "exactBase": 45,
+      "dictionaryFirstExact": 36,
+      "casesWithNeuralCall": 73,
+      "predictCalls": 73,
+      "unknownTargetChars": [],
+      "targetNeuralEligibility": 74,
+      "byKind": {
+        "core": {
+          "cases": 55,
+          "targets": 57,
+          "exactBase": 34,
+          "dictionaryFirstExact": 29
+        },
+        "proper": {
+          "cases": 11,
+          "targets": 11,
+          "exactBase": 6,
+          "dictionaryFirstExact": 2
+        },
+        "toneOnly": {
+          "cases": 1,
+          "targets": 0,
+          "exactBase": 0,
+          "dictionaryFirstExact": 0
+        },
+        "sameCodeTone": {
+          "cases": 2,
+          "targets": 2,
+          "exactBase": 2,
+          "dictionaryFirstExact": 2
+        },
+        "contextHard": {
+          "cases": 3,
+          "targets": 3,
+          "exactBase": 3,
+          "dictionaryFirstExact": 3
+        },
+        "mixed": {
+          "cases": 1,
+          "targets": 1,
+          "exactBase": 0,
+          "dictionaryFirstExact": 0
+        }
+      }
+    },
+    "modelFiles": [
+      {
+        "path": "__init__.py",
+        "bytes": 62,
+        "sha256": "dcf423a94be3cd37cdf30f5a671a52075a6020e8ac287ced9b11d6bbd5669547"
+      },
+      {
+        "path": "char2idx.pkl",
+        "bytes": 85262,
+        "sha256": "e41861f3af2debb342d3555d970db47b22e5d35c8e0190722dfb9b39c941988c"
+      },
+      {
+        "path": "class2idx.pkl",
+        "bytes": 14000,
+        "sha256": "b17a497ee9618e6d5c2f7814ab7f847d80a3cb757e92423774781e4d3dc56c49"
+      },
+      {
+        "path": "digest_cedict.pkl",
+        "bytes": 379072,
+        "sha256": "71e727a041a1d7023a1fbe32bbc23d5f4aa85a9d67fe4d6502fc398ef30b875c"
+      },
+      {
+        "path": "g2pM.py",
+        "bytes": 9064,
+        "sha256": "4a19f9d8cd95d806e13c432e8b573355455c35845dd8fc16ec4fa86a26ca1de4"
+      },
+      {
+        "path": "np_ckpt.pkl",
+        "bytes": 1607180,
+        "sha256": "5b38c21cbaeb5f9b2f5d0bf872487de0fc22f91a3b26189b7d998136d2c8d3ae"
+      }
+    ],
+    "fixtureSourceSha256": "befe93c1eaaf6ae52f08014cf848a7859d8d5ea2aba8b2737632e6780296d51d",
+    "xiaoheCrosscheck": {
+      "status": "passed",
+      "date": "2026-11-02",
+      "scope": "Independent full fixture equality and actual Babble explainSound keycode comparison; no model rerun, no performance test, no gold edits.",
+      "inputs": [
+        {
+          "path": "g2pm-pilot/pilot-results.json",
+          "bytes": 112742,
+          "sha256": "226274343deec95426a72c1f38f56e217eaec31ffbff8c6af1e87b6c86aaa997"
+        },
+        {
+          "path": "browser-pilot/pilot-results.json",
+          "bytes": 336298,
+          "sha256": "befe93c1eaaf6ae52f08014cf848a7859d8d5ea2aba8b2737632e6780296d51d"
+        },
+        {
+          "path": "src/domain/sound.ts",
+          "bytes": 2208,
+          "sha256": "1f2c37c2f93f5e11b0c933277df95aa1e47879ca672794b4f07e747e8be6d045"
+        },
+        {
+          "path": "src/data/generated/sound-mapping.json",
+          "bytes": 1069,
+          "sha256": "71b8e6850c77d28b0e4e271c3d7a808a569e1eaecfee553dc31e58b1514c77a9"
+        }
+      ],
+      "fixture": {
+        "equal": true,
+        "rows": 73,
+        "targets": 74,
+        "canonicalFormat": "UTF-8 JSON.stringify(rows.map({text,targets:[{index,char,expected}]})), no newline",
+        "g2pmSha256": "dee3d7af5ab9906f51ff15ff67a7f8d9155d61c1f25fc36510b1f9d06e9a50d4",
+        "pinyinProSha256": "dee3d7af5ab9906f51ff15ff67a7f8d9155d61c1f25fc36510b1f9d06e9a50d4",
+        "storedExpectedCodesValidated": 74,
+        "rawPredictionAndBaseCodeEqualityValidated": 74
+      },
+      "summary": {
+        "targets": 74,
+        "exactBase": 45,
+        "sameCode": 45,
+        "dictionaryFirstExactBase": 36,
+        "dictionaryFirstSameCode": 36,
+        "unencodablePredictions": 0,
+        "baseMismatchButCodeCorrect": 0
+      },
+      "rows": [
+        {
+          "text": "我在银行工作。",
+          "targets": [
+            {
+              "index": 3,
+              "char": "行",
+              "expected": "hang",
+              "expectedCode": "HH",
+              "prediction": "xing2",
+              "base": "xing",
+              "exactBase": false,
+              "dictionaryFirst": "xing2",
+              "dictionaryFirstBase": "xing",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "xing2",
+                "hang2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "XK",
+              "predictionCode": "XK",
+              "dictionaryFirstCode": "XK",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "请走人行道。",
+          "targets": [
+            {
+              "index": 3,
+              "char": "行",
+              "expected": "xing",
+              "expectedCode": "XK",
+              "prediction": "xing2",
+              "base": "xing",
+              "exactBase": true,
+              "dictionaryFirst": "xing2",
+              "dictionaryFirstBase": "xing",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "xing2",
+                "hang2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "XK",
+              "predictionCode": "XK",
+              "dictionaryFirstCode": "XK",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "我写了一行代码。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "行",
+              "expected": "hang",
+              "expectedCode": "HH",
+              "prediction": "xing2",
+              "base": "xing",
+              "exactBase": false,
+              "dictionaryFirst": "xing2",
+              "dictionaryFirstBase": "xing",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "xing2",
+                "hang2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "XK",
+              "predictionCode": "XK",
+              "dictionaryFirstCode": "XK",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "这个计划行不通。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "行",
+              "expected": "xing",
+              "expectedCode": "XK",
+              "prediction": "xing2",
+              "base": "xing",
+              "exactBase": true,
+              "dictionaryFirst": "xing2",
+              "dictionaryFirstBase": "xing",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "xing2",
+                "hang2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "XK",
+              "predictionCode": "XK",
+              "dictionaryFirstCode": "XK",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "他是这个领域的行家。",
+          "targets": [
+            {
+              "index": 7,
+              "char": "行",
+              "expected": "hang",
+              "expectedCode": "HH",
+              "prediction": "xing2",
+              "base": "xing",
+              "exactBase": false,
+              "dictionaryFirst": "xing2",
+              "dictionaryFirstBase": "xing",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "xing2",
+                "hang2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "XK",
+              "predictionCode": "XK",
+              "dictionaryFirstCode": "XK",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "三百六十行，行行出状元。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "行",
+              "expected": "hang",
+              "expectedCode": "HH",
+              "prediction": "xing2",
+              "base": "xing",
+              "exactBase": false,
+              "dictionaryFirst": "xing2",
+              "dictionaryFirstBase": "xing",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "xing2",
+                "hang2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "XK",
+              "predictionCode": "XK",
+              "dictionaryFirstCode": "XK",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "校长看着孩子长大。",
+          "targets": [
+            {
+              "index": 1,
+              "char": "长",
+              "expected": "zhang",
+              "expectedCode": "VH",
+              "prediction": "chang2",
+              "base": "chang",
+              "exactBase": false,
+              "dictionaryFirst": "zhang3",
+              "dictionaryFirstBase": "zhang",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "zhang3",
+                "chang2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "IH",
+              "predictionCode": "IH",
+              "dictionaryFirstCode": "VH",
+              "sameCode": false,
+              "dictionaryFirstSameCode": true
+            },
+            {
+              "index": 6,
+              "char": "长",
+              "expected": "zhang",
+              "expectedCode": "VH",
+              "prediction": "zhang3",
+              "base": "zhang",
+              "exactBase": true,
+              "dictionaryFirst": "zhang3",
+              "dictionaryFirstBase": "zhang",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "zhang3",
+                "chang2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "VH",
+              "predictionCode": "VH",
+              "dictionaryFirstCode": "VH",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "这条路很长。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "长",
+              "expected": "chang",
+              "expectedCode": "IH",
+              "prediction": "zhang3",
+              "base": "zhang",
+              "exactBase": false,
+              "dictionaryFirst": "zhang3",
+              "dictionaryFirstBase": "zhang",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "zhang3",
+                "chang2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "VH",
+              "predictionCode": "VH",
+              "dictionaryFirstCode": "VH",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "我们去了长安。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "长",
+              "expected": "chang",
+              "expectedCode": "IH",
+              "prediction": "chang2",
+              "base": "chang",
+              "exactBase": true,
+              "dictionaryFirst": "zhang3",
+              "dictionaryFirstBase": "zhang",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "zhang3",
+                "chang2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "IH",
+              "predictionCode": "IH",
+              "dictionaryFirstCode": "VH",
+              "sameCode": true,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "请重新开始。",
+          "targets": [
+            {
+              "index": 1,
+              "char": "重",
+              "expected": "chong",
+              "expectedCode": "IS",
+              "prediction": "chong2",
+              "base": "chong",
+              "exactBase": true,
+              "dictionaryFirst": "zhong4",
+              "dictionaryFirstBase": "zhong",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "zhong4",
+                "chong2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "IS",
+              "predictionCode": "IS",
+              "dictionaryFirstCode": "VS",
+              "sameCode": true,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "这个箱子很重。",
+          "targets": [
+            {
+              "index": 5,
+              "char": "重",
+              "expected": "zhong",
+              "expectedCode": "VS",
+              "prediction": "zhong4",
+              "base": "zhong",
+              "exactBase": true,
+              "dictionaryFirst": "zhong4",
+              "dictionaryFirstBase": "zhong",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "zhong4",
+                "chong2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "VS",
+              "predictionCode": "VS",
+              "dictionaryFirstCode": "VS",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "他住在重庆。",
+          "targets": [
+            {
+              "index": 3,
+              "char": "重",
+              "expected": "chong",
+              "expectedCode": "IS",
+              "prediction": "chong2",
+              "base": "chong",
+              "exactBase": true,
+              "dictionaryFirst": "zhong4",
+              "dictionaryFirstBase": "zhong",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "zhong4",
+                "chong2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "IS",
+              "predictionCode": "IS",
+              "dictionaryFirstCode": "VS",
+              "sameCode": true,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "他承担了重担。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "重",
+              "expected": "zhong",
+              "expectedCode": "VS",
+              "prediction": "chong2",
+              "base": "chong",
+              "exactBase": false,
+              "dictionaryFirst": "zhong4",
+              "dictionaryFirstBase": "zhong",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "zhong4",
+                "chong2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "IS",
+              "predictionCode": "IS",
+              "dictionaryFirstCode": "VS",
+              "sameCode": false,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "他朝着北方走。",
+          "targets": [
+            {
+              "index": 1,
+              "char": "朝",
+              "expected": "chao",
+              "expectedCode": "IC",
+              "prediction": "chao2",
+              "base": "chao",
+              "exactBase": true,
+              "dictionaryFirst": "chao2",
+              "dictionaryFirstBase": "chao",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "chao2",
+                "zhao1"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "IC",
+              "predictionCode": "IC",
+              "dictionaryFirstCode": "IC",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "珍惜每个朝夕。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "朝",
+              "expected": "zhao",
+              "expectedCode": "VC",
+              "prediction": "chao2",
+              "base": "chao",
+              "exactBase": false,
+              "dictionaryFirst": "chao2",
+              "dictionaryFirstBase": "chao",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "chao2",
+                "zhao1"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "IC",
+              "predictionCode": "IC",
+              "dictionaryFirstCode": "IC",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "他住在北京朝阳区。",
+          "targets": [
+            {
+              "index": 5,
+              "char": "朝",
+              "expected": "chao",
+              "expectedCode": "IC",
+              "prediction": "chao2",
+              "base": "chao",
+              "exactBase": true,
+              "dictionaryFirst": "chao2",
+              "dictionaryFirstBase": "chao",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "chao2",
+                "zhao1"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "IC",
+              "predictionCode": "IC",
+              "dictionaryFirstCode": "IC",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "我喜欢音乐。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "乐",
+              "expected": "yue",
+              "expectedCode": "YT",
+              "prediction": "yue4",
+              "base": "yue",
+              "exactBase": true,
+              "dictionaryFirst": "le4",
+              "dictionaryFirstBase": "le",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "le4",
+                "yue4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "YT",
+              "predictionCode": "YT",
+              "dictionaryFirstCode": "LE",
+              "sameCode": true,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "祝你快乐。",
+          "targets": [
+            {
+              "index": 3,
+              "char": "乐",
+              "expected": "le",
+              "expectedCode": "LE",
+              "prediction": "yue4",
+              "base": "yue",
+              "exactBase": false,
+              "dictionaryFirst": "le4",
+              "dictionaryFirstBase": "le",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "le4",
+                "yue4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "YT",
+              "predictionCode": "YT",
+              "dictionaryFirstCode": "LE",
+              "sameCode": false,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "浙江乐清。",
+          "targets": [
+            {
+              "index": 2,
+              "char": "乐",
+              "expected": "yue",
+              "expectedCode": "YT",
+              "prediction": "yue4",
+              "base": "yue",
+              "exactBase": true,
+              "dictionaryFirst": "le4",
+              "dictionaryFirstBase": "le",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "le4",
+                "yue4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "YT",
+              "predictionCode": "YT",
+              "dictionaryFirstCode": "LE",
+              "sameCode": true,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "四川乐山。",
+          "targets": [
+            {
+              "index": 2,
+              "char": "乐",
+              "expected": "le",
+              "expectedCode": "LE",
+              "prediction": "yue4",
+              "base": "yue",
+              "exactBase": false,
+              "dictionaryFirst": "le4",
+              "dictionaryFirstBase": "le",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "le4",
+                "yue4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "YT",
+              "predictionCode": "YT",
+              "dictionaryFirstCode": "LE",
+              "sameCode": false,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "记得还钱。",
+          "targets": [
+            {
+              "index": 2,
+              "char": "还",
+              "expected": "huan",
+              "expectedCode": "HR",
+              "prediction": "huan2",
+              "base": "huan",
+              "exactBase": true,
+              "dictionaryFirst": "hai2",
+              "dictionaryFirstBase": "hai",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "hai2",
+                "huan2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "HR",
+              "predictionCode": "HR",
+              "dictionaryFirstCode": "HD",
+              "sameCode": true,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "他还在等。",
+          "targets": [
+            {
+              "index": 1,
+              "char": "还",
+              "expected": "hai",
+              "expectedCode": "HD",
+              "prediction": "hai2",
+              "base": "hai",
+              "exactBase": true,
+              "dictionaryFirst": "hai2",
+              "dictionaryFirstBase": "hai",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "hai2",
+                "huan2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "HD",
+              "predictionCode": "HD",
+              "dictionaryFirstCode": "HD",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "你觉得怎么样？",
+          "targets": [
+            {
+              "index": 1,
+              "char": "觉",
+              "expected": "jue",
+              "expectedCode": "JT",
+              "prediction": "jue2",
+              "base": "jue",
+              "exactBase": true,
+              "dictionaryFirst": "jue2",
+              "dictionaryFirstBase": "jue",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "jue2",
+                "jiao4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "JT",
+              "predictionCode": "JT",
+              "dictionaryFirstCode": "JT",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "他正在睡觉。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "觉",
+              "expected": "jiao",
+              "expectedCode": "JN",
+              "prediction": "jiao4",
+              "base": "jiao",
+              "exactBase": true,
+              "dictionaryFirst": "jue2",
+              "dictionaryFirstBase": "jue",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "jue2",
+                "jiao4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "JN",
+              "predictionCode": "JN",
+              "dictionaryFirstCode": "JT",
+              "sameCode": true,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "他看着门外。",
+          "targets": [
+            {
+              "index": 2,
+              "char": "着",
+              "expected": "zhe",
+              "expectedCode": "VE",
+              "prediction": "zhe5",
+              "base": "zhe",
+              "exactBase": true,
+              "dictionaryFirst": "zhe5",
+              "dictionaryFirstBase": "zhe",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "zhe5",
+                "zhao1",
+                "zhao2",
+                "zhuo2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "VE",
+              "predictionCode": "VE",
+              "dictionaryFirstCode": "VE",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "孩子睡着了。",
+          "targets": [
+            {
+              "index": 3,
+              "char": "着",
+              "expected": "zhao",
+              "expectedCode": "VC",
+              "prediction": "zhe5",
+              "base": "zhe",
+              "exactBase": false,
+              "dictionaryFirst": "zhe5",
+              "dictionaryFirstBase": "zhe",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "zhe5",
+                "zhao1",
+                "zhao2",
+                "zhuo2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "VE",
+              "predictionCode": "VE",
+              "dictionaryFirstCode": "VE",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "我们着手准备。",
+          "targets": [
+            {
+              "index": 2,
+              "char": "着",
+              "expected": "zhuo",
+              "expectedCode": "VO",
+              "prediction": "zhe5",
+              "base": "zhe",
+              "exactBase": false,
+              "dictionaryFirst": "zhe5",
+              "dictionaryFirstBase": "zhe",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "zhe5",
+                "zhao1",
+                "zhao2",
+                "zhuo2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "VE",
+              "predictionCode": "VE",
+              "dictionaryFirstCode": "VE",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "大家很着急。",
+          "targets": [
+            {
+              "index": 3,
+              "char": "着",
+              "expected": "zhao",
+              "expectedCode": "VC",
+              "prediction": "zhe5",
+              "base": "zhe",
+              "exactBase": false,
+              "dictionaryFirst": "zhe5",
+              "dictionaryFirstBase": "zhe",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "zhe5",
+                "zhao1",
+                "zhao2",
+                "zhuo2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "VE",
+              "predictionCode": "VE",
+              "dictionaryFirstCode": "VE",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "请系好鞋带。",
+          "targets": [
+            {
+              "index": 1,
+              "char": "系",
+              "expected": "ji",
+              "expectedCode": "JI",
+              "prediction": "xi4",
+              "base": "xi",
+              "exactBase": false,
+              "dictionaryFirst": "xi4",
+              "dictionaryFirstBase": "xi",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "xi4",
+                "ji4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "XI",
+              "predictionCode": "XI",
+              "dictionaryFirstCode": "XI",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "这件事没有关系。",
+          "targets": [
+            {
+              "index": 6,
+              "char": "系",
+              "expected": "xi",
+              "expectedCode": "XI",
+              "prediction": "xi4",
+              "base": "xi",
+              "exactBase": true,
+              "dictionaryFirst": "xi4",
+              "dictionaryFirstBase": "xi",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "xi4",
+                "ji4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "XI",
+              "predictionCode": "XI",
+              "dictionaryFirstCode": "XI",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "这两个东西差不多。",
+          "targets": [
+            {
+              "index": 5,
+              "char": "差",
+              "expected": "cha",
+              "expectedCode": "IA",
+              "prediction": "cha4",
+              "base": "cha",
+              "exactBase": true,
+              "dictionaryFirst": "cha4",
+              "dictionaryFirstBase": "cha",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "cha4",
+                "cha1",
+                "chai1"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "IA",
+              "predictionCode": "IA",
+              "dictionaryFirstCode": "IA",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "他去北京出差了。",
+          "targets": [
+            {
+              "index": 5,
+              "char": "差",
+              "expected": "chai",
+              "expectedCode": "ID",
+              "prediction": "chai1",
+              "base": "chai",
+              "exactBase": true,
+              "dictionaryFirst": "cha4",
+              "dictionaryFirstBase": "cha",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "cha4",
+                "cha1",
+                "chai1"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "ID",
+              "predictionCode": "ID",
+              "dictionaryFirstCode": "IA",
+              "sameCode": true,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "这种质量很差。",
+          "targets": [
+            {
+              "index": 5,
+              "char": "差",
+              "expected": "cha",
+              "expectedCode": "IA",
+              "prediction": "cha4",
+              "base": "cha",
+              "exactBase": true,
+              "dictionaryFirst": "cha4",
+              "dictionaryFirstBase": "cha",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "cha4",
+                "cha1",
+                "chai1"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "IA",
+              "predictionCode": "IA",
+              "dictionaryFirstCode": "IA",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "这些树参差不齐。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "差",
+              "expected": "ci",
+              "expectedCode": "CI",
+              "prediction": "cha1",
+              "base": "cha",
+              "exactBase": false,
+              "dictionaryFirst": "cha4",
+              "dictionaryFirstBase": "cha",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "cha4",
+                "cha1",
+                "chai1"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "IA",
+              "predictionCode": "IA",
+              "dictionaryFirstCode": "IA",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "我来参加会议。",
+          "targets": [
+            {
+              "index": 2,
+              "char": "参",
+              "expected": "can",
+              "expectedCode": "CJ",
+              "prediction": "can1",
+              "base": "can",
+              "exactBase": true,
+              "dictionaryFirst": "can1",
+              "dictionaryFirstBase": "can",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "can1",
+                "shen1"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "CJ",
+              "predictionCode": "CJ",
+              "dictionaryFirstCode": "CJ",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "这是野山参。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "参",
+              "expected": "shen",
+              "expectedCode": "UF",
+              "prediction": "can1",
+              "base": "can",
+              "exactBase": false,
+              "dictionaryFirst": "can1",
+              "dictionaryFirstBase": "can",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "can1",
+                "shen1"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "CJ",
+              "predictionCode": "CJ",
+              "dictionaryFirstCode": "CJ",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "这些树参差不齐。",
+          "targets": [
+            {
+              "index": 3,
+              "char": "参",
+              "expected": "cen",
+              "expectedCode": "CF",
+              "prediction": "can1",
+              "base": "can",
+              "exactBase": false,
+              "dictionaryFirst": "can1",
+              "dictionaryFirstBase": "can",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "can1",
+                "shen1"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "CJ",
+              "predictionCode": "CJ",
+              "dictionaryFirstCode": "CJ",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "德国柏林。",
+          "targets": [
+            {
+              "index": 2,
+              "char": "柏",
+              "expected": "bo",
+              "expectedCode": "BO",
+              "prediction": "bo2",
+              "base": "bo",
+              "exactBase": true,
+              "dictionaryFirst": "bai3",
+              "dictionaryFirstBase": "bai",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "bai3",
+                "bo2",
+                "bo4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "BO",
+              "predictionCode": "BO",
+              "dictionaryFirstCode": "BD",
+              "sameCode": true,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "门前有棵柏树。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "柏",
+              "expected": "bai",
+              "expectedCode": "BD",
+              "prediction": "bai3",
+              "base": "bai",
+              "exactBase": true,
+              "dictionaryFirst": "bai3",
+              "dictionaryFirstBase": "bai",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "bai3",
+                "bo2",
+                "bo4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "BD",
+              "predictionCode": "BD",
+              "dictionaryFirstCode": "BD",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "我已了解情况了。",
+          "targets": [
+            {
+              "index": 2,
+              "char": "了",
+              "expected": "liao",
+              "expectedCode": "LN",
+              "prediction": "le5",
+              "base": "le",
+              "exactBase": false,
+              "dictionaryFirst": "le5",
+              "dictionaryFirstBase": "le",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "le5",
+                "liao3",
+                "liao4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "LE",
+              "predictionCode": "LE",
+              "dictionaryFirstCode": "LE",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            },
+            {
+              "index": 6,
+              "char": "了",
+              "expected": "le",
+              "expectedCode": "LE",
+              "prediction": "le5",
+              "base": "le",
+              "exactBase": true,
+              "dictionaryFirst": "le5",
+              "dictionaryFirstBase": "le",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "le5",
+                "liao3",
+                "liao4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "LE",
+              "predictionCode": "LE",
+              "dictionaryFirstCode": "LE",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "这种事让人受不了。",
+          "targets": [
+            {
+              "index": 7,
+              "char": "了",
+              "expected": "liao",
+              "expectedCode": "LN",
+              "prediction": "le5",
+              "base": "le",
+              "exactBase": false,
+              "dictionaryFirst": "le5",
+              "dictionaryFirstBase": "le",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "le5",
+                "liao3",
+                "liao4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "LE",
+              "predictionCode": "LE",
+              "dictionaryFirstCode": "LE",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "他对这件事很好奇。",
+          "targets": []
+        },
+        {
+          "text": "单独行动。",
+          "targets": [
+            {
+              "index": 0,
+              "char": "单",
+              "expected": "dan",
+              "expectedCode": "DJ",
+              "prediction": "dan1",
+              "base": "dan",
+              "exactBase": true,
+              "dictionaryFirst": "dan1",
+              "dictionaryFirstBase": "dan",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "dan1",
+                "shan4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "DJ",
+              "predictionCode": "DJ",
+              "dictionaryFirstCode": "DJ",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "他是匈奴单于。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "单",
+              "expected": "chan",
+              "expectedCode": "IJ",
+              "prediction": "dan1",
+              "base": "dan",
+              "exactBase": false,
+              "dictionaryFirst": "dan1",
+              "dictionaryFirstBase": "dan",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "dan1",
+                "shan4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "DJ",
+              "predictionCode": "DJ",
+              "dictionaryFirstCode": "DJ",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "这位单先生来了。",
+          "targets": [
+            {
+              "index": 2,
+              "char": "单",
+              "expected": "shan",
+              "expectedCode": "UJ",
+              "prediction": "dan1",
+              "base": "dan",
+              "exactBase": false,
+              "dictionaryFirst": "dan1",
+              "dictionaryFirstBase": "dan",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "dan1",
+                "shan4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "DJ",
+              "predictionCode": "DJ",
+              "dictionaryFirstCode": "DJ",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "他曾经来过。",
+          "targets": [
+            {
+              "index": 1,
+              "char": "曾",
+              "expected": "ceng",
+              "expectedCode": "CG",
+              "prediction": "ceng2",
+              "base": "ceng",
+              "exactBase": true,
+              "dictionaryFirst": "ceng2",
+              "dictionaryFirstBase": "ceng",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "ceng2",
+                "zeng1"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "CG",
+              "predictionCode": "CG",
+              "dictionaryFirstCode": "CG",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "曾先生来了。",
+          "targets": [
+            {
+              "index": 0,
+              "char": "曾",
+              "expected": "zeng",
+              "expectedCode": "ZG",
+              "prediction": "ceng2",
+              "base": "ceng",
+              "exactBase": false,
+              "dictionaryFirst": "ceng2",
+              "dictionaryFirstBase": "ceng",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "ceng2",
+                "zeng1"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "CG",
+              "predictionCode": "CG",
+              "dictionaryFirstCode": "CG",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "请解开绳子。",
+          "targets": [
+            {
+              "index": 1,
+              "char": "解",
+              "expected": "jie",
+              "expectedCode": "JP",
+              "prediction": "jie3",
+              "base": "jie",
+              "exactBase": true,
+              "dictionaryFirst": "jie3",
+              "dictionaryFirstBase": "jie",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "jie3",
+                "xie4",
+                "jie4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "JP",
+              "predictionCode": "JP",
+              "dictionaryFirstCode": "JP",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "解先生来了。",
+          "targets": [
+            {
+              "index": 0,
+              "char": "解",
+              "expected": "xie",
+              "expectedCode": "XP",
+              "prediction": "jie3",
+              "base": "jie",
+              "exactBase": false,
+              "dictionaryFirst": "jie3",
+              "dictionaryFirstBase": "jie",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "jie3",
+                "xie4",
+                "jie4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "JP",
+              "predictionCode": "JP",
+              "dictionaryFirstCode": "JP",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "这是阿胶。",
+          "targets": [
+            {
+              "index": 2,
+              "char": "阿",
+              "expected": "e",
+              "expectedCode": "EE",
+              "prediction": "a1",
+              "base": "a",
+              "exactBase": false,
+              "dictionaryFirst": "a1",
+              "dictionaryFirstBase": "a",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "a1",
+                "e1"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "AA",
+              "predictionCode": "AA",
+              "dictionaryFirstCode": "AA",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "阿姨来了。",
+          "targets": [
+            {
+              "index": 0,
+              "char": "阿",
+              "expected": "a",
+              "expectedCode": "AA",
+              "prediction": "a1",
+              "base": "a",
+              "exactBase": true,
+              "dictionaryFirst": "a1",
+              "dictionaryFirstBase": "a",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "a1",
+                "e1"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "AA",
+              "predictionCode": "AA",
+              "dictionaryFirstCode": "AA",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "福建厦门。",
+          "targets": [
+            {
+              "index": 2,
+              "char": "厦",
+              "expected": "xia",
+              "expectedCode": "XX",
+              "prediction": "xia4",
+              "base": "xia",
+              "exactBase": true,
+              "dictionaryFirst": "sha4",
+              "dictionaryFirstBase": "sha",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "sha4",
+                "xia4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "XX",
+              "predictionCode": "XX",
+              "dictionaryFirstCode": "UA",
+              "sameCode": true,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "远处有一座大厦。",
+          "targets": [
+            {
+              "index": 6,
+              "char": "厦",
+              "expected": "sha",
+              "expectedCode": "UA",
+              "prediction": "sha4",
+              "base": "sha",
+              "exactBase": true,
+              "dictionaryFirst": "sha4",
+              "dictionaryFirstBase": "sha",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "sha4",
+                "xia4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "UA",
+              "predictionCode": "UA",
+              "dictionaryFirstCode": "UA",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "这是薄荷叶。",
+          "targets": [
+            {
+              "index": 2,
+              "char": "薄",
+              "expected": "bo",
+              "expectedCode": "BO",
+              "prediction": "bo4",
+              "base": "bo",
+              "exactBase": true,
+              "dictionaryFirst": "bao2",
+              "dictionaryFirstBase": "bao",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "bao2",
+                "bo2",
+                "bo4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "BO",
+              "predictionCode": "BO",
+              "dictionaryFirstCode": "BC",
+              "sameCode": true,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "切成一张薄片。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "薄",
+              "expected": "bao",
+              "expectedCode": "BC",
+              "prediction": "bao2",
+              "base": "bao",
+              "exactBase": true,
+              "dictionaryFirst": "bao2",
+              "dictionaryFirstBase": "bao",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "bao2",
+                "bo2",
+                "bo4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "BC",
+              "predictionCode": "BC",
+              "dictionaryFirstCode": "BC",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "这个环节比较薄弱。",
+          "targets": [
+            {
+              "index": 6,
+              "char": "薄",
+              "expected": "bo",
+              "expectedCode": "BO",
+              "prediction": "bo2",
+              "base": "bo",
+              "exactBase": true,
+              "dictionaryFirst": "bao2",
+              "dictionaryFirstBase": "bao",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "bao2",
+                "bo2",
+                "bo4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "BO",
+              "predictionCode": "BO",
+              "dictionaryFirstCode": "BC",
+              "sameCode": true,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "给予帮助。",
+          "targets": [
+            {
+              "index": 0,
+              "char": "给",
+              "expected": "ji",
+              "expectedCode": "JI",
+              "prediction": "gei3",
+              "base": "gei",
+              "exactBase": false,
+              "dictionaryFirst": "gei3",
+              "dictionaryFirstBase": "gei",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "gei3",
+                "ji3"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "GW",
+              "predictionCode": "GW",
+              "dictionaryFirstCode": "GW",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "请给我一本书。",
+          "targets": [
+            {
+              "index": 1,
+              "char": "给",
+              "expected": "gei",
+              "expectedCode": "GW",
+              "prediction": "gei3",
+              "base": "gei",
+              "exactBase": true,
+              "dictionaryFirst": "gei3",
+              "dictionaryFirstBase": "gei",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "gei3",
+                "ji3"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "GW",
+              "predictionCode": "GW",
+              "dictionaryFirstCode": "GW",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "这个东西很便宜。",
+          "targets": [
+            {
+              "index": 5,
+              "char": "便",
+              "expected": "pian",
+              "expectedCode": "PM",
+              "prediction": "pian2",
+              "base": "pian",
+              "exactBase": true,
+              "dictionaryFirst": "bian4",
+              "dictionaryFirstBase": "bian",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "bian4",
+                "pian2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "PM",
+              "predictionCode": "PM",
+              "dictionaryFirstCode": "BM",
+              "sameCode": true,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "这里交通便利。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "便",
+              "expected": "bian",
+              "expectedCode": "BM",
+              "prediction": "bian4",
+              "base": "bian",
+              "exactBase": true,
+              "dictionaryFirst": "bian4",
+              "dictionaryFirstBase": "bian",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "bian4",
+                "pian2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "BM",
+              "predictionCode": "BM",
+              "dictionaryFirstCode": "BM",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "请你先和面。",
+          "targets": [
+            {
+              "index": 3,
+              "char": "和",
+              "expected": "huo",
+              "expectedCode": "HO",
+              "prediction": "he2",
+              "base": "he",
+              "exactBase": false,
+              "dictionaryFirst": "he2",
+              "dictionaryFirstBase": "he",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "he2",
+                "he4",
+                "hu2",
+                "huo2",
+                "huo4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "HE",
+              "predictionCode": "HE",
+              "dictionaryFirstCode": "HE",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "他为人和气。",
+          "targets": [
+            {
+              "index": 3,
+              "char": "和",
+              "expected": "he",
+              "expectedCode": "HE",
+              "prediction": "he2",
+              "base": "he",
+              "exactBase": true,
+              "dictionaryFirst": "he2",
+              "dictionaryFirstBase": "he",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "he2",
+                "he4",
+                "hu2",
+                "huo2",
+                "huo4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "HE",
+              "predictionCode": "HE",
+              "dictionaryFirstCode": "HE",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "不要随声附和。",
+          "targets": [
+            {
+              "index": 5,
+              "char": "和",
+              "expected": "he",
+              "expectedCode": "HE",
+              "prediction": "he2",
+              "base": "he",
+              "exactBase": true,
+              "dictionaryFirst": "he2",
+              "dictionaryFirstBase": "he",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "he2",
+                "he4",
+                "hu2",
+                "huo2",
+                "huo4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "HE",
+              "predictionCode": "HE",
+              "dictionaryFirstCode": "HE",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "他说服了同学。",
+          "targets": [
+            {
+              "index": 1,
+              "char": "说",
+              "expected": "shuo",
+              "expectedCode": "UO",
+              "prediction": "shuo1",
+              "base": "shuo",
+              "exactBase": true,
+              "dictionaryFirst": "shuo1",
+              "dictionaryFirstBase": "shuo",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "shuo1",
+                "shui4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "UO",
+              "predictionCode": "UO",
+              "dictionaryFirstCode": "UO",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "他去游说。",
+          "targets": [
+            {
+              "index": 3,
+              "char": "说",
+              "expected": "shui",
+              "expectedCode": "UV",
+              "prediction": "shuo1",
+              "base": "shuo",
+              "exactBase": false,
+              "dictionaryFirst": "shuo1",
+              "dictionaryFirstBase": "shuo",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "shuo1",
+                "shui4"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "UO",
+              "predictionCode": "UO",
+              "dictionaryFirstCode": "UO",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "他有倔强的性格。",
+          "targets": [
+            {
+              "index": 3,
+              "char": "强",
+              "expected": "jiang",
+              "expectedCode": "JL",
+              "prediction": "qiang2",
+              "base": "qiang",
+              "exactBase": false,
+              "dictionaryFirst": "qiang2",
+              "dictionaryFirstBase": "qiang",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "qiang2",
+                "jiang4",
+                "qiang3"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "QL",
+              "predictionCode": "QL",
+              "dictionaryFirstCode": "QL",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        },
+        {
+          "text": "我们强迫他离开。",
+          "targets": [
+            {
+              "index": 2,
+              "char": "强",
+              "expected": "qiang",
+              "expectedCode": "QL",
+              "prediction": "qiang2",
+              "base": "qiang",
+              "exactBase": true,
+              "dictionaryFirst": "qiang2",
+              "dictionaryFirstBase": "qiang",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "qiang2",
+                "jiang4",
+                "qiang3"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "QL",
+              "predictionCode": "QL",
+              "dictionaryFirstCode": "QL",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "记载这些故事。",
+          "targets": [
+            {
+              "index": 1,
+              "char": "载",
+              "expected": "zai",
+              "expectedCode": "ZD",
+              "prediction": "zai4",
+              "base": "zai",
+              "exactBase": true,
+              "dictionaryFirst": "zai4",
+              "dictionaryFirstBase": "zai",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "zai4",
+                "zai3"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "ZD",
+              "predictionCode": "ZD",
+              "dictionaryFirstCode": "ZD",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "这辆车可以载重三吨。",
+          "targets": [
+            {
+              "index": 5,
+              "char": "载",
+              "expected": "zai",
+              "expectedCode": "ZD",
+              "prediction": "zai4",
+              "base": "zai",
+              "exactBase": true,
+              "dictionaryFirst": "zai4",
+              "dictionaryFirstBase": "zai",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "zai4",
+                "zai3"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "ZD",
+              "predictionCode": "ZD",
+              "dictionaryFirstCode": "ZD",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "这衣服真漂亮。",
+          "targets": [
+            {
+              "index": 4,
+              "char": "漂",
+              "expected": "piao",
+              "expectedCode": "PN",
+              "prediction": "piao4",
+              "base": "piao",
+              "exactBase": true,
+              "dictionaryFirst": "piao4",
+              "dictionaryFirstBase": "piao",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "piao4",
+                "piao1",
+                "piao3"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "PN",
+              "predictionCode": "PN",
+              "dictionaryFirstCode": "PN",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "小船漂在水上。",
+          "targets": [
+            {
+              "index": 2,
+              "char": "漂",
+              "expected": "piao",
+              "expectedCode": "PN",
+              "prediction": "piao1",
+              "base": "piao",
+              "exactBase": true,
+              "dictionaryFirst": "piao4",
+              "dictionaryFirstBase": "piao",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "piao4",
+                "piao1",
+                "piao3"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "PN",
+              "predictionCode": "PN",
+              "dictionaryFirstCode": "PN",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "我们准备去漂白衣服。",
+          "targets": [
+            {
+              "index": 5,
+              "char": "漂",
+              "expected": "piao",
+              "expectedCode": "PN",
+              "prediction": "piao3",
+              "base": "piao",
+              "exactBase": true,
+              "dictionaryFirst": "piao4",
+              "dictionaryFirstBase": "piao",
+              "dictionaryFirstExact": true,
+              "dictionaryCandidates": [
+                "piao4",
+                "piao1",
+                "piao3"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "PN",
+              "predictionCode": "PN",
+              "dictionaryFirstCode": "PN",
+              "sameCode": true,
+              "dictionaryFirstSameCode": true
+            }
+          ]
+        },
+        {
+          "text": "English 2026\n银行，行走。𠀀😀，A股。",
+          "targets": [
+            {
+              "index": 14,
+              "char": "行",
+              "expected": "hang",
+              "expectedCode": "HH",
+              "prediction": "xing2",
+              "base": "xing",
+              "exactBase": false,
+              "dictionaryFirst": "xing2",
+              "dictionaryFirstBase": "xing",
+              "dictionaryFirstExact": false,
+              "dictionaryCandidates": [
+                "xing2",
+                "hang2"
+              ],
+              "modelVocabularyKnown": true,
+              "neuralEligible": true,
+              "actualCode": "XK",
+              "predictionCode": "XK",
+              "dictionaryFirstCode": "XK",
+              "sameCode": false,
+              "dictionaryFirstSameCode": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "localDefaultArticleAggregates": {
+    "source": "authorized local HY.txt; only aggregate counts recorded; no source sent to a service",
+    "hanOccurrences": 1840,
+    "modes": {
+      "shuangpin": {
+        "trainableOccurrences": 1840,
+        "ambiguousOccurrences": 503,
+        "sameCodeOnlyOccurrences": 232,
+        "differentCodeOrUnavailableOccurrences": 271,
+        "readingOnlyChoiceOccurrences": 0,
+        "uniqueCounts": {
+          "ambiguous": 116,
+          "sameCodeOnly": 59,
+          "differentCodeOrUnavailable": 57
+        }
+      },
+      "fourCodeOnly": {
+        "trainableOccurrences": 1815,
+        "ambiguousOccurrences": 488,
+        "sameCodeOnlyOccurrences": 232,
+        "differentCodeOrUnavailableOccurrences": 256,
+        "readingOnlyChoiceOccurrences": 3,
+        "uniqueCounts": {
+          "ambiguous": 113,
+          "sameCodeOnly": 59,
+          "differentCodeOrUnavailable": 54
+        }
+      }
+    }
+  }
+}

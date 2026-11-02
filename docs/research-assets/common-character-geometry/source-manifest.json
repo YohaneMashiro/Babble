@@ -1,0 +1,108 @@
+{
+  "modified": "2026-10-30",
+  "modifications": "Rendered unchanged ordered source outlines; colors and numeric stroke indices show authored first/last research scopes; gray strokes remain unexpanded. This is not full Xiaohe teaching.",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/README.md",
+      "bytes": 2480,
+      "sha256": "e682a6485ca67834f6c5e360c56c4918d91b2f74aafaba5903f047eb1c0753f5"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/ARPHICPL.TXT",
+      "bytes": 6900,
+      "sha256": "5590533436c70f10f2f524ee61456238c290175c6662fbe1c700b5f038a6d328"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/package.json",
+      "bytes": 518,
+      "sha256": "7bb3ebcd7157fff2d29bfdcdb51077228464900e6c094e46741e00765a988a7d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/data/%E5%8D%87.json",
+      "bytes": 1275,
+      "sha256": "7d8495522cb3e2987725ea05a813f0d8f7e34a632ac2ba4b886058fdcb5febde"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/data/%E6%97%A0.json",
+      "bytes": 1427,
+      "sha256": "d9f4dce9455d8747047d9633761ccb89bbaa600ccf04288d59710070f3caf281"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/data/%E6%96%AD.json",
+      "bytes": 2993,
+      "sha256": "90a83d779d07deaca20419f09ddfd8d60bf41f218c7ff5db1132b0612fc4557a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/data/%E8%A7%81.json",
+      "bytes": 1566,
+      "sha256": "38f248a32907c2061fe800b7217847f07181ec6ecfa421e194e020426b79ec3d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/data/%E7%94%9F.json",
+      "bytes": 1431,
+      "sha256": "dbe556919f5c0a95448c40997dfce35ad56ebf26d874218e7076d8c12374cfd8"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/data/%E7%BB%A7.json",
+      "bytes": 2832,
+      "sha256": "7dce96070719b23bba5783960778e8b1447d33adcb87ada31629818e47221c62"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/data/%E5%A4%9C.json",
+      "bytes": 2356,
+      "sha256": "7f31c7256f40ac7a61aee770c99676b67270322be858b2dc0f3c7f4fe39ca6da"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/data/%E5%A4%A7.json",
+      "bytes": 1034,
+      "sha256": "83c82950e903c915aa50d0d62b084a2d31c85fe68dce21e0acf39e2f9607e611"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/data/%E7%89%9B.json",
+      "bytes": 1271,
+      "sha256": "cb0c578ebb919ca2ad759cc8a79159f1eff623ae7f57dacca26a1bbbc523ab98"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/data/%E4%BA%BA.json",
+      "bytes": 659,
+      "sha256": "18ffb9fb727576b0c3e7dc44914be7ffd43164de9ba121710824b83f27bd3bb1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/data/%E4%B8%80.json",
+      "bytes": 373,
+      "sha256": "ed728673d86fb9aa559c5b150e59ffbee666b085d4a55597c524079a91ebc8ce"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/data/%E5%84%BF.json",
+      "bytes": 848,
+      "sha256": "9f1e8515ba0fbf39f3b03e0fdd2342771f0c7197fff7c2ceee64674b95bf2c68"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/data/%E5%BB%BE.json",
+      "bytes": 1076,
+      "sha256": "c47a99cab3a07430aea7e784ede933649f534824a96c3c405da7ff6577404b4a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chanind/hanzi-writer-data/68d10a4b21150cae5e1ebbd223eed289cf32d90c/data/%E5%B0%A2.json",
+      "bytes": 1179,
+      "sha256": "d353691a1aa36693cc18153f1704fe822dd5c0b8d9a4781413df5130678bdd63"
+    }
+  ],
+  "distributedArtifacts": [
+    {
+      "file": "geometry-sheet.png",
+      "bytes": 160787,
+      "sha256": "5b5eb054e7f111e7e65c5887105ddebfab51afcbd09278b6e50f69d8cd532e2a"
+    },
+    {
+      "file": "ARPHICPL.TXT",
+      "bytes": 6900,
+      "sha256": "5590533436c70f10f2f524ee61456238c290175c6662fbe1c700b5f038a6d328"
+    },
+    {
+      "file": "NOTICE.md",
+      "bytes": 701,
+      "sha256": "f44c7f79ff0cdce6ce64684b4125d3b5614cfcbae5625b6f58e4e7ed0076dc54"
+    }
+  ]
+}

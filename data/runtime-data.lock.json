@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "generator": {
+    "id": "babble-lossless-runtime",
+    "version": "1.0.0",
+    "files": [
+      {
+        "path": "scripts/pack-runtime-data.mjs",
+        "sha256": "7c608b1bf4a54282ce80e6986fb826d5b6d5f5dc3dbc6aa18eeaf75d35d93613",
+        "bytes": 9935
+      },
+      {
+        "path": "src/data/runtime-codec.ts",
+        "sha256": "2c631d74ca382485ba554af2574153fd6627cc6b8bd1293630e459275409d2bc",
+        "bytes": 8863
+      },
+      {
+        "path": "data/NOTICE-runtime-data.md",
+        "sha256": "8fead4af951e35255b362046bf89098f5767e51bdf08938d5c35bc80f8603124",
+        "bytes": 1811
+      }
+    ]
+  },
+  "sourceLocks": [
+    {
+      "path": "data/sources.lock.json",
+      "sha256": "a2f8f387d7c179b741ad5d3e8e99a3937dd53b7bbcfa4952646df0c038808692"
+    },
+    {
+      "path": "data/shape-sources.lock.json",
+      "sha256": "104fc74e4d76c1bc636c7f411c2109ac8db12899dc1f42557b736cb4b713af65"
+    },
+    {
+      "path": "data/shape-expansion.lock.json",
+      "sha256": "9128b16303b6d833dbf4fe333a070167572a49031b04934a59e14480e32f5a26"
+    },
+    {
+      "path": "data/shape-expansion-inputs.lock.json",
+      "sha256": "ca78cf145f6a502f1ded276589551b628761fad0cdb2ae7502b56d497b4a5d70"
+    }
+  ],
+  "canonical": [
+    {
+      "path": "src/data/generated/readings.json",
+      "sha256": "f8347fc97e9ecbb593e770dd72e7c4814c3ea488aea179a2089367f6ada260fb",
+      "bytes": 3218048,
+      "characters": 44348
+    },
+    {
+      "path": "src/data/generated/shape-traces.json",
+      "sha256": "0fa139ecc338c6ce6991749f93c1ba9356254c1cc4ede42b0f7a79359dbf6c17",
+      "bytes": 989573,
+      "characters": 6596
+    },
+    {
+      "path": "src/data/generated/shape-expansion.json",
+      "sha256": "5c232ab043b15c3631db40b4b32996d401674e433147a8afa9ed40d89c974fe6",
+      "bytes": 523377,
+      "characters": 1570
+    }
+  ],
+  "derived": [
+    {
+      "path": "src/data/generated/runtime-readings.json",
+      "sha256": "9bfd70f2fa744e45d01ceb7e967ad4789534635a4f5630121b9c46cc28ba2081",
+      "bytes": 841335,
+      "characters": 44348
+    },
+    {
+      "path": "src/data/generated/runtime-shape-traces.json",
+      "sha256": "ea8484f154b89664f0d1d10924123f4b6d4af43cb125b4df461e8a8a962b9b1b",
+      "bytes": 514858,
+      "characters": 6596
+    },
+    {
+      "path": "src/data/generated/runtime-shape-expansion.json",
+      "sha256": "4a70ca8c6efecb8b985b0a5f1e9c8e8d3c3be2fe49469d508263e6e9a0d433ed",
+      "bytes": 278021,
+      "characters": 1570
+    }
+  ],
+  "encoding": {
+    "readings": "[character, ordered pinyin dictionary IDs, ordered provenance masks, optional frequency]; absent frequency differs from zero",
+    "readingMasks": {
+      "kMandarin": 1,
+      "kTGHZ2013": 2,
+      "order": [
+        "kMandarin",
+        "kTGHZ2013"
+      ]
+    },
+    "shapes": "[character, codes, firstRoot, lastRoot, firstRootPath, lastRootPath, idsTree]",
+    "expansion": "shape tuple plus ordered source-ID-set dictionary ID and notes",
+    "metadata": "All canonical metadata is retained verbatim; dictionaries use first occurrence order."
+  },
+  "reproduction": {
+    "generate": "npm run generate:runtime",
+    "check": "npm run check:runtime",
+    "policy": "Derived outputs only. Frozen source locks and every locally pinned source/input are verified; no upstream relock or network access."
+  },
+  "notice": "data/NOTICE-runtime-data.md"
+}

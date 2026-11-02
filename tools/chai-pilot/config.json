@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "name": "babble-xiaohe-baseline-v1",
+  "upstreamCommit": "f5a8c42fe93adc218014d22499f18d62449d5fc2",
+  "glyphSources": ["G"],
+  "analysis": {
+    "degenerator": { "feature": { "提": "横" }, "no_cross": true },
+    "classifier": { "捺": 6, "平捺": 6, "挑捺": 6 },
+    "selector": ["全符笔顺", "首末取大", "根少优先"]
+  },
+  "excludeTargetAsRoot": true,
+  "strokeClasses": {
+    "1": { "root": "一", "key": "a" },
+    "2": { "root": "丨", "key": "l" },
+    "3": { "root": "丿", "key": "p" },
+    "4": { "root": "丶", "key": "d" },
+    "5": { "root": "乛", "key": "v" },
+    "6": { "root": "ㄟ", "key": "n" }
+  },
+  "defaultCharacters": "走现声其无生大带见平延欺背举升即夜断继蝉蠢视觉途",
+  "controlCharacters": "某你我中木水花是不书",
+  "limitations": [
+    "This is an experimental baseline, not a complete Xiaohe configuration.",
+    "The target itself is excluded from the root inventory for that target; no complete single-root-character policy is implemented.",
+    "First/last root inventories come from the existing licensed libre-flypy source; segmentation uses their union and rejects endpoints absent from the corresponding side.",
+    "Named components, Xiaohe-derived small characters, insertion/separation and enclosure priorities still need explicit definitions and regressions.",
+    "A reference match is a review candidate, never authorization to publish the remote glyph data or an automatic runtime import."
+  ]
+}

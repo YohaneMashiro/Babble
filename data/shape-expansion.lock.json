@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "auditedAt": "2026-10-26",
+  "generator": {
+    "id": "babble-shape-expansion-v1",
+    "version": "1.0.0",
+    "path": "tools/shape-expansion/generate.py",
+    "sha256": "a915e02158b399ab3895b1e06b0f67a4b30918a97f71df0db2a7d4a208971edf",
+    "license": "AGPL-3.0-only"
+  },
+  "inputLock": "data/shape-expansion-inputs.lock.json",
+  "researchReference": {
+    "url": "https://flypy.cc/ix/ixdata.json",
+    "discoveredVia": "https://flypy.cc/ix/",
+    "sha256": "6968764d45720778e5c9a462c2807cf5cf9acbb34f2cdc4585be6025de6b1db1",
+    "redistribution": "unconfirmed; not redistributed",
+    "use": "External negative validator only; no reference field is copied into generated records."
+  },
+  "selectionPolicy": [
+    "Use only licensed source character decompositions, root-key definitions, Unicode equivalences, stroke sequences, and modern readings.",
+    "First and last derivations share the same top-level decomposition; recursively follow only the corresponding ordered boundary.",
+    "Canonicalize six stroke classes and Unicode equivalent radical glyphs with traceable source paths.",
+    "Generate sound keys from modern Unihan readings and the pinned sound scheme; shape keys come from traced source root/stroke rules.",
+    "Require exact generated full-code agreement and root-glyph agreement; strip only an explicit trailing romanized pronunciation annotation in the validator.",
+    "Exclude private-use, missing and replacement roots; keep the legacy artifact unchanged.",
+    "Supplemental generated codes retain the tool/input licensing and are not labelled as CC0 release records."
+  ],
+  "files": {
+    "data/shape-expansion-inputs.lock.json": "ca78cf145f6a502f1ded276589551b628761fad0cdb2ae7502b56d497b4a5d70",
+    "src/data/generated/readings.json": "f8347fc97e9ecbb593e770dd72e7c4814c3ea488aea179a2089367f6ada260fb",
+    "src/data/generated/shape-traces.json": "0fa139ecc338c6ce6991749f93c1ba9356254c1cc4ede42b0f7a79359dbf6c17",
+    "src/data/generated/sound-mapping.json": "71b8e6850c77d28b0e4e271c3d7a808a569e1eaecfee553dc31e58b1514c77a9",
+    "tools/libre-flypy-audit/inputs/ids_lv2.txt": "08c3706ff884b37fdcdbd63851f4f30f36ea59be8643f771085bbdbe31ce4b9d",
+    "tools/libre-flypy-audit/my_ids.txt": "9190bc1fe722153dac9b8326639da8bc11c8c9bb9cc243b3157ea1899218aa7a",
+    "tools/libre-flypy-audit/src/roots.rs": "a225c7d6bf881df18d58f85dafed280b31746f68812dd10ba503323d59ab5604",
+    "tools/shape-expansion/inputs/CC-BY-3.0.txt": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+    "tools/shape-expansion/inputs/CHAIZI-LICENSE": "243ce65e3a5a24669b08b5b6d25e82e961dfc747f841f04f199126a218968100",
+    "tools/shape-expansion/inputs/CHAIZI-README.md": "9b52172aaf8f6170e475288706ce095ab7b5f8d5b1815e75ebf72ffa0b8fcfee",
+    "tools/shape-expansion/inputs/EquivalentUnifiedIdeograph.txt": "38619c05a17e771554000fe604afee92e10eb49e0616ecf0c87af3c1eb0f4320",
+    "tools/shape-expansion/inputs/STROKES-LICENSE": "9df7a478e61e42c7cfd326bc174f595d61f6927512c051466a78defa9840ed17",
+    "tools/shape-expansion/inputs/STROKES-README.md": "c2a53a782358bafa2367d689095a5bf423b08c4abe6ddbc12c15015502b60434",
+    "tools/shape-expansion/inputs/Strokes.txt": "314bb2f74362eda6ba504a345fd12ad2b743010e9ea0a9cfd1cd0743903f2f1e",
+    "tools/shape-expansion/inputs/UNICODE-LICENSE": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96",
+    "tools/shape-expansion/inputs/chaizi-ft.txt": "474659d99bd43573f24c62cc5c4b19b67169f4e1647ebf0249b0762a59f4d2b7",
+    "tools/shape-expansion/inputs/chaizi-jt.txt": "c341a99fc6a4a4f3169279c451ca55057a22603a5d7a520094378f65e817ad26"
+  },
+  "expected": {
+    "candidateRootPairsTested": 329537,
+    "independentlyDerivedAcceptedCharacters": 8069,
+    "independentlyDerivedAcceptedCodes": 8392,
+    "supplementalCharacters": 1570,
+    "supplementalUniqueCodes": 1630,
+    "legacyShapeCharacters": 6596,
+    "combinedShapeCharacters": 8166
+  },
+  "generated": {
+    "path": "src/data/generated/shape-expansion.json",
+    "sha256": "5c232ab043b15c3631db40b4b32996d401674e433147a8afa9ed40d89c974fe6"
+  }
+}

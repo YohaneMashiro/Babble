@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "policyId": "radical-aliases-public-rules-bounded-v1",
+  "prefix": "OK",
+  "componentCounts": [
+    2,
+    3
+  ],
+  "maximumCombinationsPerSourceRow": 256,
+  "shardCodepointShift": 10,
+  "globalComponentRules": {
+    "辶": {
+      "pinyin": "zhi",
+      "code": "VI"
+    },
+    "廴": {
+      "pinyin": "zhi",
+      "code": "VI"
+    },
+    "礻": {
+      "pinyin": "pie",
+      "code": "PP"
+    },
+    "衤": {
+      "pinyin": "pie",
+      "code": "PP"
+    }
+  },
+  "globalRuleEvidence": {
+    "id": "flypy-public-component-spelling-rule",
+    "url": "https://flypy.cc/help/#/pc",
+    "locator": "第八节：OK拼字；辶廴vi、礻衤pp",
+    "checkedDocumentSha256": "e5f57ba87405b4c82ea8debccd56ae7f6b050d4818caf157f94c596e4d1a6fe6",
+    "scope": "Original structured record of four public global spelling rules; not a copy of a dictionary or tutorial."
+  },
+  "expectedFixedBaseline": {
+    "candidateCharacters": 89189,
+    "candidatePairs": 112553,
+    "confirmedCharacters": 59926,
+    "confirmedPairs": 59930
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "retrievedAt": "2026-10-25",
+  "sources": [
+    {
+      "id": "unicode-unihan-17.0.0",
+      "name": "Unicode Unihan 17.0.0: modern Mandarin readings and frequency counts",
+      "author": "Unicode, Inc.; Unihan contributors; kHanyuPinlu digitization and proofing by Richard Cook with contributors documented in UAX #38",
+      "version": "17.0.0",
+      "sourceUrl": "https://www.unicode.org/Public/17.0.0/ucd/Unihan.zip",
+      "documentationUrl": "https://www.unicode.org/reports/tr38/tr38-39.html",
+      "license": "Unicode-3.0",
+      "licenseUrl": "https://www.unicode.org/license.txt",
+      "noticeFile": "data/NOTICE-Unicode.txt",
+      "artifacts": {
+        "archive": {
+          "url": "https://www.unicode.org/Public/17.0.0/ucd/Unihan.zip",
+          "sha256": "f7a48b2b545acfaa77b2d607ae28747404ce02baefee16396c5d2d7a8ef34b5e",
+          "bytes": 8518517
+        },
+        "readings": {
+          "archiveMember": "Unihan_Readings.txt",
+          "sha256": "575e69c9ad85a4737a889a4f94cbd987042a90a1a6cc16dd3f4ed995c715b17c",
+          "bytes": 8843048,
+          "properties": [
+            "kMandarin",
+            "kTGHZ2013",
+            "kHanyuPinlu"
+          ]
+        },
+        "license": {
+          "url": "https://www.unicode.org/license.txt",
+          "sha256": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96"
+        }
+      },
+      "modifications": [
+        "Extract only kMandarin, kTGHZ2013 and kHanyuPinlu from the pinned archive.",
+        "Preserve kMandarin source order; append distinct kTGHZ2013 modern readings; retain field provenance per reading.",
+        "Normalize readings to Unicode NFC; retain tone marks and neutral tone spelling; do not infer pronunciation from context.",
+        "Sum kHanyuPinlu pronunciation counts per character; keep missing frequency absent rather than zero.",
+        "Exclude kHanyuPinyin and kXHC1983 to avoid silently accepting historical or rare dictionary readings as modern defaults.",
+        "Do not deduplicate simplified and traditional counts or compute corpus coverage percentages from this derivative."
+      ],
+      "generated": {
+        "path": "src/data/generated/readings.json",
+        "importer": "scripts/import-unihan.py",
+        "sha256": "f8347fc97e9ecbb593e770dd72e7c4814c3ea488aea179a2089367f6ada260fb",
+        "bytes": 3218048
+      },
+      "redistributionStatus": "adopted-with-notice",
+      "notes": "A pinned historical Unicode release is intentional; this is not a claim to include the newest Unicode release. kHanyuPinlu uses the 1986 frequency dictionary's 1,807,389-ideograph corpus across four genres, with duplicated counts possible for simplified/traditional forms. It is not a current Internet ranking.",
+      "noticeSha256": "a5d94080d80e1fd0b0313b7417ca07e927eb48c6139c19ddc025e19ca698e44a"
+    },
+    {
+      "id": "shuangpin-practice-xiaohe-4927919",
+      "name": "Zhuluo shuangpin-practice: Xiaohe initial, final and zero-initial mapping",
+      "author": "sharebravery (许多言); Xiaohe layout designed by 何海峰（散步的鹤）",
+      "version": "4927919362cadcda6e61375a04bc75a1e47e6639",
+      "sourceUrl": "https://github.com/sharebravery/shuangpin-practice/blob/4927919362cadcda6e61375a04bc75a1e47e6639/src/data/schemes.ts",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/sharebravery/shuangpin-practice/blob/4927919362cadcda6e61375a04bc75a1e47e6639/LICENSE",
+      "noticeFile": "data/NOTICE-shuangpin-practice.txt",
+      "artifacts": {
+        "mapping": {
+          "url": "https://raw.githubusercontent.com/sharebravery/shuangpin-practice/4927919362cadcda6e61375a04bc75a1e47e6639/src/data/schemes.ts",
+          "sha256": "f93fbcae5782a700668f347c9a8a07c7086cd8225444baa8f8161c27e172a0b1"
+        },
+        "license": {
+          "url": "https://raw.githubusercontent.com/sharebravery/shuangpin-practice/4927919362cadcda6e61375a04bc75a1e47e6639/LICENSE",
+          "sha256": "01682881fe5ad299d64a43b2c15de8d386ecf1a4a1be8c7d827aa3479a9d3924"
+        },
+        "upstreamProvenance": {
+          "url": "https://raw.githubusercontent.com/sharebravery/shuangpin-practice/4927919362cadcda6e61375a04bc75a1e47e6639/THIRD_PARTY.md",
+          "sha256": "0a18fb8e62e7f22f6f42c9b3a4e36b87c7a79f7a6b8cdc5611a844b13bb03a50"
+        }
+      },
+      "modifications": [
+        "Extract only the xiaohe initials, finals and zeroInitials objects into JSON; no upstream TypeScript is executed.",
+        "Preserve upstream lowercase key values and v/ve spellings for ü/üe.",
+        "Exclude other layouts, all upstream practice text and all application code."
+      ],
+      "generated": {
+        "path": "src/data/generated/sound-mapping.json",
+        "importer": "scripts/import-sound-mapping.py",
+        "sha256": "71b8e6850c77d28b0e4e271c3d7a808a569e1eaecfee553dc31e58b1514c77a9",
+        "bytes": 1069
+      },
+      "verificationReferences": [
+        "https://flypy.cc/images/hejp.png",
+        "https://flypy.cc/images/uplu.png"
+      ],
+      "redistributionStatus": "adopted-with-notice",
+      "notes": "Upstream THIRD_PARTY.md states the scheme rules were independently organized from public layout rules and no third-party application source was copied. Official Flypy images were inspected for verification only; no official images are redistributed.",
+      "noticeSha256": "a647cde6d1715e0e22822feb9b0f7b00db6470e7b4a8bd901ee5c5b2f7ed3c16"
+    }
+  ]
+}

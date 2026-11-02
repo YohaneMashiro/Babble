@@ -1,0 +1,6 @@
+Babble g2pW model resources
+Original g2pW: Yi-Chang Chen, Yu-Chuan Chang, Yen-Cheng Chang, Yi-Ren Yeh. Apache-2.0; see LICENSE.txt.
+Google Research / google-bert Chinese BERT vocabulary: Apache-2.0.
+Modified by Babble: dynamic int8 MatMul/Gather quantization, source alignment and shard packaging.
+ONNX Runtime Web: Microsoft Corporation, MIT; see runtime/LICENSE.txt and runtime/ThirdPartyNotices.txt.
+Reproducibility sources and hashes: data/g2pw-model.lock.json in downloadable source.

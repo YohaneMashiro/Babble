@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "scope": "Exact locally executed research program snapshots; no raw reference, candidate corpus or private text copied. These are not production generators or a portable CLI.",
+  "programs": [
+    {
+      "path": "programs/reading-policy/run.mjs",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/reading-policy/run.mjs",
+      "bytes": 14357,
+      "sha256": "c7a034ea5b7fd57a1866be61f4e9b20f8ba7c1fd6b8c7b55513f8b8d4d30b94f"
+    },
+    {
+      "path": "programs/reading-policy/extract.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/reading-policy/extract.py",
+      "bytes": 2386,
+      "sha256": "a47ee0e90be8be2a4ef24ba5824d16b166b9c78cdb98d25da85fde314d9d0bc8"
+    },
+    {
+      "path": "programs/reading-policy/reproduce.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/reading-policy/reproduce.py",
+      "bytes": 2831,
+      "sha256": "35dadd9b10b12f9ea11106cb4637bd933d4c387fd87274da25d024c63e7dc52d"
+    },
+    {
+      "path": "programs/reading-policy/verify-benchmarks.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/reading-policy/verify-benchmarks.py",
+      "bytes": 2105,
+      "sha256": "1112ef50dc6b0b6898e52b41c25b93a9596518229ee464a2fd232a9d45a6edf4"
+    },
+    {
+      "path": "programs/reading-policy/measure-coverage.mjs",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/reading-policy/measure-coverage.mjs",
+      "bytes": 6059,
+      "sha256": "faf2b61e7e462551da90e66abe3681d50e1e3ab071db5a003eafa33e06d0364d"
+    },
+    {
+      "path": "programs/reading-policy/export-choices.mjs",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/reading-policy/export-choices.mjs",
+      "bytes": 4450,
+      "sha256": "ee511ceb6769cfeb6e136d052cac1e1a1d855ccb3068a0f9cf9178e398dcf658"
+    },
+    {
+      "path": "programs/reading-policy/equivalent-glyph-transfer/run.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/reading-policy/equivalent-glyph-transfer/run.py",
+      "bytes": 14739,
+      "sha256": "6ae8d1c9e007d697b99b591261e15591a35704b491aa043799609f68a5b58fcc"
+    },
+    {
+      "path": "programs/reading-policy/equivalent-glyph-transfer/verify-reproduction.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/reading-policy/equivalent-glyph-transfer/verify-reproduction.py",
+      "bytes": 1467,
+      "sha256": "0b6be8dce37c603e0cd6492a49057104eb05839fabf00d409b24d149561dd8c7"
+    },
+    {
+      "path": "programs/reading-policy/whole-character/generate.mjs",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/reading-policy/whole-character/generate.mjs",
+      "bytes": 3024,
+      "sha256": "16c5c26a8b18fc5b9b1df292b30b960cb9d08d8f78316b39f58a4d26fbda596b"
+    },
+    {
+      "path": "programs/reading-policy/whole-character/compare-and-crosscheck.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/reading-policy/whole-character/compare-and-crosscheck.py",
+      "bytes": 4091,
+      "sha256": "725587d9f6dbd3dd0e9578b6a6bb39405fe2aa995099739ed586e1a13b2509a5"
+    },
+    {
+      "path": "programs/decomposition/prepare.mjs",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/decomposition/prepare.mjs",
+      "bytes": 2671,
+      "sha256": "d0bdeb8626ca44165cc4f11bc3bfcc8d88dacdc1cd5c1de3435d9eadc8a0b012"
+    },
+    {
+      "path": "programs/decomposition/generate.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/decomposition/generate.py",
+      "bytes": 10387,
+      "sha256": "4b28c4f4e56b4afb8530c1696ea8c9f7b9f3fc1cca681c02f6defff9aeaaad2a"
+    },
+    {
+      "path": "programs/decomposition/compare.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/decomposition/compare.py",
+      "bytes": 6341,
+      "sha256": "4f8936753755fefaafc4cbd60aeba671d05093c8c6b5e61679a00fd5a4276b3e"
+    },
+    {
+      "path": "programs/decomposition/generate-interaction.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/decomposition/generate-interaction.py",
+      "bytes": 4864,
+      "sha256": "81bdcfb12b011a0b0157ed16eba91fd52ad3d7279e9a375eec321adf76d63ae1"
+    },
+    {
+      "path": "programs/decomposition/compare-interaction.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/decomposition/compare-interaction.py",
+      "bytes": 9934,
+      "sha256": "540d45a80cd4776e239127ae4334c77ab8baedd6006a94a0f7e4f50d8791def6"
+    },
+    {
+      "path": "programs/decomposition/generate-tagged-cjkvi.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/decomposition/generate-tagged-cjkvi.py",
+      "bytes": 2506,
+      "sha256": "d57c99f542330a98e77457a53319bbdab59c523e30dcf3ab055e17d8419bef2d"
+    },
+    {
+      "path": "programs/decomposition/compare-tagged-final.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/decomposition/compare-tagged-final.py",
+      "bytes": 8885,
+      "sha256": "786bd77828f27efc2816e7e9e8d6ddd8d5224ed9f9d63a390a372671ee89c5af"
+    },
+    {
+      "path": "programs/decomposition/diagnose-final-residual.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/decomposition/diagnose-final-residual.py",
+      "bytes": 6559,
+      "sha256": "95b9c437a6aa26c4e22e057cee851f7cd1fc1c8b934bd1140fe6908358564a73"
+    },
+    {
+      "path": "programs/decomposition/leaf-expansion/run.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/decomposition/leaf-expansion/run.py",
+      "bytes": 9626,
+      "sha256": "d410dc9270209848d932dddf362b73fc7a15502dbfb0658dda6c6d97e0e50ac5"
+    },
+    {
+      "path": "programs/decomposition/leaf-expansion/compare.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/decomposition/leaf-expansion/compare.py",
+      "bytes": 8168,
+      "sha256": "c7300bebd63b5b74187dde5dff44b39d35dfd06177ea8b0942125bcaca47aec1"
+    },
+    {
+      "path": "programs/decomposition/leaf-expansion/audit-caps.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/decomposition/leaf-expansion/audit-caps.py",
+      "bytes": 1206,
+      "sha256": "5173874db2eb7f4fc369e51ded8852e45a57d51821f99686984816b6c1be472a"
+    },
+    {
+      "path": "programs/decomposition/leaf-expansion/negative-control.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/decomposition/leaf-expansion/negative-control.py",
+      "bytes": 2913,
+      "sha256": "72283769e00089832f519569d51b096ed1f11cb9c697278b80ed6a5d5bca8eff"
+    },
+    {
+      "path": "programs/common/build-candidates.mjs",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/common/build-candidates.mjs",
+      "bytes": 8082,
+      "sha256": "16f17df779a8f2f66534a42287e9f65177da099475750cf63b0bc5d8f799dddc"
+    },
+    {
+      "path": "programs/common/compare-candidates.mjs",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/common/compare-candidates.mjs",
+      "bytes": 2049,
+      "sha256": "2d014bc3887ee13a5eeabbe41ab8786fa84eefeb63e2a132820713423f0e28f0"
+    },
+    {
+      "path": "programs/common/render-geometry.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/common/render-geometry.py",
+      "bytes": 2427,
+      "sha256": "6853ac752f3c4186f09ff31ce2677761d1ee6428ee0fb085d2ebd019fca802c0"
+    },
+    {
+      "path": "programs/checker/audit-reading.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/checker/audit-reading.py",
+      "bytes": 7053,
+      "sha256": "c797be2277e7a1a079e67975eae53800bbf40e5b757e90ba43f60114b21adf3a"
+    },
+    {
+      "path": "programs/checker/audit-broad-choices.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/checker/audit-broad-choices.py",
+      "bytes": 2178,
+      "sha256": "0985a38335bbb2e77ead2a677d374f275f87dc0d4e89e509728c69bf1c4c98dd"
+    },
+    {
+      "path": "programs/checker/audit-decomposition.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/checker/audit-decomposition.py",
+      "bytes": 7629,
+      "sha256": "7f52965c8b2ba12fba53bebafe68051a0f23c1e008f3fec3b6281eea0b0eef80"
+    },
+    {
+      "path": "programs/checker/audit-tagged-final.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/checker/audit-tagged-final.py",
+      "bytes": 6333,
+      "sha256": "6d7c668bec2c2f614ab490b1990b10d1bf1640bdc119288de3f921a8ee89e578"
+    },
+    {
+      "path": "programs/checker/audit-equivalent-transfer.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/checker/audit-equivalent-transfer.py",
+      "bytes": 6538,
+      "sha256": "e31456a5def1049a393a4f6efcb8ed8cdf6bdff0c1ae50f27912c4aebd0a4e74"
+    },
+    {
+      "path": "programs/checker/audit-without-cjkvi.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/checker/audit-without-cjkvi.py",
+      "bytes": 4276,
+      "sha256": "ca241afa9210e727fe6e67e3bbfe1112b8ca4ee0607a8dd539693a9c869a9a40"
+    },
+    {
+      "path": "programs/checker/audit-leaf-expansion.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/checker/audit-leaf-expansion.py",
+      "bytes": 9198,
+      "sha256": "546c99661c9812e4d094e641b2be9e7abb44f32d58e09bc55fe8910658b3f00b"
+    },
+    {
+      "path": "programs/checker/audit-common.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/checker/audit-common.py",
+      "bytes": 5358,
+      "sha256": "f63b7f2f50e60792d17c1e7b9fa5f976c2372f29a4c621e08c7bc234bd6fb51e"
+    },
+    {
+      "path": "programs/checker/audit-targets.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/checker/audit-targets.py",
+      "bytes": 5903,
+      "sha256": "8b31aa9022e51e825f4450c7beac91c8a5c11cc31c0057da8b1a331276379364"
+    },
+    {
+      "path": "programs/checker/audit-snapshot.py",
+      "originalResearchPath": "/root/.cache/babble-coverage-next/checker/audit-snapshot.py",
+      "bytes": 1729,
+      "sha256": "e9d91848e2df7a03c2a559d89c61be43b0869c70d221180befb72967d61a3d30"
+    }
+  ]
+}

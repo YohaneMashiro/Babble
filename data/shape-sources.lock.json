@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "auditedAt": "2026-10-25",
+  "generator": {
+    "url": "https://github.com/OverflowCat/libre-flypy",
+    "commit": "0eddd3eafc1ad68b3b55f0565c10b7b92b104d51",
+    "tag": "1.2.0",
+    "license": "AGPL-3.0-only",
+    "modification": "25 additive lines in src/main.rs to retain actual root and propagation paths; encoding decisions unchanged",
+    "patch": "tools/libre-flypy-audit/trace.patch",
+    "id": "libre-flypy-trace-1.2.0"
+  },
+  "publishedCodes": {
+    "url": "https://github.com/OverflowCat/libre-flypy/releases/download/1.2.0/output.txt",
+    "sha256": "bde3928b0193c9fc462f974e81c10181feaf533fe7fd038a81cb4a60ec6e0cb7",
+    "license": "CC0-1.0 per upstream README",
+    "licenseStatement": "https://github.com/OverflowCat/libre-flypy/blob/0eddd3eafc1ad68b3b55f0565c10b7b92b104d51/README.md#协议",
+    "id": "libre-flypy-codes-1.2.0"
+  },
+  "inputs": [
+    {
+      "name": "yi-bai/ids",
+      "commit": "2f9ad2de309c56a83555ca7474473ce1fa1b8ee4",
+      "file": "inputs/ids_lv2.txt",
+      "sourceUrl": "https://github.com/yi-bai/ids/blob/2f9ad2de309c56a83555ca7474473ce1fa1b8ee4/ids_lv2.txt",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2021 Yi Bai",
+      "licenseFile": "inputs/IDS-LICENSE",
+      "id": "yi-bai-ids-2023"
+    },
+    {
+      "name": "mozillazg/pinyin-data",
+      "commit": "2fe1f86e2bbed2e230d6e947aa393f8ee37342f4",
+      "file": "inputs/pinyin.txt",
+      "sourceUrl": "https://github.com/mozillazg/pinyin-data/blob/2fe1f86e2bbed2e230d6e947aa393f8ee37342f4/pinyin.txt",
+      "license": "MIT; preserve upstream Unicode data terms",
+      "copyright": "Copyright (c) 2016 mozillazg; includes Unihan Unicode 15.0 data",
+      "licenseFile": "inputs/PINYIN-LICENSE",
+      "id": "pinyin-data-2023"
+    }
+  ],
+  "unicodeNotice": {
+    "url": "https://www.unicode.org/license.txt",
+    "retrievedAt": "2026-10-25",
+    "file": "inputs/UNICODE-LICENSE",
+    "note": "Current Unicode License v3 included in addition to upstream MIT notice; the pinned pinyin data identifies its Unihan input as Unicode 15.0.0."
+  },
+  "researchReference": {
+    "url": "https://flypy.cc/ix/ixdata.json",
+    "discoveredVia": "https://flypy.cc/ix/",
+    "sha256": "6968764d45720778e5c9a462c2807cf5cf9acbb34f2cdc4585be6025de6b1db1",
+    "redistribution": "unconfirmed; not redistributed",
+    "use": "Local research verification only; required path must be outside project; output fields originate from licensed generator trace"
+  },
+  "selectionPolicy": [
+    "Use only code records present in the CC0 published release.",
+    "Use actual generator lookup paths, never infer a root from a code.",
+    "Require exact agreement on full code and both root characters with the temporary research reference.",
+    "Exclude private-use, question-mark or replacement roots without substitution.",
+    "Do not infer readings, full decompositions, missing codes or root aliases."
+  ],
+  "expected": {
+    "generatedRows": 52743,
+    "acceptedCharacters": 6596,
+    "acceptedUniqueCodes": 7014
+  },
+  "reproduction": {
+    "command": "python3 tools/libre-flypy-audit/rebuild.py --reference /absolute/outside/project/ixdata.json --check",
+    "requires": [
+      "Python >=3.10",
+      "rustc >=1.65 (verified with 1.75.0)",
+      "system C linker"
+    ],
+    "network": "None; no reference requests during build or reproduction.",
+    "dependencySelection": "Nearest available upstream commits before libre-flypy 1.2.0; the original project did not lock data dependencies, so published/generated disagreement is filtered rather than patched."
+  },
+  "traceLicense": "AGPL-3.0-only, conservatively retained for derivative trace material; not relicensed as CC0",
+  "files": {
+    "Cargo.toml": "0134cc371b59eb3661a4bc0742787eb5c98ea5427497e0ff890eb1f1f5cd2b10",
+    "LICENSE": "3144633ae79761522a0025d5dbbc8f64616c0c5b24a3931f84a71abc5e7b1891",
+    "UPSTREAM-README.md": "aa2e18959847f5c6ba34ee506d9f789e1ee462ed221420fea3a7a552c0e8d54b",
+    "inputs/IDS-LICENSE": "f1d89fe379529df4166f75142ff82c7cc302795ec992e2a64c189aa8733da419",
+    "inputs/PINYIN-LICENSE": "9c048697be2502a16e8bcb282d5d465a07295b2def0ffb05a269c5d39dbe1586",
+    "inputs/UNICODE-LICENSE": "e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96",
+    "inputs/ids_lv2.txt": "08c3706ff884b37fdcdbd63851f4f30f36ea59be8643f771085bbdbe31ce4b9d",
+    "inputs/pinyin.txt": "b240322a1dbe7bb4abffb1889cdbbb3f124bc3242d27ea40a10f51596c41db50",
+    "inputs/release-output-1.2.0.txt": "bde3928b0193c9fc462f974e81c10181feaf533fe7fd038a81cb4a60ec6e0cb7",
+    "my_ids.txt": "9190bc1fe722153dac9b8326639da8bc11c8c9bb9cc243b3157ea1899218aa7a",
+    "my_pinyin.txt": "ad3156bb7fab65c681f831b2e340de9221bb67202393db689e0db7e9ae6f399d",
+    "rebuild.py": "39d0f8fae9488dfe7e142b9f55db02471fa105da90aef189ccaafacc0f109f12",
+    "src/ids/mod.rs": "cc91e839710d6ad945943f59a26ba9cb11ed15fdb269058ed3b52c3f8f761d9b",
+    "src/ids/pn.rs": "715e60b032f007cd37e4e91dfaf372849f48f8ee3e111cab7e65f44ca52d216e",
+    "src/main.rs": "fc236d957d192e67ff2752bd75a547b89606a8676d22a408c3c6af991158534d",
+    "src/pinyin.rs": "9156f2a925b9eadc7c7ac4f91f950630d5a8d26176e6769ff531689329cec590",
+    "src/roots.rs": "a225c7d6bf881df18d58f85dafed280b31746f68812dd10ba503323d59ab5604",
+    "trace.patch": "c750f86de3d6b504a86ffcc86ea9bcba864eef5856fd3f659a5b2a99c1a7b89d"
+  },
+  "generated": {
+    "path": "src/data/generated/shape-traces.json",
+    "sha256": "0fa139ecc338c6ce6991749f93c1ba9356254c1cc4ede42b0f7a79359dbf6c17"
+  }
+}
